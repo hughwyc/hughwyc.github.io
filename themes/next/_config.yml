@@ -249,6 +249,9 @@ auto_excerpt:
   enable: false
   length: 150
   
+# Automatically scroll page to section which is under <!-- more --> mark.
+scroll_to_more: false
+  
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
 read_more_btn: true
