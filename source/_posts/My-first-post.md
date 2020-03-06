@@ -1,12 +1,13 @@
 ---
 title: My first post
-date: 2020-03-06 16:17:58
-tags: 
-- blog
+tags:
+  - blog
 categories:
-- life
+  - life
 visitor: true
 comment_count: true
+abbrlink: ffda4f34
+date: 2020-03-06 16:17:58
 ---
 
 这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章，具体搭建方法[详见这里](https://www.cxyxiaowu.com/6407.html)。
