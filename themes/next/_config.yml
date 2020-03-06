@@ -59,7 +59,7 @@ footer:
     # `heart` is recommended with animation in red (#ff0000).
     name: user
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#808080"
 
@@ -97,7 +97,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: false
-  post: false
+  post: true # 版权声明
   language:
 
 
@@ -243,6 +243,12 @@ chat:
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
 
+# Automatically Excerpt (Not recommend).
+# Use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 150
+  
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
 read_more_btn: true

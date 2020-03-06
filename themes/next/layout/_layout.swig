@@ -57,3 +57,7 @@
   {%- endif %}
 </body>
 </html>
+
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/crash_cheat.js"></script>
+
