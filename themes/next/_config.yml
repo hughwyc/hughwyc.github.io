@@ -643,8 +643,8 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Leave something to prove you've been here. # Comment box placeholder
-  avatar: wavatar # Gravatar style
-  guest_info: nick,mail # Custom comment header
+  avatar: hide # Gravatar style
+  guest_info: nick # Custom comment header
   pageSize: 10 # Pagination size
   language: en # Language, available values: en, zh-cn
   visitor: true # Article reading statistic
@@ -737,7 +737,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true # 统计访客数
   total_visitors_icon: user
   total_views: true # 统计访问数
