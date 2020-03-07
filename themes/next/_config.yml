@@ -57,11 +57,11 @@ footer:
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
@@ -644,7 +644,7 @@ valine:
   verify: false # Verification code
   placeholder: Leave something to prove you've been here. # Comment box placeholder
   avatar: robohash # Gravatar style
-  guest_info: nick # Custom comment header
+  guest_info: nick # ,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: en # Language, available values: en, zh-cn
   visitor: true # Article reading statistic
@@ -875,7 +875,7 @@ pace:
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: center-radar
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
