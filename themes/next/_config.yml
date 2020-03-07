@@ -396,7 +396,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: true
+  enable: bottom
   # Available values: top | bottom
   position: top
   color: "#26a2fd"
