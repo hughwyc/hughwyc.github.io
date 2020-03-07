@@ -52,7 +52,7 @@ footer:
   #since: 2015
   
   #统计
-  counter: true
+  counter: false
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
