@@ -68,13 +68,13 @@ footer:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
     version: true
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
     version: true
 
@@ -643,7 +643,7 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Leave something to prove you've been here. # Comment box placeholder
-  avatar: hide # Gravatar style
+  avatar: robohash # Gravatar style
   guest_info: nick # Custom comment header
   pageSize: 10 # Pagination size
   language: en # Language, available values: en, zh-cn
@@ -1027,3 +1027,7 @@ vendors:
 css: css
 js: js
 images: images
+
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
