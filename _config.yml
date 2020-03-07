@@ -41,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true # 在新建的同时生成对应的文件夹，用于存放文档的资源文件，如图片、音频等
+post_asset_folder: false # 在新建的同时生成对应的文件夹，用于存放文档的资源文件，如图片、音频等
 relative_link: false
 future: true
 highlight:

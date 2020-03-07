@@ -10,7 +10,7 @@
 override: false
 
 # Console reminder if new version released.
-reminder: false
+reminder: true
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
@@ -98,7 +98,7 @@ creative_commons:
   license: by-nc-sa
   sidebar: false
   post: true # 版权声明
-  language: deed.zh
+  language: 
 
 
 # ---------------------------------------------------------------
@@ -247,7 +247,7 @@ excerpt_description: true
 # Use <!-- more --> in the post to control excerpt accurately.
   
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
   
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -875,7 +875,7 @@ pace:
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: bounce
+  theme: minimal
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
