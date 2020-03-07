@@ -245,12 +245,9 @@ excerpt_description: true
 
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
-auto_excerpt:
-  enable: false
-  length: 150
   
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: false
+scroll_to_more: true
   
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -258,9 +255,9 @@ read_more_btn: true
 
 # Post meta display settings
 post_meta:
-  item_text: true
+  item_text: false
   created_at: true
-  updated_at:
+  updated_at: 
     enable: true
     another_day: true
   categories: true
@@ -484,7 +481,7 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
@@ -646,13 +643,13 @@ valine:
   notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Leave something to prove you've been here. # Comment box placeholder
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
+  avatar: wavatar # Gravatar style
+  guest_info: nick,mail # Custom comment header
   pageSize: 10 # Pagination size
   language: en # Language, available values: en, zh-cn
   visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: true # Whether to record the commenter IP
+  recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 
