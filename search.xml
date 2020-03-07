@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>go-study</title>
+    <url>/posts/go-study</url>
+    <content><![CDATA[<p>即将开始我的Go学习之旅啦~</p>
+]]></content>
+      <categories>
+        <category>golang</category>
+      </categories>
+      <tags>
+        <tag>go</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>My first post</title>
     <url>/posts/my-first-blog</url>
     <content><![CDATA[<p>这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章，具体搭建方法<a href="https://www.cxyxiaowu.com/6407.html" target="_blank" rel="noopener">详见这里</a>。</p>
