@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>经济学原理</title>
+    <url>/posts/principle-of-economics-1</url>
+    <content><![CDATA[<h1 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h1><blockquote>
+<p><strong>稀缺性</strong> (scarcity) 是指社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务。</p>
+<p><strong>经济学</strong> (economics) 研究社会如何管理自己的稀缺资源，研究人们如何做出决策。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
+<li>一个人最宝贵的资源，是<strong>时间</strong>。</li>
+<li>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</li>
+</ul>
+<blockquote>
+<p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
+<p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
+</blockquote>
+<ul>
+<li>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>economy</category>
+      </categories>
+      <tags>
+        <tag>economy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>go-study</title>
     <url>/posts/go-study</url>
     <content><![CDATA[<p>即将开始我的Go学习之旅啦~</p>
