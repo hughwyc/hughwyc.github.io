@@ -30,7 +30,7 @@
 <meta property="og:description" content="曼昆著，经济学原理--微观经济学分册">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-08T15:49:57.000Z">
-<meta property="article:modified_time" content="2020-03-08T16:25:49.880Z">
+<meta property="article:modified_time" content="2020-03-08T16:31:13.180Z">
 <meta property="article:author" content="Hugh Davis">
 <meta property="article:tag" content="economy">
 <meta name="twitter:card" content="summary">
@@ -226,7 +226,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-09 00:25:49" itemprop="dateModified" datetime="2020-03-09T00:25:49+08:00">2020-03-09</time>
+                <time title="Modified: 2020-03-09 00:31:13" itemprop="dateModified" datetime="2020-03-09T00:31:13+08:00">2020-03-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -259,7 +259,7 @@
     </a>
   </span>
   
-  <br>
+  
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
@@ -274,8 +274,6 @@
                 <span class="post-meta-item-text">Reading time &asymp;</span>
               <span>1 mins.</span>
             </span>
-            <div class="post-description">曼昆著，经济学原理--微观经济学分册</div>
-
         </div>
       </header>
 
@@ -292,15 +290,16 @@
 <a id="more"></a>
 
 <h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
-<li>一个人最宝贵的资源，是<strong>时间</strong>。</li>
-<li>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</li>
-</ul>
+<li><p>一个人最宝贵的资源，是<strong>时间</strong>。</p>
+</li>
+<li><p>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</p>
 <blockquote>
 <p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
 <p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
 </blockquote>
-<ul>
-<li>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</li>
+</li>
+<li><p>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</p>
+</li>
 </ul>
 
     </div>
@@ -313,7 +312,7 @@
       
         <div>
     
-        <div style="text-align:center;color: #ccc;font-size:16px;">- - - - - - 本文已结束 ♥ 感谢您的阅读 - - - - - -</div>
+        <div style="text-align:center;color: #ccc;font-size:16px;">- - - - - End of Post  ♥  Thank You - - - - -</div>
     
 </div>
       
