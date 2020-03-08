@@ -60,6 +60,13 @@
               {%- endif %}
 
               <time title="{{ create_title }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{{ date(post.date) }}</time>
+			  
+			  {% if post.top %}
+				 <i class="fa fa-thumb-tack"></i>
+				 <font color=7D26CD>Pinned</font>
+				 <span class="post-meta-divider">|</span>
+			  {% endif %}
+			  
             </span>
           {%- endif %}
 
