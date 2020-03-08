@@ -47,7 +47,7 @@
           {%- set datetime_diff = date_diff or time_diff %}
 		  {% if post.top %}
 			<i class="fa fa-thumb-tack"></i>
-			<font color=7D26CD>Pinned</font>
+			<font color=#428BCA>Pinned</font>
 			<span class="post-meta-divider">|</span>
 		  {% endif %}
 
@@ -158,11 +158,6 @@
               <span>{{ symbolsTime(post, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
             </span>
           {%- endif %}
-
-          {%- if post.description and (not theme.excerpt_description or not is_index) %}
-            <div class="post-description">{{ post.description }}</div>
-          {%- endif %}
-
         </div>
       </header>
     {%- endif %}

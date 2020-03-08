@@ -1,5 +1,5 @@
 <div>
     {% if not is_index %}
-        <div style="text-align:center;color: #ccc;font-size:16px;">- - - - - - 本文已结束 ♥ 感谢您的阅读 - - - - - -</div>
+        <div style="text-align:center;color: #ccc;font-size:16px;">- - - - - End of Post  ♥  Thank You - - - - -</div>
     {% endif %}
 </div>
