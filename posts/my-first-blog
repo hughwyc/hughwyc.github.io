@@ -30,7 +30,7 @@
 <meta property="og:description" content="这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章，具体搭建方法详见这里。 开学时间仍是未定。在这史无前例的漫长假期中，得益于丰富的网络资源，即使宅在家里，也可以尝试许多有趣的东西。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-06T08:17:58.000Z">
-<meta property="article:modified_time" content="2020-03-07T14:02:37.367Z">
+<meta property="article:modified_time" content="2020-03-08T08:45:23.354Z">
 <meta property="article:author" content="Hugh Davis">
 <meta property="article:tag" content="blog">
 <meta name="twitter:card" content="summary">
@@ -219,13 +219,20 @@
               <span class="post-meta-item-text">Posted on</span>
 
               <time title="Created: 2020-03-06 16:17:58" itemprop="dateCreated datePublished" datetime="2020-03-06T16:17:58+08:00">2020-03-06</time>
+			  
+			  
+				 <i class="fa fa-thumb-tack"></i>
+				 <font color=7D26CD>Pinned</font>
+				 <span class="post-meta-divider">|</span>
+			  
+			  
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-07 22:02:37" itemprop="dateModified" datetime="2020-03-07T22:02:37+08:00">2020-03-07</time>
+                <time title="Modified: 2020-03-08 16:45:23" itemprop="dateModified" datetime="2020-03-08T16:45:23+08:00">2020-03-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
