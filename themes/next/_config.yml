@@ -3,6 +3,9 @@
 # See: https://theme-next.org/docs/theme-settings/
 # ---------------------------------------------------------------
 
+# color-1: #26a2fd
+# color-2: #428BCA
+
 # If false, merge configs from `_data/next.yml` into default configuration (rewrite).
 # If true, will fully override default configuration by options from `_data/next.yml` (override). Only for NexT settings.
 # And if true, all config from default NexT `_config.yml` must be copied into `next.yml`. Use if you know what you are doing.
@@ -61,7 +64,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: false
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#26a2fd"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
