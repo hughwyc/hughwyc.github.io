@@ -306,7 +306,7 @@ td {
 }
 .btn {
   background: #fff;
-  border: 2px solid #555;
+  border: 1px solid #555;
   border-radius: 2px;
   color: #555;
   display: inline-block;
@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #339f14;
+  background: #ffff2a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
