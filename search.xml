@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>经济学原理</title>
-    <url>/posts/principle-of-economics-1/</url>
-    <content><![CDATA[<h1 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h1><blockquote>
-<p><strong>稀缺性</strong> (scarcity) 是指社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务。</p>
-<p><strong>经济学</strong> (economics) 研究社会如何管理自己的稀缺资源，研究人们如何做出决策。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
-<li><p>一个人最宝贵的资源，是<strong>时间</strong>。</p>
-</li>
-<li><p>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</p>
-<blockquote>
-<p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
-<p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
-</blockquote>
-</li>
-<li><p>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>economy</category>
-      </categories>
-      <tags>
-        <tag>economy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Golang学习</title>
-    <url>/posts/go-study/</url>
+    <title>Github使用学习</title>
+    <url>/posts/github-study/</url>
     <content><![CDATA[<hr>
 <p> <font color=red> <strong>注意：以后听视频课，一定要同时做笔记！！！</strong> </font> </p>
 <hr>
@@ -96,11 +67,7 @@
 <p><code>git branch -a</code> –&gt; 查看本地和远程所有分支（仅显示分支名）</p>
 <p><code>git branch -v</code> –&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息</p>
 <p><code>git branch -vv</code> –&gt; 比上一个多显示出远程分支名</p>
-<div align=center><img src="https://github.com/hughwyc/Test-Repo/blob/master/Study-Note.assets/1583212205798.png" width="100%" height="100%"> </div>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Hugh@HUGHDAVIS MINGW64 /d/Documents/GitHub/Golang-Study/Test-Repo (master)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -avv</span></span><br><span class="line">* master                c0f501f [origin/master: ahead 1] upload the .md file</span><br><span class="line">  remotes/origin/HEAD   -&gt; origin/master</span><br><span class="line">  remotes/origin/master ba2ced5 Create new.txt</span><br></pre></td></tr></table></figure>
-
-
+<p><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" alt="image"></p>
 </li>
 </ol>
 <p>运行后有三行信息，依次说明:</p>
@@ -181,10 +148,39 @@
 </ol>
 ]]></content>
       <categories>
-        <category>golang</category>
+        <category>Tools</category>
       </categories>
       <tags>
-        <tag>go</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经济学原理</title>
+    <url>/posts/principle-of-economics-1/</url>
+    <content><![CDATA[<h1 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h1><blockquote>
+<p><strong>稀缺性</strong> (scarcity) 是指社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务。</p>
+<p><strong>经济学</strong> (economics) 研究社会如何管理自己的稀缺资源，研究人们如何做出决策。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
+<li><p>一个人最宝贵的资源，是<strong>时间</strong>。</p>
+</li>
+<li><p>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</p>
+<blockquote>
+<p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
+<p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
+</blockquote>
+</li>
+<li><p>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>economy</category>
+      </categories>
+      <tags>
+        <tag>economy</tag>
       </tags>
   </entry>
   <entry>
