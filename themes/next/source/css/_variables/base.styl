@@ -16,11 +16,11 @@ $grey-dim     = #666;
 $black-light  = #555;
 $black-dim    = #333;
 $black-deep   = #222;
-$red          = #26a2fd; // #ff2a2a;
+$red          = #ff2a2a;
 $blue-bright  = #87daff;
 $blue         = #0684bd;
 $blue-deep    = #262a30;
-$orange       = #428BCA; // #fc6423;
+$orange       = #fc6423;
 
 
 // Scaffolding
@@ -66,22 +66,25 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "Noto Serif CJK SC"
+$font-family-chinese      = "PingFang SC", "Microsoft YaHei";
 
-$font-family-base         = $font-family-chinese, sans-serif
-$font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global')
+$font-family-base         = $font-family-chinese, sans-serif;
+$font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global');
 
-$font-family-logo         = $font-family-base
-$font-family-logo         = get_font_family('logo'), $font-family-base if get_font_family('logo')
+$font-family-logo         = $font-family-base;
+$font-family-logo         = get_font_family('title'), $font-family-base if get_font_family('title');
 
-$font-family-headings     = $font-family-base
-$font-family-headings     = get_font_family('headings'), $font-family-base if get_font_family('headings')
+$font-family-headings     = $font-family-base;
+$font-family-headings     = get_font_family('headings'), $font-family-base if get_font_family('headings');
 
-$font-family-posts        = $font-family-base
-$font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts')
+$font-family-posts        = $font-family-base;
+$font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts');
 
-$font-family-monospace    = consolas, Menlo, $font-family-chinese, monospace
-$font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-chinese, monospace if get_font_family('codes')
+$font-family-monospace    = consolas, Menlo, monospace, $font-family-chinese;
+$font-family-monospace    = get_font_family('codes'), consolas, Menlo, monospace, $font-family-chinese if get_font_family('codes');
+
+$font-family-icons        = 'FontAwesome';
+
 
 // Font size
 $font-size-base           = (hexo-config('font.enable') and hexo-config('font.global.size') is a 'unit') ? unit(hexo-config('font.global.size'), em) : 1em;
@@ -209,7 +212,7 @@ $sidebar-padding                      = hexo-config('sidebar.padding') is a 'uni
 $sidebar-offset                       = hexo-config('sidebar.offset') is a 'unit' ? unit(hexo-config('sidebar.offset'), px) : 12px;
 $sidebar-nav-color                    = $black-light;
 $sidebar-nav-hover-color              = $whitesmoke;
-$sidebar-highlight                    = #428BCA;
+$sidebar-highlight                    = $blue-bright;
 
 $site-author-image-width              = 96px;
 $site-author-image-border-width       = 2px;
@@ -240,7 +243,7 @@ $b2t-position-right           = 30px;
 $b2t-position-right-mobile    = 20px;
 $b2t-font-size                = 12px;
 $b2t-color                    = white;
-$b2t-bg-color                 = #26a2fd;
+$b2t-bg-color                 = $black-deep;
 
 //  .post-expand .post-eof
 //  In Muse scheme, margin above and below the post separator
