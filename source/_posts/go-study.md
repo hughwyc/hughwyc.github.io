@@ -1,13 +1,13 @@
 ---
-title: Golang学习
+title: Github使用学习
 copyright: true
 visitor: true
 comment_count: true
-date: 2020-03-07 21:50:51
-id: go-study
-tags: go
-categories: golang
-description: 搭建本博客的初衷，是记录学Go的历程
+date: 2020-03-09 19:40:00
+id: github-study
+tags: github
+categories: Tools
+description: 正是在学习Github的时候，才知道还可以用来搭博客。
 ---
 
 ---
@@ -88,17 +88,7 @@ description: 搭建本博客的初衷，是记录学Go的历程
 
     `git branch -vv` --> 比上一个多显示出远程分支名
 
-    <div align=center><img src="https://github.com/hughwyc/Test-Repo/blob/master/Study-Note.assets/1583212205798.png" width="100%" height="100%"> </div>
-    
-    ```shell
-    Hugh@HUGHDAVIS MINGW64 /d/Documents/GitHub/Golang-Study/Test-Repo (master)
-    $ git branch -avv
-    * master                c0f501f [origin/master: ahead 1] upload the .md file
-      remotes/origin/HEAD   -> origin/master
-      remotes/origin/master ba2ced5 Create new.txt
-    
-    ```
-    
+    ![image](https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png)
 
 运行后有三行信息，依次说明:
 
