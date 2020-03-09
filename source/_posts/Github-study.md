@@ -229,11 +229,22 @@ $ git clone [远程Git仓库地址] [别名(可不设置，默认为仓库名)]
 
 ## 七、Github Pages 搭建网站
 
-### 个人站点
+### 1. 个人站点
 
 访问：https://用户名.github.io
 
-### 搭建步骤
+### 2. 搭建步骤
 
 1. 创建个人站点 --> 新建仓库（注：仓库名必须是【用户名.github.io】）
 2. 在仓库下新建index.html的文件，即可。
+
+### 附：参考搭建教程
+
+1. [超全面！如何用 GitHub 从零开始搭建一个博客 ？](https://www.cxyxiaowu.com/6407.html)
+2. [Hexo博客+Next主题深度优化与定制](https://hasaik.com/posts/ab21860c.html)
+3. [hexo-Next主题美化](lyxf.live/posts/2063/)
+4. [基于hexo博客自定义页面样式](www.cduyzh.com/hexo-settings-3/)
+5. [Hexo Next主题添加访客统计](https://blog.csdn.net/baidu_34310405/article/details/102665373)
+
+
+
