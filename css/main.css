@@ -210,7 +210,7 @@ h6 {
   font-size: 0.875em;
 }
 p {
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
 }
 a,
 span.exturl {
@@ -239,7 +239,7 @@ hr {
   background-image: repeating-linear-gradient(-45deg, #ddd, #ddd 4px, transparent 4px, transparent 8px);
   border: 0;
   height: 3px;
-  margin: 40px 0;
+  margin: 5px 0;
 }
 blockquote {
   border-left: 4px solid #ddd;
@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3338de;
+  background: #40716a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
