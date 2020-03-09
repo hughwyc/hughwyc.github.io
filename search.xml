@@ -90,7 +90,8 @@
 <li><code>git merge --abort</code> –&gt; Undo a merge</li>
 <li><code>git push origin</code> –&gt; </li>
 </ol>
-<h6 id="注：git-fetch、git-merge、git-pull-三者之间的区别与联系"><a href="#注：git-fetch、git-merge、git-pull-三者之间的区别与联系" class="headerlink" title="注：git fetch、git merge、git pull 三者之间的区别与联系"></a><font color=red>注：<code>git fetch</code>、<code>git merge</code>、<code>git pull</code> 三者之间的区别与联系</font></h6><ul>
+<p><strong><font color=red>注：<code>git fetch</code>、<code>git merge</code>、<code>git pull</code> 三者之间的区别与联系</font></strong></p>
+<ul>
 <li><code>git fetch</code> and <code>git pull</code>  both are used to <strong>download</strong> new data from a remote repository. </li>
 <li><code>git fetch</code> really only downloads new data from a remote repository - but it doesn’t integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository. </li>
 <li><code>git pull</code>, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly <strong>integrates</strong> it into your current working copy files. This has a couple of consequences:<ul>
