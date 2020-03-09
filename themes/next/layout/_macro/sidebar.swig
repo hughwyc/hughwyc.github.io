@@ -43,7 +43,6 @@
           <span>0%</span>
         </div>
       {%- endif %}
-
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
