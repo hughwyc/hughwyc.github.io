@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let searchPath = CONFIG.path;
   if (searchPath.length === 0) {
     searchPath = 'search.xml';
-  } else if (searchPath.endsWith('json')) {
+  } else if (/json$/i.test(searchPath)) {
     isXml = false;
   }
   const path = CONFIG.root + searchPath;
@@ -100,7 +100,6 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   const inputEventFunction = () => {
-    if (!isfetched) return;
     let searchText = input.value.trim().toLowerCase();
     let keywords = searchText.split(/[-\s]+/);
     if (keywords.length > 1) {
@@ -230,14 +229,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const fetchData = () => {
+  const fetchData = callback => {
     fetch(path)
       .then(response => response.text())
       .then(res => {
-        // Remove loading animation
-        document.getElementById('no-result').innerHTML = '<i class="fa fa-search fa-5x"></i>';
-        input.focus();
-
         // Get the contents from search data
         isfetched = true;
         datas = isXml ? [...new DOMParser().parseFromString(res, 'text/xml').querySelectorAll('entry')].map(element => {
@@ -247,12 +242,34 @@ window.addEventListener('DOMContentLoaded', () => {
             url    : element.querySelector('url').innerHTML
           };
         }) : JSON.parse(res);
+
+        // Remove loading animation
+        document.querySelector('.search-pop-overlay').innerHTML = '';
+        document.body.style.overflow = '';
+
+        if (callback) {
+          callback();
+        }
       });
   };
 
   if (CONFIG.localsearch.preload) {
     fetchData();
   }
+
+  const proceedSearch = () => {
+    document.body.style.overflow = 'hidden';
+    document.querySelector('.search-pop-overlay').style.display = 'block';
+    document.querySelector('.popup').style.display = 'block';
+    document.querySelector('.search-input').focus();
+  };
+
+  // Search function
+  const searchFunc = () => {
+    document.querySelector('.search-pop-overlay').style.display = '';
+    document.querySelector('.search-pop-overlay').innerHTML = '<div class="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div>';
+    fetchData(proceedSearch);
+  };
 
   if (CONFIG.localsearch.trigger === 'auto') {
     input.addEventListener('input', inputEventFunction);
@@ -268,23 +285,18 @@ window.addEventListener('DOMContentLoaded', () => {
   // Handle and trigger popup window
   document.querySelectorAll('.popup-trigger').forEach(element => {
     element.addEventListener('click', () => {
-      document.body.style.overflow = 'hidden';
-      document.querySelector('.search-pop-overlay').style.display = 'block';
-      isfetched ? input.focus() : fetchData();
+      isfetched ? proceedSearch() : searchFunc();
     });
   });
 
   // Monitor main search box
   const onPopupClose = () => {
     document.body.style.overflow = '';
-    document.querySelector('.search-pop-overlay').style.display = '';
+    document.querySelector('.search-pop-overlay').style.display = 'none';
+    document.querySelector('.popup').style.display = 'none';
   };
 
-  document.querySelector('.search-pop-overlay').addEventListener('click', event => {
-    if (event.target === document.querySelector('.search-pop-overlay')) {
-      onPopupClose();
-    }
-  });
+  document.querySelector('.search-pop-overlay').addEventListener('click', onPopupClose);
   document.querySelector('.popup-btn-close').addEventListener('click', onPopupClose);
   window.addEventListener('pjax:success', onPopupClose);
   window.addEventListener('keyup', event => {
