@@ -142,10 +142,17 @@
 </ul>
 </li>
 </ul>
-<h2 id="七、Github-Pages-搭建网站"><a href="#七、Github-Pages-搭建网站" class="headerlink" title="七、Github Pages 搭建网站"></a>七、Github Pages 搭建网站</h2><h3 id="个人站点"><a href="#个人站点" class="headerlink" title="个人站点"></a>个人站点</h3><p>访问：https://用户名.github.io</p>
-<h3 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h3><ol>
+<h2 id="七、Github-Pages-搭建网站"><a href="#七、Github-Pages-搭建网站" class="headerlink" title="七、Github Pages 搭建网站"></a>七、Github Pages 搭建网站</h2><h3 id="1-个人站点"><a href="#1-个人站点" class="headerlink" title="1. 个人站点"></a>1. 个人站点</h3><p>访问：https://用户名.github.io</p>
+<h3 id="2-搭建步骤"><a href="#2-搭建步骤" class="headerlink" title="2. 搭建步骤"></a>2. 搭建步骤</h3><ol>
 <li>创建个人站点 –&gt; 新建仓库（注：仓库名必须是【用户名.github.io】）</li>
 <li>在仓库下新建index.html的文件，即可。</li>
+</ol>
+<h3 id="附：参考搭建教程"><a href="#附：参考搭建教程" class="headerlink" title="附：参考搭建教程"></a>附：参考搭建教程</h3><ol>
+<li><a href="https://www.cxyxiaowu.com/6407.html" target="_blank" rel="noopener">超全面！如何用 GitHub 从零开始搭建一个博客 ？</a></li>
+<li><a href="https://hasaik.com/posts/ab21860c.html" target="_blank" rel="noopener">Hexo博客+Next主题深度优化与定制</a></li>
+<li><a href="lyxf.live/posts/2063/">hexo-Next主题美化</a></li>
+<li><a href="www.cduyzh.com/hexo-settings-3/">基于hexo博客自定义页面样式</a></li>
+<li><a href="https://blog.csdn.net/baidu_34310405/article/details/102665373" target="_blank" rel="noopener">Hexo Next主题添加访客统计</a></li>
 </ol>
 ]]></content>
       <categories>
