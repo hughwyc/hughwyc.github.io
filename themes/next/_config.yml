@@ -2,7 +2,7 @@
 # Theme Core Configuration Settings
 # See: https://theme-next.org/docs/theme-settings/
 # ---------------------------------------------------------------
-
+  
 # color-1: #26a2fd
 # color-2: #428BCA
 
@@ -13,7 +13,7 @@
 override: false
 
 # Console reminder if new version released.
-reminder: true
+reminder: false
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
@@ -220,7 +220,7 @@ links:
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.

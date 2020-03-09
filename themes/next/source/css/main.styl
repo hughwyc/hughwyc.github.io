@@ -41,7 +41,7 @@ for $inject_mixin in hexo-config('injects.mixin')
 @import "_schemes/" + $scheme;
 
 
-// Custom Layer
+// Custom Layer（加载导出自定义设置的代码，可以覆盖上面已经导出的CSS样式）
 // --------------------------------------------------
 for $inject_style in hexo-config('injects.style')
   @import $inject_style;
