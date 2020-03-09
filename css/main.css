@@ -720,13 +720,13 @@ pre .javascript .function {
   border-bottom: 1px solid transparent;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  border-top: 3px solid #fc6423;
+  border-top: 3px solid #428bca;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab.active,
   .tabs-comment ul.nav-tabs li.tab.active {
     border-bottom: 1px solid #ddd;
-    border-left: 3px solid #fc6423;
+    border-left: 3px solid #428bca;
     border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
   }
@@ -1214,7 +1214,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a396ff;
+  background: #b8ffa2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1227,9 +1227,9 @@ pre .javascript .function {
   margin-top: 15px;
 }
 .sidebar-button a {
-  border: 1px solid #fc6423;
+  border: 1px solid #428bca;
   border-radius: 4px;
-  color: #fc6423;
+  color: #428bca;
   display: inline-block;
   padding: 0 15px;
 }
@@ -1237,8 +1237,8 @@ pre .javascript .function {
   margin-right: 5px;
 }
 .sidebar-button a:hover {
-  background: #fc6423;
-  border: 1px solid #fc6423;
+  background: #428bca;
+  border: 1px solid #428bca;
   color: #fff;
 }
 .sidebar-button a:hover .fa {
@@ -1295,14 +1295,14 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav li:hover {
-  color: #fc6423;
+  color: #428bca;
 }
 .sidebar-nav .sidebar-nav-active {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #428bca;
+  color: #428bca;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #fc6423;
+  color: #428bca;
 }
 .sidebar-panel {
   display: none;
@@ -1331,7 +1331,7 @@ pre .javascript .function {
   }
 }
 .sidebar-toggle:hover .toggle-line {
-  background: #fc6423;
+  background: #428bca;
 }
 .post-toc {
   font-size: 0.875em;
@@ -1370,14 +1370,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #428bca;
+  color: #428bca;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #428bca;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #428bca;
 }
 .site-state {
   display: flex;
@@ -1507,7 +1507,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
 }
 .back-to-top {
-  background: #222;
+  background: #26a2fd;
   bottom: -100px;
   box-sizing: border-box;
   color: #fff;
@@ -1521,7 +1521,7 @@ pre .javascript .function {
   width: initial;
 }
 .back-to-top:hover {
-  color: #fc6423;
+  color: #222;
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
@@ -1989,7 +1989,7 @@ pre .javascript .function {
   width: 90%;
 }
 .reward-container button {
-  background: #ff2a2a;
+  background: #26a2fd;
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -2000,7 +2000,7 @@ pre .javascript .function {
   vertical-align: text-top;
 }
 .reward-container button:hover {
-  background: #f55;
+  background: #51b5fd;
 }
 #qr {
   padding-top: 20px;
@@ -2019,7 +2019,7 @@ pre .javascript .function {
 }
 .post-copyright {
   background: var(--card-bg-color);
-  border-left: 3px solid #ff2a2a;
+  border-left: 3px solid #26a2fd;
   list-style: none;
   margin: 2em 0 0;
   padding: 0.5em 1em;
@@ -2284,8 +2284,8 @@ ul.breadcrumb li + li:last-child {
   font-weight: bold;
 }
 .search-popup .search-keyword {
-  border-bottom: 1px dashed #ff2a2a;
-  color: #ff2a2a;
+  border-bottom: 1px dashed #26a2fd;
+  color: #26a2fd;
   font-weight: bold;
 }
 .search-popup #search-result {
@@ -2492,18 +2492,18 @@ mjx-container + br {
 .sub-menu .menu-item a:hover,
 .sub-menu .menu-item span.exturl:hover {
   background: transparent;
-  color: #fc6423;
+  color: #428bca;
 }
 .sub-menu .menu-item a::after,
 .sub-menu .menu-item span.exturl::after {
   content: initial !important;
 }
 .sub-menu .menu-item-active a {
-  border-bottom-color: #fc6423;
-  color: #fc6423;
+  border-bottom-color: #428bca;
+  color: #428bca;
 }
 .sub-menu .menu-item-active a:hover {
-  border-bottom-color: #fc6423;
+  border-bottom-color: #428bca;
 }
 .sidebar {
   background: var(--body-bg-color);
@@ -2547,16 +2547,16 @@ mjx-container + br {
 }
 .sidebar-button a {
   border: 0;
-  color: #fc6423;
+  color: #428bca;
   display: block;
 }
 .sidebar-button a:hover {
   background: none;
   border: 0;
-  color: #e34603;
+  color: #2f70a7;
 }
 .sidebar-button a:hover .fa {
-  color: #e34603;
+  color: #2f70a7;
 }
 .links-of-author {
   display: flex;
