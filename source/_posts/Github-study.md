@@ -12,7 +12,7 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
 
 ---
 
- <font color=red> **注意：以后听视频课，一定要同时做笔记！！！** </font> 
+ <font color=#499ae0> **注意：以后听视频课，一定要同时做笔记！！！** </font> 
 
 ---
 
@@ -92,13 +92,13 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
 
 运行后有三行信息，依次说明:
 
-* 第一行，开头的星号表示**当前所在本地分支**，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 -- 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示**本地分支<font color=blue>领先</font>**其跟踪的**远程分支**一个提交。最后一项是提交时填写的备注信息。
+* 第一行，开头的星号表示**当前所在本地分支**，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 -- 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示**本地分支<font color=#499ae0>领先</font>**其跟踪的**远程分支**一个提交。最后一项是提交时填写的备注信息。
 
 * 第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。
 
 * 第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）
 
- <font color=red>**PS：**</font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下： 
+ <font color=#499ae0>**PS：**</font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下： 
 
 ` https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg `
 
@@ -110,7 +110,7 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
 29.    `git merge --abort` --> Undo a merge
 30.   `git push origin ` --> 
 
-**<font color=red>注：`git fetch`、`git merge`、`git pull` 三者之间的区别与联系</font>**
+**<font color=#499ae0>注：`git fetch`、`git merge`、`git pull` 三者之间的区别与联系</font>**
 
 - `git fetch` and `git pull`  both are used to **download** new data from a remote repository. 
 -  `git fetch` really only downloads new data from a remote repository - but it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository. 
