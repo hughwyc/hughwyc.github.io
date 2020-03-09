@@ -110,7 +110,7 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
 29.    `git merge --abort` --> Undo a merge
 30.   `git push origin ` --> 
 
-###### <font color=red>注：`git fetch`、`git merge`、`git pull` 三者之间的区别与联系</font>
+**<font color=red>注：`git fetch`、`git merge`、`git pull` 三者之间的区别与联系</font>**
 
 - `git fetch` and `git pull`  both are used to **download** new data from a remote repository. 
 -  `git fetch` really only downloads new data from a remote repository - but it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository. 
