@@ -15,56 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>经济学原理-上</title>
-    <url>/posts/principle-of-economics-1/</url>
-    <content><![CDATA[<h1 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h1><blockquote>
-<p><strong>稀缺性</strong> (scarcity) 是指社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务。</p>
-<p><strong>经济学</strong> (economics) 研究社会如何管理自己的稀缺资源，研究人们如何做出决策。</p>
-</blockquote>
-<h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
-<li><p><font color=#499ae0>一个人最宝贵的资源，是<strong>时间</strong>。</font></p>
-</li>
-<li><p>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</p>
-</li>
-</ul>
-<blockquote>
-<p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
-<p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
-</blockquote>
-<ul>
-<li>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</li>
-</ul>
-<h3 id="1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西"><a href="#1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西" class="headerlink" title="1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西"></a>1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西</h3><blockquote>
-<p><strong>机会成本</strong>（opportunity cost）是为了得到这种东西所放弃的东西。</p>
-</blockquote>
-<ul>
-<li>当做出任何一项决策时，决策者应该认识到每一种可能的行动所带来的机会成本。</li>
-</ul>
-<h3 id="1-1-3-原理三：理性考虑边际量"><a href="#1-1-3-原理三：理性考虑边际量" class="headerlink" title="1.1.3 原理三：理性考虑边际量"></a>1.1.3 原理三：理性考虑边际量</h3><blockquote>
-<p><strong>理性人</strong>（rational people）系统而有目的地尽最大努力去实现其目标。</p>
-<p><strong>边际变动</strong>（marginal change）是指对现有行动计划的微小增量调整。</p>
-</blockquote>
-<ul>
-<li>理性人通常通过比较边际收益（marginal benefit）与边际成本（marginal cost）来做决策。</li>
-<li>边际成本，即<u>在原本固定套餐的基础上</u>，多打一次电话的成本；</li>
-<li>边际收益，即多打一次电话的收益。</li>
-</ul>
-<h3 id="1-1-4-原理四：人们会对激励做出反应"><a href="#1-1-4-原理四：人们会对激励做出反应" class="headerlink" title="1.1.4 原理四：人们会对激励做出反应"></a>1.1.4 原理四：人们会对激励做出反应</h3><blockquote>
-<p><strong>激励</strong>（incentive）是引起一个人做出某种行为的某种东西（如惩罚或奖励的预期）</p>
-</blockquote>
-<ul>
-<li>整个经济学的内容可以简单地概括为：“人们会对激励做出反应。其余内容都是对此地解释。”</li>
-<li>如果政策改变了激励，那就会使人们改变自己的行为。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>economy</category>
-      </categories>
-      <tags>
-        <tag>economy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Github使用学习</title>
     <url>/posts/github-study/</url>
     <content><![CDATA[<blockquote>
@@ -188,6 +138,104 @@
       </categories>
       <tags>
         <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经济学原理-上</title>
+    <url>/posts/principle-of-economics-1/</url>
+    <content><![CDATA[<h1 id="第1章-经济学十大原理"><a href="#第1章-经济学十大原理" class="headerlink" title="第1章 经济学十大原理"></a>第1章 经济学十大原理</h1><blockquote>
+<p><strong>稀缺性</strong> (scarcity) 是指社会拥有的资源是有限的，因此不能生产人们希望拥有的所有物品与服务。</p>
+<p><strong>经济学</strong> (economics) 研究社会如何管理自己的稀缺资源，研究人们如何做出决策。</p>
+</blockquote>
+<h2 id="1-1-人们如何做出决策"><a href="#1-1-人们如何做出决策" class="headerlink" title="1.1 人们如何做出决策"></a>1.1 人们如何做出决策</h2><h3 id="1-1-1-原理一：人们面临权衡取舍"><a href="#1-1-1-原理一：人们面临权衡取舍" class="headerlink" title="1.1.1 原理一：人们面临权衡取舍"></a>1.1.1 原理一：人们面临权衡取舍</h3><ul>
+<li><p><font color=#499ae0>一个人最宝贵的资源，是<strong>时间</strong>。</font></p>
+</li>
+<li><p>要求企业减少污染，好处是更清洁的环境和健康水平的提高，代价是企业所有者、工人和消费者的收入减少了。（企业成本高–利润低–工人工资低–商品价格高）</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>效率</strong>（efficiency）是指社会能从其稀缺资源中得到最大利益。</p>
+<p><strong>平等</strong>（equality）是指将这些利益平均地分配给社会成员。</p>
+</blockquote>
+<ul>
+<li>效率与平等之间的权衡取舍：当政府把富人的收入再分配给穷人时，就减少了辛勤工作的奖励；结果是人们工作少了，生产的物品和服务也少了。（当政府想把经济蛋糕切为更均等的小份时，这块蛋糕本身变小了。）</li>
+</ul>
+<h3 id="1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西"><a href="#1-1-2-原理二：某种东西的成本是为了得到它所放弃的东西" class="headerlink" title="1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西"></a>1.1.2 原理二：某种东西的成本是为了得到它所放弃的东西</h3><blockquote>
+<p><strong>机会成本</strong>（opportunity cost）是为了得到这种东西所放弃的东西。</p>
+</blockquote>
+<ul>
+<li>当做出任何一项决策时，决策者应该认识到每一种可能的行动所带来的机会成本。</li>
+</ul>
+<h3 id="1-1-3-原理三：理性人考虑边际量"><a href="#1-1-3-原理三：理性人考虑边际量" class="headerlink" title="1.1.3 原理三：理性人考虑边际量"></a>1.1.3 原理三：理性人考虑边际量</h3><blockquote>
+<p><strong>理性人</strong>（rational people）系统而有目的地尽最大努力去实现其目标。</p>
+<p><strong>边际变动</strong>（marginal change）是指对现有行动计划的微小增量调整。</p>
+</blockquote>
+<ul>
+<li>理性人通常通过比较边际收益（marginal benefit）与边际成本（marginal cost）来做决策。</li>
+<li>边际成本，即<u>在原本固定套餐的基础上</u>，多打一次电话的成本；</li>
+<li>边际收益，即多打一次电话的收益。</li>
+</ul>
+<h3 id="1-1-4-原理四：人们会对激励做出反应"><a href="#1-1-4-原理四：人们会对激励做出反应" class="headerlink" title="1.1.4 原理四：人们会对激励做出反应"></a>1.1.4 原理四：人们会对激励做出反应</h3><blockquote>
+<p><strong>激励</strong>（incentive）是引起一个人做出某种行为的某种东西（如惩罚或奖励的预期）</p>
+</blockquote>
+<ul>
+<li>整个经济学的内容可以简单地概括为：“人们会对激励做出反应。其余内容都是对此地解释。”</li>
+<li>如果政策改变了激励，那就会使人们改变自己的行为。</li>
+<li>汽油税鼓励人们开小型的节油型汽车。汽油税越高，会有更多的人驾驶混合动力型汽车，如果更高，人们就会开始驾驶电动汽车。</li>
+</ul>
+<h2 id="1-2-人们如何相互影响"><a href="#1-2-人们如何相互影响" class="headerlink" title="1.2 人们如何相互影响"></a>1.2 人们如何相互影响</h2><h3 id="1-2-1-原理五：贸易可以使每个人的状况都变得更好"><a href="#1-2-1-原理五：贸易可以使每个人的状况都变得更好" class="headerlink" title="1.2.1 原理五：贸易可以使每个人的状况都变得更好"></a>1.2.1 原理五：贸易可以使每个人的状况都变得更好</h3><ul>
+<li>通过与他人进行进行贸易，每个人可以从事自己最擅长的活动，可以以较低成本获得各种各样的物品与服务。</li>
+</ul>
+<h3 id="1-2-2-原理六：市场通常是组织经济活动的一种好方法"><a href="#1-2-2-原理六：市场通常是组织经济活动的一种好方法" class="headerlink" title="1.2..2 原理六：市场通常是组织经济活动的一种好方法"></a>1.2..2 原理六：市场通常是组织经济活动的一种好方法</h3><blockquote>
+<p><strong>市场经济</strong>（market economy）是指当许多企业和家庭在物品与服务市场上相互交易时，通过他们的分散决策配置资源的经济。</p>
+</blockquote>
+<ul>
+<li>看不见的手通过价格机制、供求机制、竞争机制来自动调节人们的行为以使社会福利最大化。</li>
+<li>我们每天所需的食物和饮料，不是出自屠户、酿酒师或面包师的恩惠，而是出自他们利己的打算。</li>
+<li>每一个人，既不打算促进公共的利益，也不知道自己是在何种程度上促进那种利益，他所盘算的只是他自己的利益。</li>
+</ul>
+<h3 id="1-2-3-原理七：政府有时可以改善市场结果"><a href="#1-2-3-原理七：政府有时可以改善市场结果" class="headerlink" title="1.2.3 原理七：政府有时可以改善市场结果"></a>1.2.3 原理七：政府有时可以改善市场结果</h3><blockquote>
+<p><strong>产权</strong>（property rights）是指个人拥有并控制稀缺资源的能力。</p>
+</blockquote>
+<ul>
+<li>政府的作用：赋予个人产权；促进效率或促进平等。</li>
+</ul>
+<blockquote>
+<p><strong>市场失灵</strong>（market failure）指市场本身不能有效配置资源的情况。</p>
+<p><strong>外部性</strong>（externality）是一个人的行为对旁观者福利的影响。（污染）</p>
+<p><strong>市场势力</strong>（market power）指单个经济活动者（或某个经济活动小群体）对市场价格有显著影响的能力。（垄断）</p>
+</blockquote>
+<ul>
+<li>在正常情况下，价格是通过竞争来约束个人的利己行为。</li>
+</ul>
+<h2 id="1-3-整体经济如何运行"><a href="#1-3-整体经济如何运行" class="headerlink" title="1.3 整体经济如何运行"></a>1.3 整体经济如何运行</h2><h3 id="1-3-1-原理八：一国的生活水平取决于它生产物品与服务的能力"><a href="#1-3-1-原理八：一国的生活水平取决于它生产物品与服务的能力" class="headerlink" title="1.3.1 原理八：一国的生活水平取决于它生产物品与服务的能力"></a>1.3.1 原理八：一国的生活水平取决于它生产物品与服务的能力</h3><blockquote>
+<p><strong>生产率</strong>（productivity）是指每单位劳动投入所生产的物品与服务的数量</p>
+</blockquote>
+<h3 id="1-3-2-原理九：当政府发行了过多货币时，物价上涨"><a href="#1-3-2-原理九：当政府发行了过多货币时，物价上涨" class="headerlink" title="1.3.2 原理九：当政府发行了过多货币时，物价上涨"></a>1.3.2 原理九：当政府发行了过多货币时，物价上涨</h3><blockquote>
+<p><strong>通货膨胀</strong>（inflation）指经济中物价总水平的上升。</p>
+</blockquote>
+<ul>
+<li>通货膨胀的罪魁祸首时货币量的增长。</li>
+</ul>
+<h3 id="1-3-3-原理十：社会面临通货膨胀与失业之间的短期权衡取舍"><a href="#1-3-3-原理十：社会面临通货膨胀与失业之间的短期权衡取舍" class="headerlink" title="1.3.3 原理十：社会面临通货膨胀与失业之间的短期权衡取舍"></a>1.3.3 原理十：社会面临通货膨胀与失业之间的短期权衡取舍</h3><ul>
+<li>经济中货币量的增加，刺激了社会的整体支出水平，从而增加了对物品与服务的需求。</li>
+<li>需求的增加随着时间的推移，会引起企业提高物价，但同时，它也鼓励企业雇佣更多的工人，并生产更多的物品与服务。</li>
+<li>雇佣更多的工人意味着更少的失业。</li>
+</ul>
+<blockquote>
+<p><strong>经济周期</strong>（business cycle）是指就业和生产等经济活动的波动。</p>
+</blockquote>
+<ul>
+<li>现代经济学中关于经济周期的论述一般是指经济增长率上升和下降的交替过程，而不是经济总量的增加和减少。一个完整的经济周期包括繁荣、衰退、萧条、复苏四个阶段。衡量经济周期处于什么阶段主要依据国民生产总值、工业生产指数、就业和收入、价格指数、利息率等综合经济活动指标的波动。</li>
+<li>破窗谬论：一个无业青年拿一块砖头打碎了面包店的窗户。有人说：“好可恶”，另有人说：“这是一件好事。面包师傅会拿钱请维修工来修窗户，增加了维修工的收入，而维修工又可以把收入作为支出来增加其他人的收入。如此一来，只要窗户足够大，还能促进社会繁荣哩。”</li>
+<li>其实破窗并没有创造新的活动，而只是创造了不同的活动。人们看到发生了的活动，但他们没有看到本来会发生的活动。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>economy</category>
+      </categories>
+      <tags>
+        <tag>economy</tag>
       </tags>
   </entry>
   <entry>
