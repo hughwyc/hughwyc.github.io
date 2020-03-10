@@ -1,7 +1,6 @@
 ---
 title: My first post
 date: 2020-03-06 16:17:58
-updated: 2020-03-8 11:06:00
 id: my-first-blog
 top: 1
 visitor: true
