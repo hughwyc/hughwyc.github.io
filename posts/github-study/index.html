@@ -14,12 +14,13 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-material.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"hughwyc.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#26a2fd","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"hughwyc.github.io","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#26a2fd","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="正是在学习Github的时候，才知道还可以用来搭博客。">
@@ -31,7 +32,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png">
 <meta property="article:published_time" content="2020-03-09T11:40:00.000Z">
-<meta property="article:modified_time" content="2020-03-09T16:03:39.593Z">
+<meta property="article:modified_time" content="2020-03-09T13:06:00.000Z">
 <meta property="article:author" content="Hugh Davis">
 <meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
@@ -221,14 +222,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-03-09 19:40:00" itemprop="dateCreated datePublished" datetime="2020-03-09T19:40:00+08:00">2020-03-09</time>			  
+              <time title="Created: 2020-03-09 19:40:00 19:40:00" itemprop="dateCreated datePublished" datetime="2020-03-09T19:40:00+08:00">2020-03-09 19:40:00</time>			  
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-10 00:03:39" itemprop="dateModified" datetime="2020-03-10T00:03:39+08:00">2020-03-10</time>
+                <time title="Modified: 2020-03-09 21:06:00 21:06:00" itemprop="dateModified" datetime="2020-03-09T21:06:00+08:00">2020-03-09 21:06:00</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -285,73 +286,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <hr>
-<p> <font color=#499ae0> <strong>注意：以后听视频课，一定要同时做笔记！！！</strong> </font> </p>
-<hr>
+        <blockquote>
+<p><strong><font color=#499ae0>注：以后听视频课，一定要同时做笔记</font></strong></p>
+</blockquote>
 <h2 id="一、常用Linix语句"><a href="#一、常用Linix语句" class="headerlink" title="一、常用Linix语句"></a>一、常用Linix语句</h2><ol>
-<li><p><code>ls</code> –&gt; 查看目录中的文件</p>
-</li>
-<li><p><code>pwd</code> –&gt; 显示当前工作路径</p>
-</li>
-<li><p><code>mkdir [文件名]</code> –&gt; 新建一个文件夹</p>
-</li>
-<li><p><code>git config --global user.name &#39;[用户名]&#39;</code> –&gt; 设置用户名</p>
-</li>
-<li><p><code>git config --global user.email &#39;[邮箱地址]&#39;</code> –&gt; 设置用户邮箱</p>
-</li>
-<li><p><code>git config --list</code> –&gt; 查看设置</p>
-</li>
-<li><p><code>git init</code> –&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</p>
-</li>
-<li><p><code>touch [文件名]</code> –&gt; 新建一个文件</p>
-</li>
-<li><p><code>vim [文件名]</code> –&gt; 进入vim编辑器进行修改文件</p>
-</li>
-<li><p>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</p>
-</li>
-<li><p><code>cat [文件名]</code>  –&gt; 从第一个字节开始正向查看文件的内容 </p>
-</li>
-<li><p><code>git status</code> –&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</p>
-</li>
-<li><p><code>git diff</code> –&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</p>
-</li>
-<li><p><code>git add [文件名]</code> –&gt; 把文件从工作区添加到暂存区</p>
-</li>
-<li><p><code>git reset -- [文件名]</code>  –&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</p>
-</li>
-<li><p><code>git rm [文件名]</code> –&gt; 从暂存区中删除文件</p>
-</li>
-<li><p><code>git commit -m &#39;[提交描述]&#39;</code> –&gt; 把文件从暂存区提交到本地仓库</p>
-</li>
-<li><p><code>git push</code> –&gt; 将文件从本地仓库同步到Github</p>
-</li>
-<li><p><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </p>
-</li>
-<li><p><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</p>
-</li>
-<li><p><code>git clone [仓库地址]</code>  –&gt; 将远程仓库复制到本地</p>
-</li>
-<li><p><code>git log</code> –&gt; 查看版本区(本地仓库)的历史提交记录（倒序）</p>
-<p><code>git log --reverse</code>    –&gt;  查看时间正序排列的历史提交信记录</p>
-<p><code>git log [分支名]</code>   –&gt; 查看某分支的提交历史，不写分支名查看当前所在分支</p>
-<p><code>git log --oneline</code>   –&gt; 一行显示提交历史</p>
-<p><code>git log -n</code>   –&gt; 其中 n 是数字，查看最近 n 个提交</p>
-<p><code>git log --author [贡献者名字]</code>   –&gt; 查看指定贡献者的提交记录</p>
-<p><code>git log --graph  --&gt;</code> 图示法显示提交历史</p>
-</li>
-<li><p><code>git reflog</code> –&gt; 查看所有版本记录（可用于历史记录回滚）</p>
-<ol>
+<li><code>ls</code> –&gt; 查看目录中的文件</li>
+<li><code>pwd</code> –&gt; 显示当前工作路径</li>
+<li><code>mkdir [文件名]</code> –&gt; 新建一个文件夹</li>
+<li><code>git config --global user.name &#39;[用户名]&#39;</code> –&gt; 设置用户名</li>
+<li><code>git config --global user.email &#39;[邮箱地址]&#39;</code> –&gt; 设置用户邮箱</li>
+<li><code>git config --list</code> –&gt; 查看设置</li>
+<li><code>git init</code> –&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</li>
+<li><code>touch [文件名]</code> –&gt; 新建一个文件</li>
+<li><code>vim [文件名]</code> –&gt; 进入vim编辑器进行修改文件</li>
+<li>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</li>
+<li><code>cat [文件名]</code>  –&gt; 从第一个字节开始正向查看文件的内容 </li>
+<li><code>git status</code> –&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</li>
+<li><code>git diff</code> –&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</li>
+<li><code>git add [文件名]</code> –&gt; 把文件从工作区添加到暂存区</li>
+<li><code>git reset -- [文件名]</code>  –&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</li>
+<li><code>git rm [文件名]</code> –&gt; 从暂存区中删除文件</li>
+<li><code>git commit -m &#39;[提交描述]&#39;</code> –&gt; 把文件从暂存区提交到本地仓库</li>
+<li><code>git push</code> –&gt; 将文件从本地仓库同步到Github</li>
+<li><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </li>
+<li><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</li>
+<li><code>git clone [仓库地址]</code>  –&gt; 将远程仓库复制到本地</li>
+<li><code>git log</code> –&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    –&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   –&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   –&gt; 一行显示提交历史<br><code>git log -n</code>   –&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   –&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</li>
+<li><code>git reflog</code> –&gt; 查看所有版本记录（可用于历史记录回滚）</li>
 <li><code>git reset --hard [历史版本号]</code> –&gt; 回滚到历史某一个版本</li>
+<li><code>git branch</code> –&gt;  查看本地全部分支信息；<br><code>git branch -r</code> –&gt; 查看远程所有分支；<br><code>git branch -a</code> –&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> –&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> –&gt; 比上一个多显示出远程分支名</li>
 </ol>
-</li>
-<li><p><code>git branch</code> –&gt;  查看本地全部分支信息；</p>
-<p><code>git branch -r</code> –&gt; 查看远程所有分支；</p>
-<p><code>git branch -a</code> –&gt; 查看本地和远程所有分支（仅显示分支名）</p>
-<p><code>git branch -v</code> –&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息</p>
-<p><code>git branch -vv</code> –&gt; 比上一个多显示出远程分支名</p>
-<p><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" alt="image"></p>
-</li>
-</ol>
+<div align=center><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" width="100%" height="100%"></div>
+
 <p>运行后有三行信息，依次说明:</p>
 <ul>
 <li><p>第一行，开头的星号表示<strong>当前所在本地分支</strong>，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 – 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示<strong>本地分支<font color=#499ae0>领先</font></strong>其跟踪的<strong>远程分支</strong>一个提交。最后一项是提交时填写的备注信息。</p>
@@ -359,12 +325,11 @@
 <li><p>第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。</p>
 </li>
 <li><p>第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）</p>
-<p><font color=#499ae0><strong>PS：</strong></font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下： </p>
+<p><font color=#499ae0><strong>PS：</strong></font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下：<br><code>https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg</code></p>
 </li>
 </ul>
-<p><code>https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg</code></p>
-<ol start="24">
-<li><code>git reset --soft HEAD^</code> –&gt; 撤销最近的一次提交，将修改还原到暂存区。<code>--soft</code> 表示软退回，对应的还有 <code>--hard</code> 硬退回，后面会讲到，<code>HEAD^</code> 表示撤销一次提交，<code>HEAD^^</code> 表示撤销两次提交，撤销 n 次可以简写为 <code>HEAD~n</code>。 </li>
+<ol start="26">
+<li><code>git reset --soft HEAD^</code> –&gt; 撤销最近的一次提交，将修改还原到暂存区。<code>--soft</code> 表示软退回，对应的还有 <code>--hard</code> 硬退回，后面会讲到，<code>HEAD^</code> 表示撤销一次提交，<code>HEAD^^</code> 表示撤销两次提交，撤销 n 次可以简写为 <code>HEAD~n</code>。</li>
 <li><code>git remote -v</code> –&gt;  查看当前远程的版本 </li>
 <li><code>git fetch origin master</code> –&gt; 从远程的origin仓库的master分支下载代码到本地的origin master </li>
 <li><code>git pull origin</code> –&gt; </li>
@@ -397,7 +362,7 @@
 <li>删除暂存区中的文件：<code>git rm [文件名]</code></li>
 <li>将删除动作提交到本地仓库：<code>git coommit -m &#39;[描述]&#39;</code></li>
 </ol>
-<h2 id="五、从远程仓库获取最新代码合并到本地分支"><a href="#五、从远程仓库获取最新代码合并到本地分支" class="headerlink" title="五、从远程仓库获取最新代码合并到本地分支"></a>五、从远程仓库获取最新代码合并到本地分支</h2><p>这里共展示两类三种方式。</p>
+<h2 id="五、从远程仓库获取最新代码合并到本地分支"><a href="#五、从远程仓库获取最新代码合并到本地分支" class="headerlink" title="五、从远程仓库获取最新代码合并到本地分支"></a>五、从远程仓库获取最新代码合并到本地分支</h2><p>这里共展示两类三种方式。（参考自<a href="https://blog.csdn.net/hanchao5272/article/details/79162130" target="_blank" rel="noopener">hanchao5272</a>）</p>
 <h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span></span><br></pre></td></tr></table></figure>
 
@@ -633,6 +598,8 @@
   
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 

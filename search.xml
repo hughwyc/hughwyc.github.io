@@ -3,7 +3,7 @@
   <entry>
     <title>掠过湖面的微风</title>
     <url>/posts/special-things-in-life/</url>
-    <content><![CDATA[<p>读文章时，看电视剧时，异或是与人闲谈时，偶尔会有那么几个让我脑海中荡起波纹的时刻。好似在沉睡中被人叫醒，亦或是肖申克监狱喇叭里传出的意大利歌曲。</p>
+    <content><![CDATA[<p>读文章时，看电视剧时，亦或是与人闲谈时，偶尔会有那么几个让我脑海中荡起波纹的时刻。好似在沉睡中被人叫醒，又似肖申克监狱的扬声器里传出意大利歌曲。</p>
 <h4 id="1-越是舒服的时候，可能越危险"><a href="#1-越是舒服的时候，可能越危险" class="headerlink" title="1. 越是舒服的时候，可能越危险"></a>1. 越是舒服的时候，可能越危险</h4><div align=center><img src="https://user-images.githubusercontent.com/61838645/76237525-67283d80-6269-11ea-9443-ddbb7c19f366.png" width="50%" height="50%"></div>
 
 ]]></content>
@@ -12,168 +12,6 @@
       </categories>
       <tags>
         <tag>special</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Github使用学习</title>
-    <url>/posts/github-study/</url>
-    <content><![CDATA[<hr>
-<p> <font color=#499ae0> <strong>注意：以后听视频课，一定要同时做笔记！！！</strong> </font> </p>
-<hr>
-<h2 id="一、常用Linix语句"><a href="#一、常用Linix语句" class="headerlink" title="一、常用Linix语句"></a>一、常用Linix语句</h2><ol>
-<li><p><code>ls</code> –&gt; 查看目录中的文件</p>
-</li>
-<li><p><code>pwd</code> –&gt; 显示当前工作路径</p>
-</li>
-<li><p><code>mkdir [文件名]</code> –&gt; 新建一个文件夹</p>
-</li>
-<li><p><code>git config --global user.name &#39;[用户名]&#39;</code> –&gt; 设置用户名</p>
-</li>
-<li><p><code>git config --global user.email &#39;[邮箱地址]&#39;</code> –&gt; 设置用户邮箱</p>
-</li>
-<li><p><code>git config --list</code> –&gt; 查看设置</p>
-</li>
-<li><p><code>git init</code> –&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</p>
-</li>
-<li><p><code>touch [文件名]</code> –&gt; 新建一个文件</p>
-</li>
-<li><p><code>vim [文件名]</code> –&gt; 进入vim编辑器进行修改文件</p>
-</li>
-<li><p>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</p>
-</li>
-<li><p><code>cat [文件名]</code>  –&gt; 从第一个字节开始正向查看文件的内容 </p>
-</li>
-<li><p><code>git status</code> –&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</p>
-</li>
-<li><p><code>git diff</code> –&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</p>
-</li>
-<li><p><code>git add [文件名]</code> –&gt; 把文件从工作区添加到暂存区</p>
-</li>
-<li><p><code>git reset -- [文件名]</code>  –&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</p>
-</li>
-<li><p><code>git rm [文件名]</code> –&gt; 从暂存区中删除文件</p>
-</li>
-<li><p><code>git commit -m &#39;[提交描述]&#39;</code> –&gt; 把文件从暂存区提交到本地仓库</p>
-</li>
-<li><p><code>git push</code> –&gt; 将文件从本地仓库同步到Github</p>
-</li>
-<li><p><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </p>
-</li>
-<li><p><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</p>
-</li>
-<li><p><code>git clone [仓库地址]</code>  –&gt; 将远程仓库复制到本地</p>
-</li>
-<li><p><code>git log</code> –&gt; 查看版本区(本地仓库)的历史提交记录（倒序）</p>
-<p><code>git log --reverse</code>    –&gt;  查看时间正序排列的历史提交信记录</p>
-<p><code>git log [分支名]</code>   –&gt; 查看某分支的提交历史，不写分支名查看当前所在分支</p>
-<p><code>git log --oneline</code>   –&gt; 一行显示提交历史</p>
-<p><code>git log -n</code>   –&gt; 其中 n 是数字，查看最近 n 个提交</p>
-<p><code>git log --author [贡献者名字]</code>   –&gt; 查看指定贡献者的提交记录</p>
-<p><code>git log --graph  --&gt;</code> 图示法显示提交历史</p>
-</li>
-<li><p><code>git reflog</code> –&gt; 查看所有版本记录（可用于历史记录回滚）</p>
-<ol>
-<li><code>git reset --hard [历史版本号]</code> –&gt; 回滚到历史某一个版本</li>
-</ol>
-</li>
-<li><p><code>git branch</code> –&gt;  查看本地全部分支信息；</p>
-<p><code>git branch -r</code> –&gt; 查看远程所有分支；</p>
-<p><code>git branch -a</code> –&gt; 查看本地和远程所有分支（仅显示分支名）</p>
-<p><code>git branch -v</code> –&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息</p>
-<p><code>git branch -vv</code> –&gt; 比上一个多显示出远程分支名</p>
-<p><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" alt="image"></p>
-</li>
-</ol>
-<p>运行后有三行信息，依次说明:</p>
-<ul>
-<li><p>第一行，开头的星号表示<strong>当前所在本地分支</strong>，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 – 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示<strong>本地分支<font color=#499ae0>领先</font></strong>其跟踪的<strong>远程分支</strong>一个提交。最后一项是提交时填写的备注信息。</p>
-</li>
-<li><p>第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。</p>
-</li>
-<li><p>第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）</p>
-<p><font color=#499ae0><strong>PS：</strong></font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下： </p>
-</li>
-</ul>
-<p><code>https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg</code></p>
-<ol start="24">
-<li><code>git reset --soft HEAD^</code> –&gt; 撤销最近的一次提交，将修改还原到暂存区。<code>--soft</code> 表示软退回，对应的还有 <code>--hard</code> 硬退回，后面会讲到，<code>HEAD^</code> 表示撤销一次提交，<code>HEAD^^</code> 表示撤销两次提交，撤销 n 次可以简写为 <code>HEAD~n</code>。 </li>
-<li><code>git remote -v</code> –&gt;  查看当前远程的版本 </li>
-<li><code>git fetch origin master</code> –&gt; 从远程的origin仓库的master分支下载代码到本地的origin master </li>
-<li><code>git pull origin</code> –&gt; </li>
-<li><code>git merge origin master</code> –&gt; </li>
-<li><code>git merge --abort</code> –&gt; Undo a merge</li>
-<li><code>git push origin</code> –&gt; </li>
-</ol>
-<p><strong><font color=#499ae0>注：<code>git fetch</code>、<code>git merge</code>、<code>git pull</code> 三者之间的区别与联系</font></strong></p>
-<ul>
-<li><code>git fetch</code> and <code>git pull</code>  both are used to <strong>download</strong> new data from a remote repository. </li>
-<li><code>git fetch</code> really only downloads new data from a remote repository - but it doesn’t integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository. </li>
-<li><code>git pull</code>, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly <strong>integrates</strong> it into your current working copy files. This has a couple of consequences:<ul>
-<li>Since <code>git pull</code> tries to merge remote changes with your local ones, a so-called “merge conflict” can occur.  </li>
-<li>Like for many other actions, it’s highly recommended to start a <code>git pull</code> only with a clean working copy. This means that you should <em>not</em> have any uncommitted local changes before you pull.</li>
-</ul>
-</li>
-<li>Dealing with “Merge Conflicts”. </li>
-</ul>
-<h2 id="二、Git初始化及仓库创建和操作"><a href="#二、Git初始化及仓库创建和操作" class="headerlink" title="二、Git初始化及仓库创建和操作"></a>二、Git初始化及仓库创建和操作</h2><ol>
-<li>基本信息设置 （用户名+邮箱）</li>
-<li>初始化一个新的Git仓库</li>
-</ol>
-<h2 id="三、向仓库中添加文件"><a href="#三、向仓库中添加文件" class="headerlink" title="三、向仓库中添加文件"></a>三、向仓库中添加文件</h2><ol>
-<li>新建文件</li>
-<li>将文件从工作区添加到暂存区</li>
-<li>将文件从暂存区提交到仓库</li>
-</ol>
-<h2 id="四、删除文件"><a href="#四、删除文件" class="headerlink" title="四、删除文件"></a>四、删除文件</h2><ol>
-<li>删除文件：<code>rm -rf [文件名]</code></li>
-<li>删除暂存区中的文件：<code>git rm [文件名]</code></li>
-<li>将删除动作提交到本地仓库：<code>git coommit -m &#39;[描述]&#39;</code></li>
-</ol>
-<h2 id="五、从远程仓库获取最新代码合并到本地分支"><a href="#五、从远程仓库获取最新代码合并到本地分支" class="headerlink" title="五、从远程仓库获取最新代码合并到本地分支"></a>五、从远程仓库获取最新代码合并到本地分支</h2><p>这里共展示两类三种方式。</p>
-<h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span></span><br></pre></td></tr></table></figure>
-
-<p>分析：不推荐这种方式，因为是直接合并，无法提前处理冲突。</p>
-<h3 id="2-git-fetch-merge-获取最新代码到本地，然后手动合并分支"><a href="#2-git-fetch-merge-获取最新代码到本地，然后手动合并分支" class="headerlink" title="2.git fetch + merge: 获取最新代码到本地，然后手动合并分支"></a>2.git fetch + merge: 获取最新代码到本地，然后手动合并分支</h3><h4 id="2-1-额外建立本地分支"><a href="#2-1-额外建立本地分支" class="headerlink" title="2.1.额外建立本地分支"></a>2.1.额外建立本地分支</h4><p>代码展示</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查看当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v </span></span><br><span class="line">//获取最新代码到本地临时分支(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin master:master1  [示例1：在本地建立master1分支，并下载远端的origin/master分支到master1分支中]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin dev:dev1[示例1：在本地建立dev1分支，并下载远端的origin/dev分支到dev1分支中]</span></span><br><span class="line">//查看版本差异</span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff master1 [示例1：查看本地master1分支与当前分支的版本差异]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff dev1    [示例2：查看本地dev1分支与当前分支的版本差异]</span></span><br><span class="line">//合并最新分支到本地分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge master1    [示例1：合并本地分支master1到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge dev1   [示例2：合并本地分支dev1到当前分支]</span></span><br><span class="line">//删除本地临时分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -D master1    [示例1：删除本地分支master1]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -D dev1 [示例1：删除本地分支dev1]</span></span><br></pre></td></tr></table></figure>
-
-<p>备注：不推荐这种方式，还需要额外对临时分支进行处理。</p>
-<h4 id="2-2-不额外建立本地分支"><a href="#2-2-不额外建立本地分支" class="headerlink" title="2.2.不额外建立本地分支"></a>2.2.不额外建立本地分支</h4><p>代码展示</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">//获取最新代码到本地(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin master  [示例1：获取远端的origin/master分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin dev [示例2：获取远端的origin/dev分支]</span></span><br><span class="line">//查看版本差异</span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -p master..origin/master [示例1：查看本地master与远端origin/master的版本差异]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -p dev..origin/dev   [示例2：查看本地dev与远端origin/dev的版本差异]</span></span><br><span class="line">//合并最新代码到本地分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge origin/master  [示例1：合并远端分支origin/master到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge origin/dev [示例2：合并远端分支origin/dev到当前分支]</span></span><br></pre></td></tr></table></figure>
-
-<p>备注：推荐这种方式</p>
-<h2 id="六、把本地仓库信息提交到远程仓库"><a href="#六、把本地仓库信息提交到远程仓库" class="headerlink" title="六、把本地仓库信息提交到远程仓库"></a>六、把本地仓库信息提交到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// 建立本地仓库和远程仓库的连接</span><br><span class="line">// 查看本地仓库与哪些远程仓库有连接</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">// 让本地仓库与远程仓库新建一个连接（origin是随便起的一个连接名，一般使用这个）</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote add origin [Git远程仓库地址]</span></span><br><span class="line">// 关闭连接</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote rm origin</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//提交之前最好先拉取(origin:连接名；master:主分支)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin master</span></span><br><span class="line">//把本地代码提交到远程仓库</span><br><span class="line"><span class="meta">$</span><span class="bash"> git push origin master</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> [远程Git仓库地址] [别名(可不设置，默认为仓库名)]</span></span><br><span class="line">//真实项目开发流程：</span><br><span class="line">1. 组长或负责人先创建中央仓库（增加协作者）</span><br><span class="line">2. 小组成员基于git clone，把远程仓库及其默认内容克隆到本地一份。</span><br><span class="line">3. 每个组员写完自己的程序后，基于"git add ./git commit -m 'info'/git push",提交自己的代码。</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>git clone</code>解决了三件事：<ul>
-<li>初始化一个本地仓库 <code>git init</code></li>
-<li>与远程仓库保持关联 <code>git remote add</code></li>
-<li>把远程仓库默认内容拉取到本地 <code>git pull</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="七、Github-Pages-搭建网站"><a href="#七、Github-Pages-搭建网站" class="headerlink" title="七、Github Pages 搭建网站"></a>七、Github Pages 搭建网站</h2><h3 id="1-个人站点"><a href="#1-个人站点" class="headerlink" title="1. 个人站点"></a>1. 个人站点</h3><p>访问：https://用户名.github.io</p>
-<h3 id="2-搭建步骤"><a href="#2-搭建步骤" class="headerlink" title="2. 搭建步骤"></a>2. 搭建步骤</h3><ol>
-<li>创建个人站点 –&gt; 新建仓库（注：仓库名必须是【用户名.github.io】）</li>
-<li>在仓库下新建index.html的文件，即可。</li>
-</ol>
-<h3 id="附：参考搭建教程"><a href="#附：参考搭建教程" class="headerlink" title="附：参考搭建教程"></a>附：参考搭建教程</h3><ol>
-<li><a href="https://www.cxyxiaowu.com/6407.html" target="_blank" rel="noopener">超全面！如何用 GitHub 从零开始搭建一个博客 ？</a></li>
-<li><a href="https://hasaik.com/posts/ab21860c.html" target="_blank" rel="noopener">Hexo博客+Next主题深度优化与定制</a></li>
-<li><a href="lyxf.live/posts/2063/">hexo-Next主题美化</a></li>
-<li><a href="www.cduyzh.com/hexo-settings-3/">基于hexo博客自定义页面样式</a></li>
-<li><a href="https://blog.csdn.net/baidu_34310405/article/details/102665373" target="_blank" rel="noopener">Hexo Next主题添加访客统计</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -224,6 +62,132 @@
       </categories>
       <tags>
         <tag>economy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Github使用学习</title>
+    <url>/posts/github-study/</url>
+    <content><![CDATA[<blockquote>
+<p><strong><font color=#499ae0>注：以后听视频课，一定要同时做笔记</font></strong></p>
+</blockquote>
+<h2 id="一、常用Linix语句"><a href="#一、常用Linix语句" class="headerlink" title="一、常用Linix语句"></a>一、常用Linix语句</h2><ol>
+<li><code>ls</code> –&gt; 查看目录中的文件</li>
+<li><code>pwd</code> –&gt; 显示当前工作路径</li>
+<li><code>mkdir [文件名]</code> –&gt; 新建一个文件夹</li>
+<li><code>git config --global user.name &#39;[用户名]&#39;</code> –&gt; 设置用户名</li>
+<li><code>git config --global user.email &#39;[邮箱地址]&#39;</code> –&gt; 设置用户邮箱</li>
+<li><code>git config --list</code> –&gt; 查看设置</li>
+<li><code>git init</code> –&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</li>
+<li><code>touch [文件名]</code> –&gt; 新建一个文件</li>
+<li><code>vim [文件名]</code> –&gt; 进入vim编辑器进行修改文件</li>
+<li>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</li>
+<li><code>cat [文件名]</code>  –&gt; 从第一个字节开始正向查看文件的内容 </li>
+<li><code>git status</code> –&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</li>
+<li><code>git diff</code> –&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</li>
+<li><code>git add [文件名]</code> –&gt; 把文件从工作区添加到暂存区</li>
+<li><code>git reset -- [文件名]</code>  –&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</li>
+<li><code>git rm [文件名]</code> –&gt; 从暂存区中删除文件</li>
+<li><code>git commit -m &#39;[提交描述]&#39;</code> –&gt; 把文件从暂存区提交到本地仓库</li>
+<li><code>git push</code> –&gt; 将文件从本地仓库同步到Github</li>
+<li><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </li>
+<li><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</li>
+<li><code>git clone [仓库地址]</code>  –&gt; 将远程仓库复制到本地</li>
+<li><code>git log</code> –&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    –&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   –&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   –&gt; 一行显示提交历史<br><code>git log -n</code>   –&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   –&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</li>
+<li><code>git reflog</code> –&gt; 查看所有版本记录（可用于历史记录回滚）</li>
+<li><code>git reset --hard [历史版本号]</code> –&gt; 回滚到历史某一个版本</li>
+<li><code>git branch</code> –&gt;  查看本地全部分支信息；<br><code>git branch -r</code> –&gt; 查看远程所有分支；<br><code>git branch -a</code> –&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> –&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> –&gt; 比上一个多显示出远程分支名</li>
+</ol>
+<div align=center><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" width="100%" height="100%"></div>
+
+<p>运行后有三行信息，依次说明:</p>
+<ul>
+<li><p>第一行，开头的星号表示<strong>当前所在本地分支</strong>，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 – 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示<strong>本地分支<font color=#499ae0>领先</font></strong>其跟踪的<strong>远程分支</strong>一个提交。最后一项是提交时填写的备注信息。</p>
+</li>
+<li><p>第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。</p>
+</li>
+<li><p>第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）</p>
+<p><font color=#499ae0><strong>PS：</strong></font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下：<br><code>https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg</code></p>
+</li>
+</ul>
+<ol start="26">
+<li><code>git reset --soft HEAD^</code> –&gt; 撤销最近的一次提交，将修改还原到暂存区。<code>--soft</code> 表示软退回，对应的还有 <code>--hard</code> 硬退回，后面会讲到，<code>HEAD^</code> 表示撤销一次提交，<code>HEAD^^</code> 表示撤销两次提交，撤销 n 次可以简写为 <code>HEAD~n</code>。</li>
+<li><code>git remote -v</code> –&gt;  查看当前远程的版本 </li>
+<li><code>git fetch origin master</code> –&gt; 从远程的origin仓库的master分支下载代码到本地的origin master </li>
+<li><code>git pull origin</code> –&gt; </li>
+<li><code>git merge origin master</code> –&gt; </li>
+<li><code>git merge --abort</code> –&gt; Undo a merge</li>
+<li><code>git push origin</code> –&gt; </li>
+</ol>
+<p><strong><font color=#499ae0>注：<code>git fetch</code>、<code>git merge</code>、<code>git pull</code> 三者之间的区别与联系</font></strong></p>
+<ul>
+<li><code>git fetch</code> and <code>git pull</code>  both are used to <strong>download</strong> new data from a remote repository. </li>
+<li><code>git fetch</code> really only downloads new data from a remote repository - but it doesn’t integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository. </li>
+<li><code>git pull</code>, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly <strong>integrates</strong> it into your current working copy files. This has a couple of consequences:<ul>
+<li>Since <code>git pull</code> tries to merge remote changes with your local ones, a so-called “merge conflict” can occur.  </li>
+<li>Like for many other actions, it’s highly recommended to start a <code>git pull</code> only with a clean working copy. This means that you should <em>not</em> have any uncommitted local changes before you pull.</li>
+</ul>
+</li>
+<li>Dealing with “Merge Conflicts”. </li>
+</ul>
+<h2 id="二、Git初始化及仓库创建和操作"><a href="#二、Git初始化及仓库创建和操作" class="headerlink" title="二、Git初始化及仓库创建和操作"></a>二、Git初始化及仓库创建和操作</h2><ol>
+<li>基本信息设置 （用户名+邮箱）</li>
+<li>初始化一个新的Git仓库</li>
+</ol>
+<h2 id="三、向仓库中添加文件"><a href="#三、向仓库中添加文件" class="headerlink" title="三、向仓库中添加文件"></a>三、向仓库中添加文件</h2><ol>
+<li>新建文件</li>
+<li>将文件从工作区添加到暂存区</li>
+<li>将文件从暂存区提交到仓库</li>
+</ol>
+<h2 id="四、删除文件"><a href="#四、删除文件" class="headerlink" title="四、删除文件"></a>四、删除文件</h2><ol>
+<li>删除文件：<code>rm -rf [文件名]</code></li>
+<li>删除暂存区中的文件：<code>git rm [文件名]</code></li>
+<li>将删除动作提交到本地仓库：<code>git coommit -m &#39;[描述]&#39;</code></li>
+</ol>
+<h2 id="五、从远程仓库获取最新代码合并到本地分支"><a href="#五、从远程仓库获取最新代码合并到本地分支" class="headerlink" title="五、从远程仓库获取最新代码合并到本地分支"></a>五、从远程仓库获取最新代码合并到本地分支</h2><p>这里共展示两类三种方式。（参考自<a href="https://blog.csdn.net/hanchao5272/article/details/79162130" target="_blank" rel="noopener">hanchao5272</a>）</p>
+<h3 id="1-git-pull：获取最新代码到本地，并自动合并到当前分支"><a href="#1-git-pull：获取最新代码到本地，并自动合并到当前分支" class="headerlink" title="1.git pull：获取最新代码到本地，并自动合并到当前分支"></a>1.git pull：获取最新代码到本地，并自动合并到当前分支</h3><p>命令展示</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">//直接拉取并合并最新代码</span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]</span></span><br></pre></td></tr></table></figure>
+
+<p>分析：不推荐这种方式，因为是直接合并，无法提前处理冲突。</p>
+<h3 id="2-git-fetch-merge-获取最新代码到本地，然后手动合并分支"><a href="#2-git-fetch-merge-获取最新代码到本地，然后手动合并分支" class="headerlink" title="2.git fetch + merge: 获取最新代码到本地，然后手动合并分支"></a>2.git fetch + merge: 获取最新代码到本地，然后手动合并分支</h3><h4 id="2-1-额外建立本地分支"><a href="#2-1-额外建立本地分支" class="headerlink" title="2.1.额外建立本地分支"></a>2.1.额外建立本地分支</h4><p>代码展示</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查看当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v </span></span><br><span class="line">//获取最新代码到本地临时分支(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin master:master1  [示例1：在本地建立master1分支，并下载远端的origin/master分支到master1分支中]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin dev:dev1[示例1：在本地建立dev1分支，并下载远端的origin/dev分支到dev1分支中]</span></span><br><span class="line">//查看版本差异</span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff master1 [示例1：查看本地master1分支与当前分支的版本差异]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git diff dev1    [示例2：查看本地dev1分支与当前分支的版本差异]</span></span><br><span class="line">//合并最新分支到本地分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge master1    [示例1：合并本地分支master1到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge dev1   [示例2：合并本地分支dev1到当前分支]</span></span><br><span class="line">//删除本地临时分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -D master1    [示例1：删除本地分支master1]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch -D dev1 [示例1：删除本地分支dev1]</span></span><br></pre></td></tr></table></figure>
+
+<p>备注：不推荐这种方式，还需要额外对临时分支进行处理。</p>
+<h4 id="2-2-不额外建立本地分支"><a href="#2-2-不额外建立本地分支" class="headerlink" title="2.2.不额外建立本地分支"></a>2.2.不额外建立本地分支</h4><p>代码展示</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//查询当前远程的版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">//获取最新代码到本地(本地当前分支为[branch]，获取的远端的分支为[origin/branch])</span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin master  [示例1：获取远端的origin/master分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git fetch origin dev [示例2：获取远端的origin/dev分支]</span></span><br><span class="line">//查看版本差异</span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -p master..origin/master [示例1：查看本地master与远端origin/master的版本差异]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span> -p dev..origin/dev   [示例2：查看本地dev与远端origin/dev的版本差异]</span></span><br><span class="line">//合并最新代码到本地分支</span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge origin/master  [示例1：合并远端分支origin/master到当前分支]</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge origin/dev [示例2：合并远端分支origin/dev到当前分支]</span></span><br></pre></td></tr></table></figure>
+
+<p>备注：推荐这种方式</p>
+<h2 id="六、把本地仓库信息提交到远程仓库"><a href="#六、把本地仓库信息提交到远程仓库" class="headerlink" title="六、把本地仓库信息提交到远程仓库"></a>六、把本地仓库信息提交到远程仓库</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">// 建立本地仓库和远程仓库的连接</span><br><span class="line">// 查看本地仓库与哪些远程仓库有连接</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">// 让本地仓库与远程仓库新建一个连接（origin是随便起的一个连接名，一般使用这个）</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote add origin [Git远程仓库地址]</span></span><br><span class="line">// 关闭连接</span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote rm origin</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//提交之前最好先拉取(origin:连接名；master:主分支)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git pull origin master</span></span><br><span class="line">//把本地代码提交到远程仓库</span><br><span class="line"><span class="meta">$</span><span class="bash"> git push origin master</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> [远程Git仓库地址] [别名(可不设置，默认为仓库名)]</span></span><br><span class="line">//真实项目开发流程：</span><br><span class="line">1. 组长或负责人先创建中央仓库（增加协作者）</span><br><span class="line">2. 小组成员基于git clone，把远程仓库及其默认内容克隆到本地一份。</span><br><span class="line">3. 每个组员写完自己的程序后，基于"git add ./git commit -m 'info'/git push",提交自己的代码。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>git clone</code>解决了三件事：<ul>
+<li>初始化一个本地仓库 <code>git init</code></li>
+<li>与远程仓库保持关联 <code>git remote add</code></li>
+<li>把远程仓库默认内容拉取到本地 <code>git pull</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="七、Github-Pages-搭建网站"><a href="#七、Github-Pages-搭建网站" class="headerlink" title="七、Github Pages 搭建网站"></a>七、Github Pages 搭建网站</h2><h3 id="1-个人站点"><a href="#1-个人站点" class="headerlink" title="1. 个人站点"></a>1. 个人站点</h3><p>访问：https://用户名.github.io</p>
+<h3 id="2-搭建步骤"><a href="#2-搭建步骤" class="headerlink" title="2. 搭建步骤"></a>2. 搭建步骤</h3><ol>
+<li>创建个人站点 –&gt; 新建仓库（注：仓库名必须是【用户名.github.io】）</li>
+<li>在仓库下新建index.html的文件，即可。</li>
+</ol>
+<h3 id="附：参考搭建教程"><a href="#附：参考搭建教程" class="headerlink" title="附：参考搭建教程"></a>附：参考搭建教程</h3><ol>
+<li><a href="https://www.cxyxiaowu.com/6407.html" target="_blank" rel="noopener">超全面！如何用 GitHub 从零开始搭建一个博客 ？</a></li>
+<li><a href="https://hasaik.com/posts/ab21860c.html" target="_blank" rel="noopener">Hexo博客+Next主题深度优化与定制</a></li>
+<li><a href="lyxf.live/posts/2063/">hexo-Next主题美化</a></li>
+<li><a href="www.cduyzh.com/hexo-settings-3/">基于hexo博客自定义页面样式</a></li>
+<li><a href="https://blog.csdn.net/baidu_34310405/article/details/102665373" target="_blank" rel="noopener">Hexo Next主题添加访客统计</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
