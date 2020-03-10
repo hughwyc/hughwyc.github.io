@@ -4,111 +4,69 @@ copyright: true
 visitor: true
 comment_count: true
 date: 2020-03-09 19:40:00
+updated: 2020-03-09 21:06:00
 id: github-study
 tags: github
 categories: Tools
 description: 正是在学习Github的时候，才知道还可以用来搭博客。
 ---
-
----
-
- <font color=#499ae0> **注意：以后听视频课，一定要同时做笔记！！！** </font> 
-
----
-
+> **<font color=#499ae0>注：以后听视频课，一定要同时做笔记</font>**
 ## 一、常用Linix语句
 
 1. `ls` --> 查看目录中的文件
-
 2. `pwd` --> 显示当前工作路径
-
 3. `mkdir [文件名]` --> 新建一个文件夹
-
 4. `git config --global user.name '[用户名]'` --> 设置用户名
-
 5. `git config --global user.email '[邮箱地址]'` --> 设置用户邮箱
-
 6. `git config --list` --> 查看设置
-
 7. `git init` --> 初始化一个仓库（生成一个`.git`文件夹，用于存储本地仓库的信息）
-
 8. `touch [文件名]` --> 新建一个文件
-
 9. `vim [文件名]` --> 进入vim编辑器进行修改文件
-
 10. 在vim编辑器中，按下`i`进入输入模式，按下`esc`键退出输入模式，输入`:wq`或`:x`可进行保存并退出（或按下快捷键`shift + z z`）
-
 11. `cat [文件名]`  --> 从第一个字节开始正向查看文件的内容 
-
 12. `git status` --> 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）
-
 13. `git diff` --> 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）
-
 14. `git add [文件名]` --> 把文件从工作区添加到暂存区
-
 15. `git reset -- [文件名]`  --> 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）
-
 16. `git rm [文件名]` --> 从暂存区中删除文件
-
 17. `git commit -m '[提交描述]'` --> 把文件从暂存区提交到本地仓库
-
 18. `git push` --> 将文件从本地仓库同步到Github
-
 19. `rm -f file1` 删除一个叫做 ‘file1′ 的文件’ 
-
 20. `rm -rf dir1` 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件
-
 21. `git clone [仓库地址] `  --> 将远程仓库复制到本地
-
 22. `git log` --> 查看版本区(本地仓库)的历史提交记录（倒序）
-
     `git log --reverse`    -->  查看时间正序排列的历史提交信记录
-
     `git log [分支名]`   --> 查看某分支的提交历史，不写分支名查看当前所在分支
-
     `git log --oneline`   --> 一行显示提交历史
-
     `git log -n`   --> 其中 n 是数字，查看最近 n 个提交
-
     `git log --author [贡献者名字]`   --> 查看指定贡献者的提交记录
-
     `git log --graph  --> ` 图示法显示提交历史
-
 23. `git reflog` --> 查看所有版本记录（可用于历史记录回滚）
-
-    1. `git reset --hard [历史版本号]` --> 回滚到历史某一个版本
-
-24. `git branch ` -->  查看本地全部分支信息；
-
-    `git branch -r` --> 查看远程所有分支；
-
+24. `git reset --hard [历史版本号]` --> 回滚到历史某一个版本
+25. `git branch ` -->  查看本地全部分支信息；
+	`git branch -r` --> 查看远程所有分支；
     `git branch -a` --> 查看本地和远程所有分支（仅显示分支名）
-
     `git branch -v` --> 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息
-
     `git branch -vv` --> 比上一个多显示出远程分支名
 
-    ![image](https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png)
+<div align=center><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" width="100%" height="100%"></div>
 
 运行后有三行信息，依次说明:
 
-* 第一行，开头的星号表示**当前所在本地分支**，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 -- 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示**本地分支<font color=#499ae0>领先</font>**其跟踪的**远程分支**一个提交。最后一项是提交时填写的备注信息。
-
-* 第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。
-
-* 第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）
+- 第一行，开头的星号表示**当前所在本地分支**，绿色的 master 是分支名，之所以是绿色，也是因为它是当前所在分支。后面第二项是版本号，第三项中括号里面蓝色的字，表示此分支跟踪的远程分支的名字，当然啦，这也是克隆远程仓库到本地时的默认设置 -- 创建 master 分支并自动跟踪远程同名分支；冒号后面的 ahead 1 表示**本地分支<font color=#499ae0>领先</font>**其跟踪的**远程分支**一个提交。最后一项是提交时填写的备注信息。
+- 第二行，是 Git 指针信息，它指向远程仓库的 master 分支，这行信息暂不重要。
+- 第三行，远程分支信息，详见第一行的解释。（remote分支名、版本号、提交信息）
 
  <font color=#499ae0>**PS：**</font> github中README.md关联图片的图片地址是有一定的格式的，其格式如下： 
-
 ` https://github.com/用户名/repository仓库名/raw/分支名master/图片文件夹名称/.png or.jpg `
 
-24.   `git reset --soft HEAD^` --> 撤销最近的一次提交，将修改还原到暂存区。`--soft` 表示软退回，对应的还有 `--hard` 硬退回，后面会讲到，`HEAD^` 表示撤销一次提交，`HEAD^^` 表示撤销两次提交，撤销 n 次可以简写为 `HEAD~n`。 
-25.   ` git remote -v  ` -->  查看当前远程的版本 
-26.   `git fetch origin master` --> 从远程的origin仓库的master分支下载代码到本地的origin master 
-27.   `git pull origin` --> 
-28.   `git merge origin master ` --> 
-29.    `git merge --abort` --> Undo a merge
-30.   `git push origin ` --> 
+26. `git reset --soft HEAD^` --> 撤销最近的一次提交，将修改还原到暂存区。`--soft` 表示软退回，对应的还有 `--hard` 硬退回，后面会讲到，`HEAD^` 表示撤销一次提交，`HEAD^^` 表示撤销两次提交，撤销 n 次可以简写为 `HEAD~n`。
+27. ` git remote -v  ` -->  查看当前远程的版本 
+28. `git fetch origin master` --> 从远程的origin仓库的master分支下载代码到本地的origin master 
+29. `git pull origin` --> 
+30. `git merge origin master ` --> 
+31. `git merge --abort` --> Undo a merge
+32. `git push origin ` --> 
 
 **<font color=#499ae0>注：`git fetch`、`git merge`、`git pull` 三者之间的区别与联系</font>**
 
@@ -138,7 +96,7 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
 
 ## 五、从远程仓库获取最新代码合并到本地分支
 
-这里共展示两类三种方式。
+这里共展示两类三种方式。（参考自[hanchao5272](https://blog.csdn.net/hanchao5272/article/details/79162130)）
 
 ### 1.git pull：获取最新代码到本地，并自动合并到当前分支
 命令展示

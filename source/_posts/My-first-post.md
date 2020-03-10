@@ -1,15 +1,15 @@
 ---
 title: My first post
 date: 2020-03-06 16:17:58
+updated: 2020-03-8 11:06:00
 id: my-first-blog
 top: 1
-tags: blog
-categories: life
-description: 这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章。
-
 visitor: true
 copyright: true
 comment_count: true
+tags: blog
+categories: life
+description: 这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章。
 ---
 
 开学时间仍是未定。在这史无前例的漫长假期中，得益于丰富的网络资源，即使宅在家里，也可以尝试许多[有趣的东西](https://www.cxyxiaowu.com/6407.html)。
