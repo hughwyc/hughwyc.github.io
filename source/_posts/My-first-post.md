@@ -2,7 +2,7 @@
 title: My first post
 date: 2020-03-06 16:17:58
 id: my-first-blog
-top: 1
+top: 
 visitor: true
 copyright: true
 comment_count: true

@@ -4,7 +4,6 @@ copyright: true
 visitor: true
 comment_count: true
 date: 2020-03-09 19:40:00
-updated: 2020-03-09 21:06:00
 id: github-study
 tags: github
 categories: Tools
