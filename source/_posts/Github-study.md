@@ -48,7 +48,7 @@ description: 正是在学习Github的时候，才知道还可以用来搭博客�
     `git branch -v` --> 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息
     `git branch -vv` --> 比上一个多显示出远程分支名
 
-<div align=center><img src="https://user-images.githubusercontent.com/61838645/76209358-aee4a000-623c-11ea-939f-72d933cd487f.png" width="100%" height="100%"></div>
+<div align=center><img src="https://i.loli.net/2020/03/13/xP9R34UV7Xadj5k.png" width="100%" height="100%"></div>
 
 运行后有三行信息，依次说明:
 
