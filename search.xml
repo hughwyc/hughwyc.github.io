@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>学点儿经济名词</title>
+    <url>/posts/economy-phrases/</url>
+    <content><![CDATA[<h2 id="股市相关"><a href="#股市相关" class="headerlink" title="股市相关"></a>股市相关</h2><ul>
+<li>牛市：预料股市行情看涨，前景乐观的专门术语。</li>
+<li>熊市：预料股市行情看跌，前景悲观的专门术语。</li>
+<li>价格倒挂：商品的成本或收购价格高于销售价格。</li>
+<li>放水：央行就像一个鱼缸上面的水龙头，社会经济就是这个鱼缸，而企业和个人，就是活在鱼缸里面的鱼。水快枯竭了鱼都要死了，赶紧放点水；大家活得都还不错，那就少放点；眼看着鱼缸的水都要溢出来了，那就干脆拧紧龙头，免得鱼缸爆了。</li>
+<li>对冲基金：</li>
+<li>黄金ETF：</li>
+</ul>
+]]></content>
+      <categories>
+        <category>economy</category>
+      </categories>
+      <tags>
+        <tag>economy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Journal Articles Reading Report 01</title>
     <url>/posts/Journal-Articles-Reading-Report-01/</url>
     <content><![CDATA[<blockquote>
@@ -325,6 +344,27 @@
 <h2 id="4-1-市场与竞争"><a href="#4-1-市场与竞争" class="headerlink" title="4.1 市场与竞争"></a>4.1 市场与竞争</h2><blockquote>
 <p> <strong>市场</strong>（market）：由某种产品或服务的买者和卖者组成的一个群体。</p>
 <p><strong>竞争市场</strong>（competitive market）：有许多买者与卖者，以至于每个人对市场价格的影响都微乎其微的市场。</p>
+</blockquote>
+<h2 id="4-2-需求"><a href="#4-2-需求" class="headerlink" title="4.2 需求"></a>4.2 需求</h2><h3 id="4-2-1-需求曲线"><a href="#4-2-1-需求曲线" class="headerlink" title="4.2.1 需求曲线"></a>4.2.1 需求曲线</h3><blockquote>
+<p><strong>需求量</strong>（quantity demanded）：买者愿意并且能够购买的一种物品的数量。</p>
+<p><strong>需求定理</strong>（law of demand）：认为在其他条件不变，一种物品价格的上升导致对该物品的需求量减少的观点。</p>
+<p><strong>需求表</strong>（demand schedule）：表示一种物品的价格与需求量之间关系的表格。</p>
+<p><strong>需求曲线</strong>（demand curve）：表示一种物品的价格与需求量之间关系的图形。 </p>
+</blockquote>
+<h3 id="4-2-3-需求曲线的移动"><a href="#4-2-3-需求曲线的移动" class="headerlink" title="4.2.3 需求曲线的移动"></a>4.2.3 需求曲线的移动</h3><ul>
+<li>有许多变量会导致需求曲线的移动：收入、相关物品（替代品/互补品）的价格、爱好、预期、买者的数量等。</li>
+</ul>
+<blockquote>
+<p><strong>正常物品</strong>（normal good）：在其他条件相同时，收入增加引起需求量增加的物品。</p>
+<p><strong>低档物品</strong>（inferior good）：在其他条件相同时，收入增加引起需求量减少的物品。</p>
+<p><strong>替代品</strong>（substitutes）：一种物品价格的上升引起另一种物品需求量增加的两种物品。</p>
+<p><strong>互补品</strong>（complements）：一种物品价格的上升引起另一种物品需求量减少的两种物品。</p>
+</blockquote>
+<h2 id="4-3-供给"><a href="#4-3-供给" class="headerlink" title="4.3 供给"></a>4.3 供给</h2><h3 id="4-3-1-供给曲线"><a href="#4-3-1-供给曲线" class="headerlink" title="4.3.1 供给曲线"></a>4.3.1 供给曲线</h3><blockquote>
+<p><strong>供给量</strong>（quantity supplied）：卖者愿意并且能够出售的一种物品的数量。</p>
+<p><strong>供给定理</strong>（law of supply）：认为在其他条件不变，一种物品价格的上升导致该物品的供给量增加的观点。</p>
+<p><strong>供给表</strong>（supply schedule）：表示一种物品的价格与需求量之间关系的表格。</p>
+<p><strong>供给曲线</strong>（supply curve）：表示一种物品的价格与需求量之间关系的图形。 </p>
 </blockquote>
 ]]></content>
       <categories>
