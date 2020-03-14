@@ -347,11 +347,13 @@
 </blockquote>
 <h2 id="4-2-需求"><a href="#4-2-需求" class="headerlink" title="4.2 需求"></a>4.2 需求</h2><h3 id="4-2-1-需求曲线"><a href="#4-2-1-需求曲线" class="headerlink" title="4.2.1 需求曲线"></a>4.2.1 需求曲线</h3><blockquote>
 <p><strong>需求量</strong>（quantity demanded）：买者愿意并且能够购买的一种物品的数量。</p>
-<p><strong>需求定理</strong>（law of demand）：认为在其他条件不变，一种物品价格的上升导致对该物品的需求量减少的观点。</p>
+<p><strong>需求定理</strong>（law of demand）：认为在其他条件不变时，一种物品价格的上升导致对该物品的需求量减少的观点。</p>
 <p><strong>需求表</strong>（demand schedule）：表示一种物品的价格与需求量之间关系的表格。</p>
 <p><strong>需求曲线</strong>（demand curve）：表示一种物品的价格与需求量之间关系的图形。 </p>
 </blockquote>
-<h3 id="4-2-3-需求曲线的移动"><a href="#4-2-3-需求曲线的移动" class="headerlink" title="4.2.3 需求曲线的移动"></a>4.2.3 需求曲线的移动</h3><ul>
+<h3 id="4-2-3-需求曲线的移动"><a href="#4-2-3-需求曲线的移动" class="headerlink" title="4.2.3 需求曲线的移动"></a>4.2.3 需求曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/lQ5NdGYseAUZwDJ.jpg" width="80%" height="80%"></div>
+
+<ul>
 <li>有许多变量会导致需求曲线的移动：收入、相关物品（替代品/互补品）的价格、爱好、预期、买者的数量等。</li>
 </ul>
 <blockquote>
@@ -362,11 +364,42 @@
 </blockquote>
 <h2 id="4-3-供给"><a href="#4-3-供给" class="headerlink" title="4.3 供给"></a>4.3 供给</h2><h3 id="4-3-1-供给曲线"><a href="#4-3-1-供给曲线" class="headerlink" title="4.3.1 供给曲线"></a>4.3.1 供给曲线</h3><blockquote>
 <p><strong>供给量</strong>（quantity supplied）：卖者愿意并且能够出售的一种物品的数量。</p>
-<p><strong>供给定理</strong>（law of supply）：认为在其他条件不变，一种物品价格的上升导致该物品的供给量增加的观点。</p>
-<p><strong>供给表</strong>（supply schedule）：表示一种物品的价格与需求量之间关系的表格。</p>
-<p><strong>供给曲线</strong>（supply curve）：表示一种物品的价格与需求量之间关系的图形。 </p>
+<p><strong>供给定理</strong>（law of supply）：认为在其他条件不变时，一种物品价格的上升导致该物品的供给量增加的观点。</p>
+<p><strong>供给表</strong>（supply schedule）：表示一种物品的价格与供应量之间关系的表格。</p>
+<p><strong>供给曲线</strong>（supply curve）：表示一种物品的价格与供应量之间关系的图形。 </p>
 </blockquote>
-]]></content>
+<h3 id="4-3-3-供给曲线的移动"><a href="#4-3-3-供给曲线的移动" class="headerlink" title="4.3.3 供给曲线的移动"></a>4.3.3 供给曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/UOv1wbH5rW8CRXD.jpg" width="80%" height="80%"></div>
+
+<ul>
+<li>有许多变量会导致供给曲线的移动：投入品价格、技术、预期、卖者的数量等。</li>
+</ul>
+<h2 id="4-4-供给与需求的结合"><a href="#4-4-供给与需求的结合" class="headerlink" title="4.4 供给与需求的结合"></a>4.4 供给与需求的结合</h2><h3 id="4-4-1-均衡"><a href="#4-4-1-均衡" class="headerlink" title="4.4.1 均衡"></a>4.4.1 均衡</h3><blockquote>
+<p><strong>均衡</strong>（equilibrium）：市场价格达到使供给量与需求量相等水平时的状态。</p>
+<p><strong>均衡价格</strong>（equilibrium price）：使供给与需求平衡的价格。</p>
+<p><strong>均衡数量</strong>（equilibrium quantity）：均衡价格下的供给量与需求量。</p>
+<p><strong>过剩</strong>（surplus）：供给量大于需求量的状态。</p>
+<p><strong>短缺</strong>（shortage）：需求量大于供给量的状态。</p>
+</blockquote>
+<div align=center><img src="https://i.loli.net/2020/03/14/RXBgqHPMTeGdD3I.png" width="80%" height="80%"></div>
+
+<blockquote>
+<p><strong>供求定理</strong>（law of supply and demand）：认为任何一种物品的价格都会自发调整，使该物品的供给量与需求量达到平衡的状态。</p>
+</blockquote>
+<h3 id="4-4-2-分析均衡变动的三个步骤"><a href="#4-4-2-分析均衡变动的三个步骤" class="headerlink" title="4.4.2 分析均衡变动的三个步骤"></a>4.4.2 分析均衡变动的三个步骤</h3><ol>
+<li>确定该事件是使供给曲线移动还是需求曲线移动（还是使两者都移动）；</li>
+<li>确定曲线移动的方向；</li>
+<li>用供求图说明这种移动如何改变均衡价格和均衡数量。</li>
+</ol>
+<p>曲线的移动与沿着曲线的变动：</p>
+<ul>
+<li>供给曲线的移动被称为“供给变动”；而需求曲线的移动被称为“需求变动”。</li>
+<li>沿着一条固定供给曲线的变动被称为“供给量的变动”；而沿着一条固定需求曲线的变动被称为“需求量的变动”。</li>
+</ul>
+<div align=center><img src="https://i.loli.net/2020/03/14/WFpK1Ul64hCEMes.jpg" width="100%" height="100%"></div>
+
+<center>（说明）需求增加，供给未变 --> 价格上升，均衡数量增加</center>
+
+<h1 id="第5章-弹性及其应用"><a href="#第5章-弹性及其应用" class="headerlink" title="第5章 弹性及其应用"></a>第5章 弹性及其应用</h1><h2 id="5-1-需求弹性"><a href="#5-1-需求弹性" class="headerlink" title="5.1 需求弹性"></a>5.1 需求弹性</h2>]]></content>
       <categories>
         <category>economy</category>
       </categories>
