@@ -4,7 +4,7 @@ copyright: true
 visitor: true
 comment_count: true
 date: 2020-03-13 11:55:48
-id: Journal-Articles-Reading-Report-01
+id: journal-articles-reading-report-01
 top: 
 tags: [TC4, SLM]
 categories: Paper-reading
@@ -19,7 +19,7 @@ description: Paper-01：Microstructure and hydrogen embrittlement of additively 
 
 To increase the understanding of: 
 
-* how Ti-6Al-4V micro-structure characteristics vary between selected AM processes, 
+* how Ti-6Al-4V micro-structure characteristics vary between selected AM processes;
 * how hydrogen may influence the alloy’s performance. 
 
 ### 1.2 Main points & Supporting arguments
@@ -39,7 +39,8 @@ To increase the understanding of:
 
 ### 1.5 Nice writing expressions
 
-
+* High amounts of α phase, i.e. a large number of HCP crystals,renders the alloy <u>more prone to</u> anisotropy in case of strong texture, <u>due to</u> the inherent anisotropy of the HCP crystal structure.
+* The atomic packing factor is slightly higher for HCP than for BCC, 0.74 and 0.68 <u>respectively</u>.
 
 ## 2. DEEP THINKING
 
