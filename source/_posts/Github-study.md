@@ -6,7 +6,7 @@ comment_count: true
 date: 2020-03-09 19:40:00
 id: github-study
 tags: github
-categories: Tools
+categories: Coding
 description: 正是在学习Github的时候，才知道还可以用来搭博客。
 ---
 > **<font color=#499ae0>注：以后听视频课，一定要同时做笔记</font>**

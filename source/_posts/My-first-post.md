@@ -7,7 +7,7 @@ visitor: true
 copyright: true
 comment_count: true
 tags: blog
-categories: life
+categories: Life
 description: 这是我2020年寒假在家使用 Github Pages 搭建个人博客的第一篇文章。
 ---
 
