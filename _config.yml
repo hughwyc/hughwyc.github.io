@@ -118,4 +118,4 @@ symbols_count_time:
 
 ## 适用默认的 hexo-renderer-marked
 marked:
-  smartypants: false
+  smartypants: false # 英文单引号原样显示
