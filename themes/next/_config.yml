@@ -435,7 +435,7 @@ font:
   enable: false
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: 
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -444,9 +444,9 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: false
-    family: 
-    size:
+    external: true
+    family: EB Garamond
+    size: 20px
 
   # Font settings for site title (.site-title).
   title:
