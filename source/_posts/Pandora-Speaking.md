@@ -25,7 +25,7 @@ be supposed to do sth. 本该做某事
 
 keep a journal 写日记
 
-## 核心知识点
+## 1. Key Points
 
 **due (adj.) 预期的，预计的**
 
@@ -53,7 +53,7 @@ e.g. The rent is due at the end of the month. 房租在月底交付。
 
 paycheck (n.) 工资，薪水
 
-## Extended Expressions
+## 2. Extended Expressions
 
 have a deadline. 赶着做某事
 
@@ -69,7 +69,7 @@ expire (v.) 过期，到期，失效
 
 e.g. My passport expires next month. 我的护照下个月就要过期了。
 
-## Key Points
+## 3. Review
 
 When's it due?
 
