@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Pandora-Speaking</title>
+    <url>/posts/pandora-speaking/</url>
+    <content><![CDATA[<h1 id="Day-001-When’s-it-due"><a href="#Day-001-When’s-it-due" class="headerlink" title="Day-001. When’s it due?"></a>Day-001. When’s it due?</h1><p>什么时候截止？</p>
+<p>due (adj.) 到期的，截止的</p>
+<p>It’s due tomorrow. 明天截止</p>
+<p>有人在敲门，可以问：Who’s it?</p>
+<p>be supposed to do sth. 本该做某事</p>
+<p>keep a journal 写日记</p>
+<h2 id="核心知识点"><a href="#核心知识点" class="headerlink" title="核心知识点"></a>核心知识点</h2><p><strong>due (adj.) 预期的，预计的</strong></p>
+<p>be due to do sth. 预计什么时候做某事</p>
+<p>e.g. What time is the next bus due? 下一趟公交车什么时候来？</p>
+<p>e.g. The next meeting <u>is due to be held</u> in three month’s time. 下次会议预计在3个月后召开。</p>
+<p>sb. is due to arrive + time 某人预计什么</p>
+<p>What time <u>is</u> Minister Lee <u>due to arrive</u>? 李总理什么时候到？</p>
+<p><strong>due (date) 预产期</strong></p>
+<p>e.g. When’s your <u>due date</u>? 预产期是什么时候？</p>
+<p><strong>due (adj.) 账单应付的，欠债的</strong></p>
+<p>e.g. And our rent is due yesterday. 我们的房租昨天就该付了</p>
+<p>e.g. When’s the rent due? 什么时候交房租？</p>
+<p>e.g. The rent is due at the end of the month. 房租在月底交付。</p>
+<p>paycheck (n.) 工资，薪水</p>
+<h2 id="Extended-Expressions"><a href="#Extended-Expressions" class="headerlink" title="Extended Expressions"></a>Extended Expressions</h2><p>have a deadline. 赶着做某事</p>
+<p>deal with a deadline.  赶着做某事（强烈）</p>
+<p>e.g. We are dealing with an impossible deadline. 我们有着难以达成的截止日期。</p>
+<p>miss the cutoff. 错过截止时间</p>
+<p>I missed the last bus. 我错过了末班车。</p>
+<p>expire (v.) 过期，到期，失效</p>
+<p>e.g. My passport expires next month. 我的护照下个月就要过期了。</p>
+<h2 id="Key-Points"><a href="#Key-Points" class="headerlink" title="Key Points"></a>Key Points</h2><p>When’s it due?</p>
+<p>It’s due tomorrow.</p>
+<p>What time is the next bus due?</p>
+<p>When’s your due date?</p>
+<p>And our rent is due… yesterday.</p>
+<p>Your mom has a deadline.</p>
+<p>We are dealing with an impossible deadline.</p>
+<p>You missed the cutoff.</p>
+<p>I hope it hasn’t expired.</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>english</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Go语言学习</title>
+    <url>/posts/go-study/</url>
+    <content><![CDATA[<h2 id="第一个Go程序"><a href="#第一个Go程序" class="headerlink" title="第一个Go程序"></a>第一个Go程序</h2><p>注：整理自：<a href="https://www.liwenzhou.com/" target="_blank" rel="noopener">李文周的博客</a></p>
+<h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h3><p>现在我们来创建第一个Go项目——<code>hello</code>。在我们桌面创建一个<code>hello</code>目录。</p>
+<p>在该目录中创建一个<code>main.go</code>文件：</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> main  <span class="comment">// 声明 main 包，表明当前是一个可执行程序</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span>  <span class="comment">// 导入内置 fmt 包</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;  <span class="comment">// main函数，是程序执行的入口</span></span><br><span class="line">	fmt.Println(<span class="string">"Hello World!"</span>)  <span class="comment">// 在终端打印 Hello World!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="go-build"><a href="#go-build" class="headerlink" title="go build"></a>go build</h3><p><code>go build</code>表示将源代码编译成可执行文件。</p>
+<p>在hello目录下执行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go build</span><br></pre></td></tr></table></figure>
+
+<p>或者在其他目录执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go build hello</span><br></pre></td></tr></table></figure>
+
+<p>go编译器会去 <code>GOPATH</code>的src目录下查找你要编译的<code>hello</code>项目</p>
+<p>编译得到的可执行文件会保存在执行编译命令的当前目录下，如果是windows平台会在当前目录下找到<code>hello.exe</code>可执行文件。</p>
+<p>可在终端直接执行该<code>hello.exe</code>文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">c:\desktop\hello&gt;hello.exe</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
+
+<p>我们还可以使用<code>-o</code>参数来指定编译后得到的可执行文件的名字。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">go build -o heiheihei.exe</span><br></pre></td></tr></table></figure>
+
+<h3 id="go-install"><a href="#go-install" class="headerlink" title="go install"></a>go install</h3><p><code>go install</code>表示安装的意思，它先编译源代码得到可执行文件，然后将可执行文件移动到<code>GOPATH</code>的bin目录下。因为我们的环境变量中配置了<code>GOPATH</code>下的bin目录，所以我们就可以在任意地方直接执行可执行文件了。</p>
+<h3 id="跨平台编译"><a href="#跨平台编译" class="headerlink" title="跨平台编译"></a>跨平台编译</h3><p>默认我们<code>go build</code>的可执行文件都是当前操作系统可执行的文件，如果我想在windows下编译一个linux下可执行文件，那需要怎么做呢？</p>
+<p>只需要指定目标操作系统的平台和处理器架构即可：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">SET CGO_ENABLED=0  // 禁用CGO</span><br><span class="line">SET GOOS=linux  // 目标平台是linux</span><br><span class="line">SET GOARCH=amd64  // 目标处理器架构是amd64</span><br></pre></td></tr></table></figure>
+
+<p><em>使用了cgo的代码是不支持跨平台编译的</em></p>
+<p>然后再执行<code>go build</code>命令，得到的就是能够在Linux平台运行的可执行文件了。</p>
+<p>Mac 下编译 Linux 和 Windows平台 64位 可执行程序：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build</span><br><span class="line">CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build</span><br></pre></td></tr></table></figure>
+
+<p>Linux 下编译 Mac 和 Windows 平台64位可执行程序：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build</span><br><span class="line">CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build</span><br></pre></td></tr></table></figure>
+
+<p>Windows下编译Mac平台64位可执行程序：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">SET CGO_ENABLED=0</span><br><span class="line">SET GOOS=darwin</span><br><span class="line">SET GOARCH=amd64</span><br><span class="line">go build</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>golang</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>全球通史</title>
     <url>/posts/a-global-history/</url>
     <content><![CDATA[<h1 id="第一章-人类-食物采集者"><a href="#第一章-人类-食物采集者" class="headerlink" title="第一章 人类-食物采集者"></a>第一章 人类-食物采集者</h1><p>在史前时代的几百万年中，有两大转变为此后的全部历史奠定了坚实的基础：</p>
@@ -19,7 +110,7 @@
 <h1 id="第二章-人类-食物生产者"><a href="#第二章-人类-食物生产者" class="headerlink" title="第二章 人类-食物生产者"></a>第二章 人类-食物生产者</h1><h2 id="2-2-农业的传播"><a href="#2-2-农业的传播" class="headerlink" title="2.2 农业的传播"></a>2.2 农业的传播</h2><p>现代的小麦、燕麦、裸麦和大麦，以及现代的山羊、绵羊、牛和猪均起源于中东。玉米、蚕豆和南瓜之类起源于中美洲。</p>
 ]]></content>
       <categories>
-        <category>life</category>
+        <category>History</category>
       </categories>
       <tags>
         <tag>history</tag>
@@ -61,7 +152,7 @@
 <ul>
 <li><strong>建仓</strong>：第一笔买入某股票。</li>
 <li><strong>持仓</strong>：买入某只股票以后因看好后市，而一直持有该股。</li>
-<li><strong>增仓/加仓</strong>：在上涨过程中继续买入称增仓。</li>
+<li><strong>增仓/加仓</strong>：在上涨过程中继续买入。</li>
 <li><strong>减仓</strong>：卖出一部分。</li>
 <li><strong>斩仓</strong>：就是割肉，亏损卖出股票。</li>
 <li><strong>平仓/清仓</strong>：把之前买入的股票全卖掉。</li>
@@ -87,7 +178,7 @@
 </ul>
 ]]></content>
       <categories>
-        <category>economy</category>
+        <category>Economy</category>
       </categories>
       <tags>
         <tag>economy</tag>
@@ -147,7 +238,7 @@
 
 <center>（体心立方四托一，而六方密积和面心立方三托一）</center>]]></content>
       <categories>
-        <category>life</category>
+        <category>Life</category>
       </categories>
       <tags>
         <tag>special</tag>
@@ -273,7 +364,7 @@
 </ol>
 ]]></content>
       <categories>
-        <category>Tools</category>
+        <category>Coding</category>
       </categories>
       <tags>
         <tag>github</tag>
@@ -439,7 +530,7 @@
 <p><strong>需求表</strong>（demand schedule）：表示一种物品的价格与需求量之间关系的表格。</p>
 <p><strong>需求曲线</strong>（demand curve）：表示一种物品的价格与需求量之间关系的图形。 </p>
 </blockquote>
-<h3 id="4-2-3-需求曲线的移动"><a href="#4-2-3-需求曲线的移动" class="headerlink" title="4.2.3 需求曲线的移动"></a>4.2.3 需求曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/lQ5NdGYseAUZwDJ.jpg" width="80%" height="80%"></div>
+<h3 id="4-2-3-需求曲线的移动"><a href="#4-2-3-需求曲线的移动" class="headerlink" title="4.2.3 需求曲线的移动"></a>4.2.3 需求曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/lQ5NdGYseAUZwDJ.jpg" width="70%" height="70%"></div>
 
 <ul>
 <li>有许多变量会导致需求曲线的移动：收入、相关物品（替代品/互补品）的价格、爱好、预期、买者的数量等。</li>
@@ -456,7 +547,7 @@
 <p><strong>供给表</strong>（supply schedule）：表示一种物品的价格与供应量之间关系的表格。</p>
 <p><strong>供给曲线</strong>（supply curve）：表示一种物品的价格与供应量之间关系的图形。 </p>
 </blockquote>
-<h3 id="4-3-3-供给曲线的移动"><a href="#4-3-3-供给曲线的移动" class="headerlink" title="4.3.3 供给曲线的移动"></a>4.3.3 供给曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/UOv1wbH5rW8CRXD.jpg" width="80%" height="80%"></div>
+<h3 id="4-3-3-供给曲线的移动"><a href="#4-3-3-供给曲线的移动" class="headerlink" title="4.3.3 供给曲线的移动"></a>4.3.3 供给曲线的移动</h3><div align=center><img src="https://i.loli.net/2020/03/14/UOv1wbH5rW8CRXD.jpg" width="70%" height="70%"></div>
 
 <ul>
 <li>有许多变量会导致供给曲线的移动：投入品价格、技术、预期、卖者的数量等。</li>
@@ -508,29 +599,29 @@
 <li>当弹性等于1，即需求量与价格同比例变动时，我们说需求具有<strong>单位弹性</strong>。</li>
 <li>通过某一点的需求曲线越平坦，需求价格弹性就越大；通过某一点的需求弹性越陡峭，需求价格弹性就越小。</li>
 </ul>
-<div align=center><img src="https://i.loli.net/2020/03/18/kRyp5cMn27DIOVx.jpg" width="100%" height="100%"></div>
+<div align=center><img src="https://i.loli.net/2020/03/18/8ufWKLyaIt5gYG2.jpg" width="100%" height="100%"></div>
 
+<ul>
+<li>现实世界中的几种弹性：鸡蛋（0.1），医疗（0.2），大米（0.5），住房（0.7），牛肉（1.6），餐馆用餐（2.3），苏格兰威士忌酒（4.4）。</li>
+</ul>
+<h3 id="5-1-5-总收益与需求价格弹性"><a href="#5-1-5-总收益与需求价格弹性" class="headerlink" title="5.1.5 总收益与需求价格弹性"></a>5.1.5 总收益与需求价格弹性</h3><blockquote>
+<p>总收益（total revenue）：一种物品的买者支付从而卖者得到的量。</p>
+<p>用该物品的价格乘以销售量来计算。</p>
+</blockquote>
+<div align=center><img src="https://i.loli.net/2020/03/18/9FPdaAorjItn7vZ.jpg" width="80%" height="80%"></div>
 
+<p>当价格变动时，总收益如何移动：</p>
+<div align=center><img src="https://i.loli.net/2020/03/18/dM3JEi9eTHDFIL5.jpg" width="80%" height="80%"></div>
 
+<h3 id="5-1-6-沿着一条线性需求曲线的弹性和总收益"><a href="#5-1-6-沿着一条线性需求曲线的弹性和总收益" class="headerlink" title="5.1.6 沿着一条线性需求曲线的弹性和总收益"></a>5.1.6 沿着一条线性需求曲线的弹性和总收益</h3><div align=center><img src="https://i.loli.net/2020/03/18/ztrS2wxcl3586AJ.jpg" width="80%" height="80%"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<ul>
+<li>尽管线性需求曲线的斜率（两个变量变动的比率）是不变的，但弹性（两个变量变动百分比的比率）并不是不变的。</li>
+<li>在价格低而数量高的各点上，需求曲线是缺乏弹性的；在价格高而数量低的各点上，需求曲线是富有弹性的。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>economy</category>
+        <category>Economy</category>
       </categories>
       <tags>
         <tag>economy</tag>
@@ -545,7 +636,7 @@
 <p>这笔打一生下来就由时间舞动着，不停地涂涂画画，未曾停歇。哪怕我在休息的时候，也被推着画出一小段直线。</p>
 ]]></content>
       <categories>
-        <category>life</category>
+        <category>Life</category>
       </categories>
       <tags>
         <tag>blog</tag>
