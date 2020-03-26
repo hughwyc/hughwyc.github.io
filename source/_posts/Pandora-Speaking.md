@@ -143,20 +143,20 @@ None that I can think of. 没有问题。
 
 ## 3. Review
 
-Tell me about yourself.
-
-Where do you see yourself in 10 years?
-
-Why do you want this job?
-
-Do you have any questions for us?
+Tell me a bit about yourself.
 
 I thought I could tell you a little about myself.
 
 I know most of your company inside out.
 
+Where do you see yourself in 10 years?
+
 I want to be the best and work for a company where I can build a career.
 
+Why do you want this job?
+
 Because this is not just a job to me, this is what I love. This is what I'm good at.
+
+Do you have any questions for us?
 
 None that I can think of.
