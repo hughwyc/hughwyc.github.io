@@ -11,9 +11,11 @@ categories: Coding
 description: 重新系统学习Golang
 ---
 
-## 第一个Go程序
-
 注：整理自：[李文周的博客](https://www.liwenzhou.com/)
+
+---
+
+## 第一个Go程序
 
 ### Hello World
 
@@ -106,3 +108,112 @@ SET GOOS=darwin
 SET GOARCH=amd64
 go build
 ```
+
+## 字符串
+
+Go语言中
+
+* 字符串是 "双引号" 包裹的；
+* 字符是 '单引号' 包裹的。
+
+```go
+s := "hello，你好~"
+c1 := 'h'
+c2 := '你'
+// 字节：1字节=8Bit（8个二进制位）
+// 1个字符'A'= 1个字节
+// 1个utf-8编码的汉字'你'=一般占3个字节（某些生僻字占4个）
+```
+
+### byte类型和rune类型
+
+Go 语言的字符有以下两种：
+
+1. `uint8`类型，或者叫 byte 型，代表了`ASCII码`的一个字符。
+2. `rune`类型，代表一个 `UTF-8字符`。
+
+当需要处理中文、日文或者其他复合字符时，则需要用到`rune`类型。**`rune`类型实际是一个`int32`**。
+
+### 字符串的常用操作
+
+```go
+s1 := "hello"
+s2 := "world"
+result := fmt.Sprintf("%s%s", s1, s2)
+fmt.Printf("%s%s", s1, s2)
+fmt.Println(result)
+```
+
+fmt.Sprintf()会将拼接后的字符串返回，不打印；
+
+fmt.Printf()会直接打印出拼接后的字符串
+
+| 方法                                | 介绍           |
+| :---------------------------------- | :------------- |
+| len(str)                            | 求长度         |
+| + 或 fmt.Sprintf                    | 拼接字符串     |
+| strings.Split                       | 分割           |
+| strings.contains                    | 判断是否包含   |
+| strings.HasPrefix,strings.HasSuffix | 前缀/后缀判断  |
+| strings.Index(),strings.LastIndex() | 子串出现的位置 |
+| strings.Join(a[]string, sep string) | join操作       |
+
+### 修改字符串
+
+Go语言中的字符串不能直接修改。
+
+要修改字符串，需要先将其转换成`[]rune`或`[]byte`，完成后再转换为`string`。无论哪种转换，都会重新分配内存，并复制字节数组。
+
+```go
+func changeString() {
+	s1 := "big"
+	// 强制类型转换
+	byteS1 := []byte(s1)
+	byteS1[0] = 'p'
+	fmt.Println(string(byteS1))
+
+	s2 := "白萝卜"
+	runeS2 := []rune(s2) // 把字符串强制转换成一个rune切片
+	runeS2[0] = '红'
+	fmt.Println(string(runeS2))
+}
+```
+
+## 数组
+
+三种初始化方法：
+
+```go
+// 1. 列表初始化
+a1 := [3]int{1, 2}
+fmt.Println(a1) //[1 2 0]
+// 2. 根据初始值自动推断数组的长度是多少
+a2 := [...]int{1, 3, 5, 7, 9}
+// 3. 根据索引初始化
+a3 := [...]int{1: 1, 3: 5}
+fmt.Println(a3) // [0 1 0 5]
+```
+
+## 切片
+
+### 切片的本质
+
+切片的本质就是对底层数组的封装，它包含了三个信息：底层数组的指针、切片的长度（len）和切片的容量（cap）。
+
+举个例子，现在有一个数组`a := [8]int{0, 1, 2, 3, 4, 5, 6, 7}`，切片`s1 := a[:5]`，相应示意图如下。![slice_01](https://www.liwenzhou.com/images/Go/slice/slice_01.png)切片`s2 := a[3:6]`，相应示意图如下：![slice_02](https://www.liwenzhou.com/images/Go/slice/slice_02.png)
+
+总结：
+
+* 切片的本质就是一个框，框住了一块连续的内存。
+* 切片是引用类型，指向了一个底层的数组；
+* 切片的长度就是它元素的个数；
+* 切片的容量是底层数组从**切片的第一个元素**到最后一个元素的数量。
+
+### 判断切片是否为空
+
+要检查切片是否为空，请始终使用`len(s) == 0`来判断，而不应该使用`s == nil`来判断。
+
+
+
+
+
