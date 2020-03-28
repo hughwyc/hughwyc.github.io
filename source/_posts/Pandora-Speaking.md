@@ -226,3 +226,54 @@ It's a bit nippy.
 I'm soaking wet - I got caught in a downpour.
 
 It's raining cats and dogs.
+
+# Day-004 You're a real pain in the neck, you konw?
+
+你真让人头大。
+
+## 1. Key Points
+
+**sth. / sb. is a real sth. 某物 / 某人真……**
+
+Lily is a real pleasure to work with. 和Lily一起工作真舒服。
+
+She's always been a real jerk. 她一直很讨厌。
+
+**pain in the neck 给你带来麻烦的人**
+
+A noisy student is a pain in the neck for a teacher. 对老师来说上课吵闹的学生很讨厌。
+
+**you know 表示对一个讨厌的人忍无可忍**
+
+You're a real jerk, you konw？你真的非常令人讨厌。
+
+What the heck have you been doing? 你搞什么鬼？你怎么回事？
+
+**a neat guy 某人看上去不错**（用于夸奖）
+
+He seems like a neat guy. 他看上去不错。
+
+## 2. Extended Expressions
+
+**fly-by-night 不靠谱的，没信用的**
+
+There are so many fly-by-night life coaches. 不靠谱的人生导师太多了。
+
+**lame (adj.) 跛脚的，一瘸一拐的，差劲的，很烂的**
+
+The movie was so lame. 这电影很差劲。
+
+**lousy (adj.) 非常糟糕的**
+
+That's a lousy conversation starter. 这开场白烂透了。
+
+## 3. Review
+
+You're a real pain in the neck, you know?
+
+There are so many fly-by-night life coaches.
+
+You're lame.
+
+That's a lousy conversation starter.
+
