@@ -277,3 +277,50 @@ You're lame.
 
 That's a lousy conversation starter.
 
+# Day-005 It's such a waste of time.
+
+简直就是浪费时间。
+
+## 1. Key Points
+
+**sb. / sth. is such a ... 某人/某物 真是...**
+
+That's such a good film. 那部电影真不错。
+
+**work it all out 想办法解决**
+
+Our supplies are just about gone. 我们的补给就要用完了
+
+I will work it all out. 我会想办法解决的
+
+……cheerful, optimistic, indomitable. I assure you **no such man exists**. 爽朗、乐观、不屈不挠的人，我敢打赌，不存在这样的人。
+
+What a **complete and utter** waste of my time. 这**完全**是浪费我时间。
+
+That was a waste of time, I'm such an idiot.
+
+## 2. Extended Expressions
+
+**kill time 打发时间，消磨时间**
+
+We killed time playing cards. 我们打纸牌消磨时间。
+
+**fritter away 挥霍浪费（时间、金钱或机会）**
+
+Don't fritter away your time with manicures or hairdressers. 别把时间浪费在做指甲或做头发上。
+
+He frittered away the millions his father had left him. 他挥霍了父亲留下的百万资产
+
+## 3. Review
+
+It's such a waste of time.
+
+You're such a dreamer.
+
+ I assure you no such man exists.
+
+What a complete and utter waste of my time.
+
+That was a waste of time, I'm such an idiot.
+
+He frittered away the millions his father had left him.
