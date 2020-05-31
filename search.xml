@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cpp-Study</title>
+    <url>/posts/cpp-study/</url>
+    <content><![CDATA[<h3 id="1-命名空间namespace的作用"><a href="#1-命名空间namespace的作用" class="headerlink" title="1. 命名空间namespace的作用"></a>1. 命名空间namespace的作用</h3><p>命名空间是ANSIC++引入的可以由用户命名的作用域，用来处理程序中常见的同名冲突。</p>
+<p>在 C语言中定义了3个层次的作用域，即文件(编译单元)、函数和复合语句。C++又引入了类作用域，类是出现在文件内的。在不同的作用域中可以定义相同名字的变量，互不干扰，系统能够区别它们。</p>
+<p>在 文件中可以定义全局变量(global variable)，它的作用域是整个程序。如果在文件A中定义了一个变量a int a=3；在文件B中可以再定义一个变量a int a=5;</p>
+<p>在分别对文件A和文件B进行编译时不会有问题。但是，如果一个程序包括文件A和文件B，那么在进行连接时，会报告出错，因为在同一个程序中有两个同名的变量，认为是对变量的重复定义。</p>
+<p>可 以通过extern声明同一程序中的两个文件中的同名变量是同一个变量。如果在文件B中有以下声明：</p>
+<p>extem int a；</p>
+<p>表示文件B中的变量a是在其他文件中已定义的变量。由于有此声明，在程序编译和连接后，文件A的变量a的作用域扩展到了文件B。</p>
+<p><strong>命名空间</strong>：实际上就是一个由程序设计者命名的内存区域，程序设计者可以根据需要指定一些有名字的空间域，把一些全局实体分别放在各个命名空间中，从而与其他全局实体分隔开来。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">namespace</span> ns1 <span class="comment">//指定命名中间nsl</span></span><br><span class="line">&#123; <span class="keyword">int</span> a；</span><br><span class="line"><span class="keyword">double</span> b; &#125;</span><br></pre></td></tr></table></figure>
+
+<p>namespace 是定义命名空间所必须写的关键字，nsl 是用户自己指定的命名空间的名字（可以用任意的合法标识符）</p>
+<p>在花括号内是声明块，在其中声明的实体称为命名空间成员(namespace member)。现在命名空间成员包括变量a和b，注意a和b仍然是全局变量，仅仅是把它们隐藏在指定的命名空间中而已。</p>
+<p>如果在程序中要使用变量a和b，必须加上命名空间名和作用域分辨符“::”，如nsl::a，nsl::b。这种用法称为命名空间限定(qualified)，这些名字(如nsl::a)称为被限定名 (qualified name)。</p>
+]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode-Cpp</title>
+    <url>/posts/leetcode-cpp/</url>
+    <content><![CDATA[<p>可以正式开始了~</p>
+<h2 id="Day-2020-05-31"><a href="#Day-2020-05-31" class="headerlink" title="Day-2020-05-31"></a>Day-2020-05-31</h2><h3 id="1431-Kids-With-the-Greatest-Number-of-Candies"><a href="#1431-Kids-With-the-Greatest-Number-of-Candies" class="headerlink" title="1431. Kids With the Greatest Number of Candies"></a><a href="https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies/" target="_blank" rel="noopener">1431. Kids With the Greatest Number of Candies</a></h3><p><font color = green >[easy]</font></p>
+<p>Given the array <code>candies</code> and the integer <code>extraCandies</code>, where <code>candies[i]</code> represents the number of candies that the <strong>ith</strong> kid has.</p>
+<p>For each kid check if there is a way to distribute <code>extraCandies</code> among the kids such that he or she can have the <strong>greatest</strong> number of candies among them. Notice that multiple kids can have the <strong>greatest</strong> number of candies.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input: candies &#x3D; [2,3,5,1,3], extraCandies &#x3D; 3</span><br><span class="line">Output: [true,true,true,false,true] </span><br><span class="line">Explanation: </span><br><span class="line">Kid 1 has 2 candies and if he or she receives all extra candies (3) will have 5 candies --- the greatest number of candies among the kids. </span><br><span class="line">Kid 2 has 3 candies and if he or she receives at least 2 extra candies will have the greatest number of candies among the kids. </span><br><span class="line">Kid 3 has 5 candies and this is already the greatest number of candies among the kids. </span><br><span class="line">Kid 4 has 1 candy and even if he or she receives all extra candies will only have 4 candies. </span><br><span class="line">Kid 5 has 3 candies and if he or she receives at least 2 extra candies will have the greatest number of candies among the kids.</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input: candies &#x3D; [4,2,1,1,2], extraCandies &#x3D; 1</span><br><span class="line">Output: [true,false,false,false,false] </span><br><span class="line">Explanation: There is only 1 extra candy, therefore only kid 1 will have the greatest number of candies among the kids regardless of who takes the extra candy.</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 3:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input: candies &#x3D; [12,1,12], extraCandies &#x3D; 10</span><br><span class="line">Output: [true,false,true]</span><br></pre></td></tr></table></figure>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>2 &lt;= candies.length &lt;= 100</code></li>
+<li><code>1 &lt;= candies[i] &lt;= 100</code></li>
+<li><code>1 &lt;= extraCandies &lt;= 50</code></li>
+</ul>
+<h4 id="My-Code"><a href="#My-Code" class="headerlink" title="My Code:"></a>My Code:</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; <span class="title">kidsWithCandies</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;candies, <span class="keyword">int</span> extraCandies)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> len = candies.<span class="built_in">size</span>();</span><br><span class="line">		<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt; result;</span><br><span class="line">		<span class="keyword">int</span> maxV = *max_element(candies.<span class="built_in">begin</span>(), candies.<span class="built_in">end</span>());</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (candies[i] + extraCandies &gt;= maxV)</span><br><span class="line">				result.push_back(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				result.push_back(<span class="number">0</span>); <span class="comment">// 指在容器尾端插入"0" [false]</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> result;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>[object Object]</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Journal Articles Reading Report - Template</title>
+    <url>/posts/journal-articles-reading-report-**/</url>
+    <content><![CDATA[<blockquote>
+<hr>
+</blockquote>
+<h2 id="1-ARTICLE-CONTENT"><a href="#1-ARTICLE-CONTENT" class="headerlink" title="1. ARTICLE CONTENT"></a>1. ARTICLE CONTENT</h2><h3 id="1-1-Aim-of-the-research"><a href="#1-1-Aim-of-the-research" class="headerlink" title="1.1 Aim of the research"></a>1.1 Aim of the research</h3><ul>
+<li><h3 id="1-2-Main-points-amp-Supporting-arguments"><a href="#1-2-Main-points-amp-Supporting-arguments" class="headerlink" title="1.2 Main points &amp; Supporting arguments"></a>1.2 Main points &amp; Supporting arguments</h3></li>
+<li></li>
+</ul>
+<h3 id="1-3-Characterization-methods"><a href="#1-3-Characterization-methods" class="headerlink" title="1.3 Characterization methods"></a>1.3 Characterization methods</h3><ul>
+<li><h3 id="1-4-Mechanism"><a href="#1-4-Mechanism" class="headerlink" title="1.4 Mechanism"></a>1.4 Mechanism</h3></li>
+<li></li>
+</ul>
+<h3 id="1-5-Nice-writing-expressions"><a href="#1-5-Nice-writing-expressions" class="headerlink" title="1.5 Nice writing expressions"></a>1.5 Nice writing expressions</h3><ul>
+<li><h2 id="2-DEEP-THINKING"><a href="#2-DEEP-THINKING" class="headerlink" title="2. DEEP THINKING"></a>2. DEEP THINKING</h2></li>
+</ul>
+<h3 id="2-1-Unsolved-problems"><a href="#2-1-Unsolved-problems" class="headerlink" title="2.1 Unsolved problems"></a>2.1 Unsolved problems</h3><ul>
+<li><h3 id="2-2-Enlightenment"><a href="#2-2-Enlightenment" class="headerlink" title="2.2 Enlightenment"></a>2.2 Enlightenment</h3></li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Paper-reading</category>
+      </categories>
+      <tags>
+        <tag>TC4</tag>
+        <tag>SLM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pandora-Speaking</title>
     <url>/posts/pandora-speaking/</url>
-    <content><![CDATA[<h1 id="Day-001-When-39-s-it-due"><a href="#Day-001-When-39-s-it-due" class="headerlink" title="Day-001. When&#39;s it due?"></a>Day-001. When&#39;s it due?</h1><p>什么时候截止？</p>
+    <content><![CDATA[<h1 id="0325-When-39-s-it-due"><a href="#0325-When-39-s-it-due" class="headerlink" title="0325. When&#39;s it due?"></a>0325. When&#39;s it due?</h1><p>什么时候截止？</p>
 <p><strong>due (adj.) 到期的，截止的</strong></p>
 <p>It&#39;s due tomorrow. 明天截止</p>
 <p>有人在敲门，可以问：Who&#39;s it?</p>
@@ -38,7 +124,7 @@
 <p>We are dealing with an impossible deadline.</p>
 <p>You missed the cutoff.</p>
 <p>I hope it hasn&#39;t expired.</p>
-<h1 id="Day-002-Tell-me-a-bit-about-yourself"><a href="#Day-002-Tell-me-a-bit-about-yourself" class="headerlink" title="Day-002. Tell me a bit about yourself."></a>Day-002. Tell me a bit about yourself.</h1><p>介绍下你自己。</p>
+<h1 id="0326-Tell-me-a-bit-about-yourself"><a href="#0326-Tell-me-a-bit-about-yourself" class="headerlink" title="0326. Tell me a bit about yourself."></a>0326. Tell me a bit about yourself.</h1><p>介绍下你自己。</p>
 <p>Tell me about that person. 跟我说说那个人。</p>
 <p>I&#39;ll tell you all about it. 我会把这件事原原本本告诉你。</p>
 <p>Just tell me the truth. 告诉我真相。</p>
@@ -70,7 +156,7 @@
 <p>Because this is not just a job to me, this is what I love. This is what I&#39;m good at.</p>
 <p>Do you have any questions for us?</p>
 <p>None that I can think of.</p>
-<h1 id="Day-003-When-39-s-this-rain-gonna-let-up"><a href="#Day-003-When-39-s-this-rain-gonna-let-up" class="headerlink" title="Day-003 When&#39;s this rain gonna let up?"></a>Day-003 When&#39;s this rain gonna let up?</h1><p>雨什么时候才停？</p>
+<h1 id="0327-When-39-s-this-rain-gonna-let-up"><a href="#0327-When-39-s-this-rain-gonna-let-up" class="headerlink" title="0327. When&#39;s this rain gonna let up?"></a>0327. When&#39;s this rain gonna let up?</h1><p>雨什么时候才停？</p>
 <h2 id="1-Key-Points-2"><a href="#1-Key-Points-2" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p><strong>be gonna do sth. 将要做某事</strong></p>
 <p>What are you gonna do? 你要去做什么？</p>
 <p>I&#39;m gonna hang out. 我要去闲逛。</p>
@@ -99,7 +185,7 @@
 <p>It&#39;s a bit nippy.</p>
 <p>I&#39;m soaking wet - I got caught in a downpour.</p>
 <p>It&#39;s raining cats and dogs.</p>
-<h1 id="Day-004-You-39-re-a-real-pain-in-the-neck-you-konw"><a href="#Day-004-You-39-re-a-real-pain-in-the-neck-you-konw" class="headerlink" title="Day-004 You&#39;re a real pain in the neck, you konw?"></a>Day-004 You&#39;re a real pain in the neck, you konw?</h1><p>你真让人头大。</p>
+<h1 id="0328-You-39-re-a-real-pain-in-the-neck-you-konw"><a href="#0328-You-39-re-a-real-pain-in-the-neck-you-konw" class="headerlink" title="0328. You&#39;re a real pain in the neck, you konw?"></a>0328. You&#39;re a real pain in the neck, you konw?</h1><p>你真让人头大。</p>
 <h2 id="1-Key-Points-3"><a href="#1-Key-Points-3" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p><strong>sth. / sb. is a real sth. 某物 / 某人真……</strong></p>
 <p>Lily is a real pleasure to work with. 和Lily一起工作真舒服。</p>
 <p>She&#39;s always been a real jerk. 她一直很讨厌。</p>
@@ -120,7 +206,7 @@
 <p>There are so many fly-by-night life coaches.</p>
 <p>You&#39;re lame.</p>
 <p>That&#39;s a lousy conversation starter.</p>
-<h1 id="Day-005-It-39-s-such-a-waste-of-time"><a href="#Day-005-It-39-s-such-a-waste-of-time" class="headerlink" title="Day-005 It&#39;s such a waste of time."></a>Day-005 It&#39;s such a waste of time.</h1><p>简直就是浪费时间。</p>
+<h1 id="0329-It-39-s-such-a-waste-of-time"><a href="#0329-It-39-s-such-a-waste-of-time" class="headerlink" title="0329. It&#39;s such a waste of time."></a>0329. It&#39;s such a waste of time.</h1><p>简直就是浪费时间。</p>
 <h2 id="1-Key-Points-4"><a href="#1-Key-Points-4" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p><strong>sb. / sth. is such a ... 某人/某物 真是...</strong></p>
 <p>That&#39;s such a good film. 那部电影真不错。</p>
 <p><strong>work it all out 想办法解决</strong></p>
@@ -140,7 +226,30 @@
 <p>What a complete and utter waste of my time.</p>
 <p>That was a waste of time, I&#39;m such an idiot.</p>
 <p>He frittered away the millions his father had left him.</p>
-]]></content>
+<h1 id="0330-Wow-What-a-big-boy"><a href="#0330-Wow-What-a-big-boy" class="headerlink" title="0330. Wow. What a big boy!"></a>0330. Wow. What a big boy!</h1><p>哇，简直像个小大人儿！</p>
+<h2 id="1-Key-Points-5"><a href="#1-Key-Points-5" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p>What a ... 太...</p>
+<p>What a gentleman! Thank you very much. 真是一位绅士！非常感谢。</p>
+<p>What a mess! Put everything in order right now! 太乱了！马上把所有东西收拾好！</p>
+<p>You are a big boy now, Jack. 你已经可以独当一面了，杰克。</p>
+<h2 id="2-Extended-Expressions-5"><a href="#2-Extended-Expressions-5" class="headerlink" title="2. Extended Expressions"></a>2. Extended Expressions</h2><p>Thumbs up! 给你点赞！</p>
+<p>You&#39;re all grown up. 都长大成人了。</p>
+<h2 id="3-Review-5"><a href="#3-Review-5" class="headerlink" title="3. Review"></a>3. Review</h2><p>Wow. What a big boy!</p>
+<p>Wow, really? That&#39;s hard to believe.</p>
+<p>What a surprise!</p>
+<p>You are a big boy now, Jack.</p>
+<p>Thumbs up!</p>
+<p>Well done.</p>
+<h1 id="0331-You-sound-horrible"><a href="#0331-You-sound-horrible" class="headerlink" title="0331. You sound horrible!"></a>0331. You sound horrible!</h1><p>听起来你病得挺重的。</p>
+<h2 id="1-Key-Points-6"><a href="#1-Key-Points-6" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p>sb sounds + adj. 说话声音听起来...</p>
+<p>His voice sounded strange <strong>on the phone</strong>. 他的声音在电话里听着很怪。</p>
+<h2 id="2-Extended-Expressions-6"><a href="#2-Extended-Expressions-6" class="headerlink" title="2. Extended Expressions"></a>2. Extended Expressions</h2><h2 id="3-Review-6"><a href="#3-Review-6" class="headerlink" title="3. Review"></a>3. Review</h2><h1 id="0531-Think-of-this-as-an-opportunity"><a href="#0531-Think-of-this-as-an-opportunity" class="headerlink" title="0531. Think of this as an opportunity"></a>0531. Think of this as an opportunity</h1><h2 id="1-Key-Points-7"><a href="#1-Key-Points-7" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><p>think of sth as sth. 把某事当作另外一种给不同的事看待。</p>
+<p>I don&#39;t want you think of me as some sort of authority figure. 业界的权威人士</p>
+<h2 id="2-Extended-Expressions-7"><a href="#2-Extended-Expressions-7" class="headerlink" title="2. Extended Expressions"></a>2. Extended Expressions</h2><p>You have to see your opportunity and take it. 你得看到机会，抓住机会。</p>
+<p>I&#39;d like to take this opportunity to thank you for all your help. 我要借此机会对你们的帮助表示感谢。</p>
+<p>seize/grab the chance  抓住机会</p>
+<p><u>jump at</u> the chance 抓住机会</p>
+<p>If she needs anything, go for it. See the shot and take it. 对她有求必应，看到机会，抓住机会。</p>
+<h1 id="0000-Title"><a href="#0000-Title" class="headerlink" title="0000. Title"></a>0000. Title</h1><h2 id="1-Key-Points-8"><a href="#1-Key-Points-8" class="headerlink" title="1. Key Points"></a>1. Key Points</h2><h2 id="2-Extended-Expressions-8"><a href="#2-Extended-Expressions-8" class="headerlink" title="2. Extended Expressions"></a>2. Extended Expressions</h2>]]></content>
       <categories>
         <category>English</category>
       </categories>
@@ -286,7 +395,7 @@
 <h1 id="第三章-最初的亚欧大陆文明"><a href="#第三章-最初的亚欧大陆文明" class="headerlink" title="第三章 最初的亚欧大陆文明"></a>第三章 最初的亚欧大陆文明</h1><h2 id="3-3-古代文明的类型"><a href="#3-3-古代文明的类型" class="headerlink" title="3.3 古代文明的类型"></a>3.3 古代文明的类型</h2><p>印度河：印度河文明衰落的起因和详情尚不清楚，因为人们迄今未能释读印度河流域的文字。印度河流域的文字为象形文字，上一行由左往右读，下一行由右往左读。这种写法也为早期希腊人所效仿，被称为“由左而右，复由右而左交互成行之书法”——“就像牛犁耕地一样”。</p>
 <p>商朝：约公元前1500年前后建立商朝的入侵者学习和掌握了<strong>中东人发明的种植小麦、冶铸青铜武器和制造马拉战车的技术</strong>。在商朝废墟中发现的复杂的表意文字，对中国和整个东亚后来的历史极为重要。它时现代汉字的直系祖先；这一点也可用来说明中国文明的连续性。几千年来，中东人一直不能释读他们祖先的象形文字和楔形文字，而现代中国人却能读通商朝文字。</p>
 <p>约公元前1500年前后，手执青铜武器的战车兵也入侵了遥远的中国北部的黄河流域。在那里，他们发现了商文明这种繁盛的新石器时代的文化；他们为商文明做出了自己的贡献，但也为商文明所同化。在中国，真实的情况始终是，这些入侵并没有引起与中国文化历史的彻底决裂，而在希腊和印度，情况则正好相反。</p>
-<h1 id="第四章-古典文明开启欧亚大陆整体化"><a href="#第四章-古典文明开启欧亚大陆整体化" class="headerlink" title="第四章 古典文明开启欧亚大陆整体化"></a>第四章 古典文明开启欧亚大陆整体化</h1><h2 id="4-1-整体化的根源"><a href="#4-1-整体化的根源" class="headerlink" title="4.1 整体化的根源"></a>4.1 整体化的根源</h2><p>技术进步是新的欧亚大陆整体化的基础。<strong>从人类历史真正开始之日起，人类的活动范围就一直取决于起技术水平。</strong>在人来处于食品采集阶段时，人类各群体的活动范围仅限于其狩猎场所；当人类学会农业、冶金术和造船技术时，活动范围就扩大了。到了古典时代，技术进一步发展，使农业和文明的扩展大大超越过去，因而，有了地区性的帝国，这些帝国继续扩大自己的疆域，彼此邻接起来，横贯欧亚大陆。这时的技术进步主要表现为铁的发明及其日益广泛的使用。</p>
+<h1 id="第四章-古典文明开启欧亚大陆整体化"><a href="#第四章-古典文明开启欧亚大陆整体化" class="headerlink" title="第四章 古典文明开启欧亚大陆整体化"></a>第四章 古典文明开启欧亚大陆整体化</h1><h2 id="4-1-整体化的根源"><a href="#4-1-整体化的根源" class="headerlink" title="4.1 整体化的根源"></a>4.1 整体化的根源</h2><p>技术进步是新的欧亚大陆整体化的基础。<strong>从人类历史真正开始之日起，人类的活动范围就一直取决于其技术水平。</strong>在人来处于食品采集阶段时，人类各群体的活动范围仅限于其狩猎场所；当人类学会农业、冶金术和造船技术时，活动范围就扩大了。到了古典时代，技术进一步发展，使农业和文明的扩展大大超越过去，因而，有了地区性的帝国，这些帝国继续扩大自己的疆域，彼此邻接起来，横贯欧亚大陆。这时的技术进步主要表现为铁的发明及其日益广泛的使用。</p>
 ]]></content>
       <categories>
         <category>History</category>
@@ -374,7 +483,12 @@
 <li>how Ti-6Al-4V micro-structure characteristics vary between selected AM processes;</li>
 <li>how hydrogen may influence the alloy’s performance. </li>
 </ul>
-<h3 id="1-2-Main-points-amp-Supporting-arguments"><a href="#1-2-Main-points-amp-Supporting-arguments" class="headerlink" title="1.2 Main points &amp; Supporting arguments"></a>1.2 Main points &amp; Supporting arguments</h3><h3 id="1-3-Characterization-methods"><a href="#1-3-Characterization-methods" class="headerlink" title="1.3 Characterization methods"></a>1.3 Characterization methods</h3><ul>
+<h3 id="1-2-Main-points-amp-Supporting-arguments"><a href="#1-2-Main-points-amp-Supporting-arguments" class="headerlink" title="1.2 Main points &amp; Supporting arguments"></a>1.2 Main points &amp; Supporting arguments</h3><p>（主要观点和支持性论据）</p>
+<ul>
+<li>In AM built Ti-6Al-4V the β grains morphology changes drastically by changing from 1 to 5 mm in wall thickness. When the wall is thinner than 2 mm, a curved  morphology of the β grains is formed at the outer layer. Which is explained by that the finely curved β grains are nucleated from the surrounding powder bed growing inwards following the melt pool, until meeting an upward growing β grain that nucleates from the previously deposited layer where no powder nucleation was possible.</li>
+<li></li>
+</ul>
+<h3 id="1-3-Characterization-methods"><a href="#1-3-Characterization-methods" class="headerlink" title="1.3 Characterization methods"></a>1.3 Characterization methods</h3><ul>
 <li>light optical microscopes (LOM) </li>
 <li>scanning electron microscopes (SEM)</li>
 <li>neutron time of flight (TOF) diffraction--&gt; to study the texture within the material</li>
@@ -383,6 +497,9 @@
 <h3 id="1-4-Mechanism"><a href="#1-4-Mechanism" class="headerlink" title="1.4 Mechanism"></a>1.4 Mechanism</h3><h3 id="1-5-Nice-writing-expressions"><a href="#1-5-Nice-writing-expressions" class="headerlink" title="1.5 Nice writing expressions"></a>1.5 Nice writing expressions</h3><ul>
 <li>High amounts of α phase, i.e. a large number of HCP crystals,renders the alloy <u>more prone to</u> anisotropy in case of strong texture, <u>due to</u> the inherent anisotropy of the HCP crystal structure.</li>
 <li>The atomic packing factor is slightly higher for HCP than for BCC, 0.74 and 0.68 <u>respectively</u>.</li>
+<li>When the wall is thinner than 2 mm, a curved morphology of the β grains is formed at the outer layer. <u>Which is explained by</u> that the finely curved β grains are nucleated from the surrounding powder bed growing inwards <u>following</u> the melt pool, until meeting an upward growing β grain that nucleates from the previously deposited layer where no powder nucleation was possible.</li>
+<li><u>What these AM processes all have in common</u> is fast cooling rates.</li>
+<li></li>
 </ul>
 <h2 id="2-DEEP-THINKING"><a href="#2-DEEP-THINKING" class="headerlink" title="2. DEEP THINKING"></a>2. DEEP THINKING</h2><h3 id="2-1-Unsolved-problems"><a href="#2-1-Unsolved-problems" class="headerlink" title="2.1 Unsolved problems"></a>2.1 Unsolved problems</h3><h3 id="2-2-Enlightenment"><a href="#2-2-Enlightenment" class="headerlink" title="2.2 Enlightenment"></a>2.2 Enlightenment</h3>]]></content>
       <categories>
@@ -396,7 +513,7 @@
   <entry>
     <title>掠过湖面的微风</title>
     <url>/posts/special-things-in-life/</url>
-    <content><![CDATA[<p>读文章时，看访谈节目时，亦或是与人闲谈时，偶尔会有那么几个让我脑海中荡起波纹的时刻。好似在沉睡中被人叫醒，又似肖申克监狱的扬声器里传出意大利歌曲。</p>
+    <content><![CDATA[<p>读文章时，看访谈节目时，亦或是与人闲谈时，偶尔会有那么几个让我脑海中荡起波纹的时刻。好似在沉睡中被人唤醒，又似肖申克监狱的扬声器里传出意大利歌曲。</p>
 <h2 id="1-越是舒服的时候，可能越危险"><a href="#1-越是舒服的时候，可能越危险" class="headerlink" title="1. 越是舒服的时候，可能越危险"></a>1. 越是舒服的时候，可能越危险</h2><div align=center><img src="https://i.loli.net/2020/03/11/7CvUgSqweuWQIZs.jpg" width="60%" height="60%"></div>
 
 <h2 id="2-虚拟世界里的成就，在现实世界中一文不值"><a href="#2-虚拟世界里的成就，在现实世界中一文不值" class="headerlink" title="2. 虚拟世界里的成就，在现实世界中一文不值"></a>2. 虚拟世界里的成就，在现实世界中一文不值</h2><div align=center><img src="https://i.loli.net/2020/03/11/s8G9RHn5iNwQhjo.jpg" width="60%" height="60%"></div>
@@ -417,7 +534,11 @@
 
 <center>（体心立方四托一，而六方密积和面心立方三托一）</center>
 
-<h2 id="7-哪有什么岁月静好，不过是有人替你负重前行"><a href="#7-哪有什么岁月静好，不过是有人替你负重前行" class="headerlink" title="7. 哪有什么岁月静好，不过是有人替你负重前行"></a>7. 哪有什么岁月静好，不过是有人替你负重前行</h2><div align=center><img src="https://i.loli.net/2020/03/25/At2imq1hHfTxNnM.jpg" width="60%" height="60%"></div>]]></content>
+<h2 id="7-哪有什么岁月静好，不过是有人替你负重前行"><a href="#7-哪有什么岁月静好，不过是有人替你负重前行" class="headerlink" title="7. 哪有什么岁月静好，不过是有人替你负重前行"></a>7. 哪有什么岁月静好，不过是有人替你负重前行</h2><div align=center><img src="https://i.loli.net/2020/03/25/At2imq1hHfTxNnM.jpg" width="60%" height="60%"></div>
+
+<h2 id="8-打败焦虑最好的方法，是去做那些让你焦虑的事"><a href="#8-打败焦虑最好的方法，是去做那些让你焦虑的事" class="headerlink" title="8. 打败焦虑最好的方法，是去做那些让你焦虑的事"></a>8. 打败焦虑最好的方法，是去做那些让你焦虑的事</h2><p>我们之所以觉得焦虑，无非是因为现在的自己和想象中的自己，很有距离。</p>
+<p>那就摒弃杂念，去做那个想象中的自己。</p>
+<h2 id="9-马化腾不玩王者荣耀，张一鸣不刷抖音"><a href="#9-马化腾不玩王者荣耀，张一鸣不刷抖音" class="headerlink" title="9. 马化腾不玩王者荣耀，张一鸣不刷抖音"></a>9. 马化腾不玩王者荣耀，张一鸣不刷抖音</h2>]]></content>
       <categories>
         <category>Life</category>
       </categories>
@@ -432,31 +553,58 @@
 <p><strong><font color=#499ae0>注：以后听视频课，一定要同时做笔记</font></strong></p>
 </blockquote>
 <h2 id="一、常用Linix语句"><a href="#一、常用Linix语句" class="headerlink" title="一、常用Linix语句"></a>一、常用Linix语句</h2><ol>
-<li><code>ls</code> --&gt; 查看目录中的文件</li>
-<li><code>pwd</code> --&gt; 显示当前工作路径</li>
-<li><code>mkdir [文件名]</code> --&gt; 新建一个文件夹</li>
-<li><code>git config --global user.name &#39;[用户名]&#39;</code> --&gt; 设置用户名</li>
-<li><code>git config --global user.email &#39;[邮箱地址]&#39;</code> --&gt; 设置用户邮箱</li>
-<li><code>git config --list</code> --&gt; 查看设置</li>
-<li><code>git init</code> --&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</li>
-<li><code>touch [文件名]</code> --&gt; 新建一个文件</li>
-<li><code>vim [文件名]</code> --&gt; 进入vim编辑器进行修改文件</li>
-<li>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</li>
-<li><code>cat [文件名]</code>  --&gt; 从第一个字节开始正向查看文件的内容 </li>
-<li><code>git status</code> --&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</li>
-<li><code>git diff</code> --&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</li>
-<li><code>git add [文件名]</code> --&gt; 把文件从工作区添加到暂存区</li>
-<li><code>git reset -- [文件名]</code>  --&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</li>
-<li><code>git rm [文件名]</code> --&gt; 从暂存区中删除文件</li>
-<li><code>git commit -m &#39;[提交描述]&#39;</code> --&gt; 把文件从暂存区提交到本地仓库</li>
-<li><code>git push</code> --&gt; 将文件从本地仓库同步到Github</li>
-<li><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </li>
-<li><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</li>
-<li><code>git clone [仓库地址]</code>  --&gt; 将远程仓库复制到本地</li>
-<li><code>git log</code> --&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    --&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   --&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   --&gt; 一行显示提交历史<br><code>git log -n</code>   --&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   --&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</li>
-<li><code>git reflog</code> --&gt; 查看所有版本记录（可用于历史记录回滚）</li>
-<li><code>git reset --hard [历史版本号]</code> --&gt; 回滚到历史某一个版本</li>
-<li><code>git branch</code> --&gt;  查看本地全部分支信息；<br><code>git branch -r</code> --&gt; 查看远程所有分支；<br><code>git branch -a</code> --&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> --&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> --&gt; 比上一个多显示出远程分支名</li>
+<li><p><code>ls</code> --&gt; 查看目录中的文件</p>
+</li>
+<li><p><code>pwd</code> --&gt; 显示当前工作路径</p>
+</li>
+<li><p><code>mkdir [文件名]</code> --&gt; 新建一个文件夹</p>
+</li>
+<li><p><code>git config --global user.name &#39;[用户名]&#39;</code> --&gt; 设置用户名</p>
+</li>
+<li><p><code>git config --global user.email &#39;[邮箱地址]&#39;</code> --&gt; 设置用户邮箱</p>
+</li>
+<li><p><code>git config --list</code> --&gt; 查看设置</p>
+</li>
+<li><p><code>git init</code> --&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</p>
+</li>
+<li><p><code>touch [文件名]</code> --&gt; 新建一个文件</p>
+</li>
+<li><p><code>vim [文件名]</code> --&gt; 进入vim编辑器进行修改文件</p>
+</li>
+<li><p>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</p>
+</li>
+<li><p><code>cat [文件名]</code>  --&gt; 从第一个字节开始正向查看文件的内容 </p>
+</li>
+<li><p><code>git status</code> --&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</p>
+</li>
+<li><p><code>git diff</code> --&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</p>
+</li>
+<li><p><code>git add [文件名]</code> --&gt; 把文件从工作区添加到暂存区</p>
+</li>
+<li><p><code>git reset -- [文件名]</code>  --&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</p>
+</li>
+<li><p><code>git rm [文件名]</code> --&gt; 从暂存区中删除文件</p>
+</li>
+<li><p><code>git commit -m &#39;[提交描述]&#39;</code> --&gt; 把文件从暂存区提交到本地仓库</p>
+</li>
+<li><p><code>git push</code> --&gt; 将文件从本地仓库同步到Github</p>
+</li>
+<li><p><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </p>
+</li>
+<li><p><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</p>
+</li>
+<li><p><strong><code>git clone [仓库地址]</code>  --&gt; 将远程仓库复制到本地</strong></p>
+<p>在当前文件夹下，会出现一个与远程仓库同名的文件夹，里面有仓库的所有内容</p>
+<p><code>git clone [仓库地址] [新文件名]</code> --&gt; git克隆远程仓库，并在本地重命名</p>
+</li>
+<li><p><code>git log</code> --&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    --&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   --&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   --&gt; 一行显示提交历史<br><code>git log -n</code>   --&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   --&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</p>
+</li>
+<li><p><code>git reflog</code> --&gt; 查看所有版本记录（可用于历史记录回滚）</p>
+</li>
+<li><p><code>git reset --hard [历史版本号]</code> --&gt; 回滚到历史某一个版本</p>
+</li>
+<li><p><code>git branch</code> --&gt;  查看本地全部分支信息；<br><code>git branch -r</code> --&gt; 查看远程所有分支；<br><code>git branch -a</code> --&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> --&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> --&gt; 比上一个多显示出远程分支名</p>
+</li>
 </ol>
 <div align=center><img src="https://i.loli.net/2020/03/13/xP9R34UV7Xadj5k.png" width="100%" height="100%"></div>
 
@@ -491,8 +639,11 @@
 <li>Dealing with &quot;Merge Conflicts&quot;. </li>
 </ul>
 <h2 id="二、Git初始化及仓库创建和操作"><a href="#二、Git初始化及仓库创建和操作" class="headerlink" title="二、Git初始化及仓库创建和操作"></a>二、Git初始化及仓库创建和操作</h2><ol>
-<li>基本信息设置 （用户名+邮箱）</li>
-<li>初始化一个新的Git仓库</li>
+<li><p>基本信息设置 （用户名+邮箱）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name 'hughwyc'</span><br><span class="line">git config --global user.email 'hugh.wyc@gmail.com'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化一个新的Git仓库</p>
+</li>
 </ol>
 <h2 id="三、向仓库中添加文件"><a href="#三、向仓库中添加文件" class="headerlink" title="三、向仓库中添加文件"></a>三、向仓库中添加文件</h2><ol>
 <li>新建文件</li>

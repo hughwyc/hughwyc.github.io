@@ -32,7 +32,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.loli.net/2020/03/13/xP9R34UV7Xadj5k.png">
 <meta property="article:published_time" content="2020-03-09T11:40:00.000Z">
-<meta property="article:modified_time" content="2020-03-25T08:29:46.419Z">
+<meta property="article:modified_time" content="2020-05-31T02:43:21.734Z">
 <meta property="article:author" content="Hugh Davis">
 <meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
@@ -229,7 +229,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-25 16:29 16:29:46" itemprop="dateModified" datetime="2020-03-25T16:29:46+08:00">2020-03-25 16:29</time>
+                <time title="Modified: 2020-05-31 10:43 10:43:21" itemprop="dateModified" datetime="2020-05-31T10:43:21+08:00">2020-05-31 10:43</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,7 +268,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5k</span>
+              <span>5.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -290,31 +290,58 @@
 <p><strong><font color=#499ae0>注：以后听视频课，一定要同时做笔记</font></strong></p>
 </blockquote>
 <h2 id="一、常用Linix语句"><a href="#一、常用Linix语句" class="headerlink" title="一、常用Linix语句"></a>一、常用Linix语句</h2><ol>
-<li><code>ls</code> --&gt; 查看目录中的文件</li>
-<li><code>pwd</code> --&gt; 显示当前工作路径</li>
-<li><code>mkdir [文件名]</code> --&gt; 新建一个文件夹</li>
-<li><code>git config --global user.name &#39;[用户名]&#39;</code> --&gt; 设置用户名</li>
-<li><code>git config --global user.email &#39;[邮箱地址]&#39;</code> --&gt; 设置用户邮箱</li>
-<li><code>git config --list</code> --&gt; 查看设置</li>
-<li><code>git init</code> --&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</li>
-<li><code>touch [文件名]</code> --&gt; 新建一个文件</li>
-<li><code>vim [文件名]</code> --&gt; 进入vim编辑器进行修改文件</li>
-<li>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</li>
-<li><code>cat [文件名]</code>  --&gt; 从第一个字节开始正向查看文件的内容 </li>
-<li><code>git status</code> --&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</li>
-<li><code>git diff</code> --&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</li>
-<li><code>git add [文件名]</code> --&gt; 把文件从工作区添加到暂存区</li>
-<li><code>git reset -- [文件名]</code>  --&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</li>
-<li><code>git rm [文件名]</code> --&gt; 从暂存区中删除文件</li>
-<li><code>git commit -m &#39;[提交描述]&#39;</code> --&gt; 把文件从暂存区提交到本地仓库</li>
-<li><code>git push</code> --&gt; 将文件从本地仓库同步到Github</li>
-<li><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </li>
-<li><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</li>
-<li><code>git clone [仓库地址]</code>  --&gt; 将远程仓库复制到本地</li>
-<li><code>git log</code> --&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    --&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   --&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   --&gt; 一行显示提交历史<br><code>git log -n</code>   --&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   --&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</li>
-<li><code>git reflog</code> --&gt; 查看所有版本记录（可用于历史记录回滚）</li>
-<li><code>git reset --hard [历史版本号]</code> --&gt; 回滚到历史某一个版本</li>
-<li><code>git branch</code> --&gt;  查看本地全部分支信息；<br><code>git branch -r</code> --&gt; 查看远程所有分支；<br><code>git branch -a</code> --&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> --&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> --&gt; 比上一个多显示出远程分支名</li>
+<li><p><code>ls</code> --&gt; 查看目录中的文件</p>
+</li>
+<li><p><code>pwd</code> --&gt; 显示当前工作路径</p>
+</li>
+<li><p><code>mkdir [文件名]</code> --&gt; 新建一个文件夹</p>
+</li>
+<li><p><code>git config --global user.name &#39;[用户名]&#39;</code> --&gt; 设置用户名</p>
+</li>
+<li><p><code>git config --global user.email &#39;[邮箱地址]&#39;</code> --&gt; 设置用户邮箱</p>
+</li>
+<li><p><code>git config --list</code> --&gt; 查看设置</p>
+</li>
+<li><p><code>git init</code> --&gt; 初始化一个仓库（生成一个<code>.git</code>文件夹，用于存储本地仓库的信息）</p>
+</li>
+<li><p><code>touch [文件名]</code> --&gt; 新建一个文件</p>
+</li>
+<li><p><code>vim [文件名]</code> --&gt; 进入vim编辑器进行修改文件</p>
+</li>
+<li><p>在vim编辑器中，按下<code>i</code>进入输入模式，按下<code>esc</code>键退出输入模式，输入<code>:wq</code>或<code>:x</code>可进行保存并退出（或按下快捷键<code>shift + z z</code>）</p>
+</li>
+<li><p><code>cat [文件名]</code>  --&gt; 从第一个字节开始正向查看文件的内容 </p>
+</li>
+<li><p><code>git status</code> --&gt; 查看当前所有文件的状况（所在的位置，是工作区还是暂存区）</p>
+</li>
+<li><p><code>git diff</code> --&gt; 对比查看工作区被跟踪的文件的修改详情（ 只有在版本区中存在的文件才是被跟踪文件 ）</p>
+</li>
+<li><p><code>git add [文件名]</code> --&gt; 把文件从工作区添加到暂存区</p>
+</li>
+<li><p><code>git reset -- [文件名]</code>  --&gt; 撤回暂存区中对某文件的修改（若不写文件名，则全部撤回）</p>
+</li>
+<li><p><code>git rm [文件名]</code> --&gt; 从暂存区中删除文件</p>
+</li>
+<li><p><code>git commit -m &#39;[提交描述]&#39;</code> --&gt; 把文件从暂存区提交到本地仓库</p>
+</li>
+<li><p><code>git push</code> --&gt; 将文件从本地仓库同步到Github</p>
+</li>
+<li><p><code>rm -f file1</code> 删除一个叫做 ‘file1′ 的文件’ </p>
+</li>
+<li><p><code>rm -rf dir1</code> 删除一个叫做 ‘dir1’ 的目录并同时删除其子文件</p>
+</li>
+<li><p><strong><code>git clone [仓库地址]</code>  --&gt; 将远程仓库复制到本地</strong></p>
+<p>在当前文件夹下，会出现一个与远程仓库同名的文件夹，里面有仓库的所有内容</p>
+<p><code>git clone [仓库地址] [新文件名]</code> --&gt; git克隆远程仓库，并在本地重命名</p>
+</li>
+<li><p><code>git log</code> --&gt; 查看版本区(本地仓库)的历史提交记录（倒序）<br><code>git log --reverse</code>    --&gt;  查看时间正序排列的历史提交信记录<br><code>git log [分支名]</code>   --&gt; 查看某分支的提交历史，不写分支名查看当前所在分支<br><code>git log --oneline</code>   --&gt; 一行显示提交历史<br><code>git log -n</code>   --&gt; 其中 n 是数字，查看最近 n 个提交<br><code>git log --author [贡献者名字]</code>   --&gt; 查看指定贡献者的提交记录<br><code>git log --graph  --&gt;</code> 图示法显示提交历史</p>
+</li>
+<li><p><code>git reflog</code> --&gt; 查看所有版本记录（可用于历史记录回滚）</p>
+</li>
+<li><p><code>git reset --hard [历史版本号]</code> --&gt; 回滚到历史某一个版本</p>
+</li>
+<li><p><code>git branch</code> --&gt;  查看本地全部分支信息；<br><code>git branch -r</code> --&gt; 查看远程所有分支；<br><code>git branch -a</code> --&gt; 查看本地和远程所有分支（仅显示分支名）<br><code>git branch -v</code> --&gt; 显示本地分支名、版本号、本地分支与远程分支的提交同步状态、最新的提交信息<br><code>git branch -vv</code> --&gt; 比上一个多显示出远程分支名</p>
+</li>
 </ol>
 <div align=center><img src="https://i.loli.net/2020/03/13/xP9R34UV7Xadj5k.png" width="100%" height="100%"></div>
 
@@ -349,8 +376,11 @@
 <li>Dealing with &quot;Merge Conflicts&quot;. </li>
 </ul>
 <h2 id="二、Git初始化及仓库创建和操作"><a href="#二、Git初始化及仓库创建和操作" class="headerlink" title="二、Git初始化及仓库创建和操作"></a>二、Git初始化及仓库创建和操作</h2><ol>
-<li>基本信息设置 （用户名+邮箱）</li>
-<li>初始化一个新的Git仓库</li>
+<li><p>基本信息设置 （用户名+邮箱）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name 'hughwyc'</span><br><span class="line">git config --global user.email 'hugh.wyc@gmail.com'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化一个新的Git仓库</p>
+</li>
 </ol>
 <h2 id="三、向仓库中添加文件"><a href="#三、向仓库中添加文件" class="headerlink" title="三、向仓库中添加文件"></a>三、向仓库中添加文件</h2><ol>
 <li>新建文件</li>
@@ -530,7 +560,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -543,7 +573,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
