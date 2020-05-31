@@ -24,6 +24,11 @@ To increase the understanding of:
 
 ### 1.2 Main points & Supporting arguments
 
+（主要观点和支持性论据）
+
+* In AM built Ti-6Al-4V the β grains morphology changes drastically by changing from 1 to 5 mm in wall thickness. When the wall is thinner than 2 mm, a curved  morphology of the β grains is formed at the outer layer. Which is explained by that the finely curved β grains are nucleated from the surrounding powder bed growing inwards following the melt pool, until meeting an upward growing β grain that nucleates from the previously deposited layer where no powder nucleation was possible.
+* 
+
 
 
 ### 1.3 Characterization methods
@@ -41,6 +46,9 @@ To increase the understanding of:
 
 * High amounts of α phase, i.e. a large number of HCP crystals,renders the alloy <u>more prone to</u> anisotropy in case of strong texture, <u>due to</u> the inherent anisotropy of the HCP crystal structure.
 * The atomic packing factor is slightly higher for HCP than for BCC, 0.74 and 0.68 <u>respectively</u>.
+* When the wall is thinner than 2 mm, a curved morphology of the β grains is formed at the outer layer. <u>Which is explained by</u> that the finely curved β grains are nucleated from the surrounding powder bed growing inwards <u>following</u> the melt pool, until meeting an upward growing β grain that nucleates from the previously deposited layer where no powder nucleation was possible.
+* <u>What these AM processes all have in common</u> is fast cooling rates.
+* 
 
 ## 2. DEEP THINKING
 

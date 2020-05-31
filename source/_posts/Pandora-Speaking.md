@@ -5,13 +5,13 @@ visitor: true
 comment_count: true
 date: 2020-03-25 11:58:03
 id: pandora-speaking
-top: 3
+top: 
 tags: english
 categories: English
 description: 2020年03月25日，开始为期180天的潘多拉口语学习课程
 ---
 
-# Day-001. When's it due?
+# 0325. When's it due?
 
 什么时候截止？
 
@@ -89,7 +89,7 @@ You missed the cutoff.
 
 I hope it hasn't expired.
 
-# Day-002. Tell me a bit about yourself.
+# 0326. Tell me a bit about yourself.
 
 介绍下你自己。
 
@@ -161,7 +161,7 @@ Do you have any questions for us?
 
 None that I can think of.
 
-# Day-003 When's this rain gonna let up?
+# 0327. When's this rain gonna let up?
 
 雨什么时候才停？
 
@@ -227,7 +227,7 @@ I'm soaking wet - I got caught in a downpour.
 
 It's raining cats and dogs.
 
-# Day-004 You're a real pain in the neck, you konw?
+# 0328. You're a real pain in the neck, you konw?
 
 你真让人头大。
 
@@ -277,7 +277,7 @@ You're lame.
 
 That's a lousy conversation starter.
 
-# Day-005 It's such a waste of time.
+# 0329. It's such a waste of time.
 
 简直就是浪费时间。
 
@@ -324,3 +324,79 @@ What a complete and utter waste of my time.
 That was a waste of time, I'm such an idiot.
 
 He frittered away the millions his father had left him.
+
+# 0330. Wow. What a big boy!
+
+哇，简直像个小大人儿！
+
+## 1. Key Points
+
+What a ... 太...
+
+What a gentleman! Thank you very much. 真是一位绅士！非常感谢。
+
+What a mess! Put everything in order right now! 太乱了！马上把所有东西收拾好！
+
+You are a big boy now, Jack. 你已经可以独当一面了，杰克。
+
+## 2. Extended Expressions
+
+Thumbs up! 给你点赞！
+
+You're all grown up. 都长大成人了。
+
+## 3. Review
+
+Wow. What a big boy!
+
+Wow, really? That's hard to believe.
+
+What a surprise!
+
+You are a big boy now, Jack.
+
+Thumbs up!
+
+Well done.
+
+# 0331. You sound horrible!
+
+听起来你病得挺重的。
+
+## 1. Key Points
+
+sb sounds + adj. 说话声音听起来...
+
+His voice sounded strange **on the phone**. 他的声音在电话里听着很怪。
+
+## 2. Extended Expressions
+
+## 3. Review
+
+
+
+# 0531. Think of this as an opportunity
+
+## 1. Key Points
+
+think of sth as sth. 把某事当作另外一种给不同的事看待。
+
+I don't want you think of me as some sort of authority figure. 业界的权威人士
+
+## 2. Extended Expressions
+
+You have to see your opportunity and take it. 你得看到机会，抓住机会。
+
+I'd like to take this opportunity to thank you for all your help. 我要借此机会对你们的帮助表示感谢。
+
+seize/grab the chance  抓住机会
+
+<u>jump at</u> the chance 抓住机会
+
+If she needs anything, go for it. See the shot and take it. 对她有求必应，看到机会，抓住机会。
+
+# 0000. Title
+
+## 1. Key Points
+
+## 2. Extended Expressions

@@ -5,7 +5,7 @@ visitor: true
 comment_count: true
 date: 2020-03-22 12:15:11
 id: go-study
-top: 2
+top: 
 tags: golang
 categories: Coding
 description: 重新系统学习Golang

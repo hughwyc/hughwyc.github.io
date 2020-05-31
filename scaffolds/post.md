@@ -2,6 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 id: 
+notshow:
 top: 
 tags: 
 categories: 
