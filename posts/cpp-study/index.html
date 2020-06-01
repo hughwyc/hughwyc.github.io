@@ -31,7 +31,7 @@
 <meta property="og:description" content="重新系统学习C++，随时记录">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-31T06:32:27.000Z">
-<meta property="article:modified_time" content="2020-05-31T06:43:35.526Z">
+<meta property="article:modified_time" content="2020-06-01T02:46:54.395Z">
 <meta property="article:author" content="Hugh Davis">
 <meta property="article:tag" content="[object Object]">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-31 14:43 14:43:35" itemprop="dateModified" datetime="2020-05-31T14:43:35+08:00">2020-05-31 14:43</time>
+                <time title="Modified: 2020-06-01 10:46 10:46:54" itemprop="dateModified" datetime="2020-06-01T10:46:54+08:00">2020-06-01 10:46</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -266,14 +266,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>831</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>2 mins.</span>
             </span>
         </div>
       </header>
@@ -284,19 +284,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="1-命名空间namespace的作用"><a href="#1-命名空间namespace的作用" class="headerlink" title="1. 命名空间namespace的作用"></a>1. 命名空间namespace的作用</h3><p>命名空间是ANSIC++引入的可以由用户命名的作用域，用来处理程序中常见的同名冲突。</p>
-<p>在 C语言中定义了3个层次的作用域，即文件(编译单元)、函数和复合语句。C++又引入了类作用域，类是出现在文件内的。在不同的作用域中可以定义相同名字的变量，互不干扰，系统能够区别它们。</p>
+        <h3 id="1-命名空间namespace"><a href="#1-命名空间namespace" class="headerlink" title="1. 命名空间namespace"></a>1. 命名空间namespace</h3><p>命名空间是ANSIC++引入的可以由用户命名的作用域，用来处理程序中常见的同名冲突。</p>
 <p>在 文件中可以定义全局变量(global variable)，它的作用域是整个程序。如果在文件A中定义了一个变量a int a=3；在文件B中可以再定义一个变量a int a=5;</p>
 <p>在分别对文件A和文件B进行编译时不会有问题。但是，如果一个程序包括文件A和文件B，那么在进行连接时，会报告出错，因为在同一个程序中有两个同名的变量，认为是对变量的重复定义。</p>
-<p>可 以通过extern声明同一程序中的两个文件中的同名变量是同一个变量。如果在文件B中有以下声明：</p>
-<p>extem int a；</p>
-<p>表示文件B中的变量a是在其他文件中已定义的变量。由于有此声明，在程序编译和连接后，文件A的变量a的作用域扩展到了文件B。</p>
+<p>可以通过extern声明同一程序中的两个文件中的同名变量是同一个变量。如果在文件B中有：<code>extem int a；</code>，表示文件B中的变量a是在其他文件中已定义的变量。由于有此声明，在程序编译和连接后，文件A的变量a的作用域扩展到了文件B。</p>
 <p><strong>命名空间</strong>：实际上就是一个由程序设计者命名的内存区域，程序设计者可以根据需要指定一些有名字的空间域，把一些全局实体分别放在各个命名空间中，从而与其他全局实体分隔开来。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> ns1 <span class="comment">//指定命名中间nsl</span></span><br><span class="line">&#123; <span class="keyword">int</span> a；</span><br><span class="line"><span class="keyword">double</span> b; &#125;</span><br></pre></td></tr></table></figure>
 
-<p>namespace 是定义命名空间所必须写的关键字，nsl 是用户自己指定的命名空间的名字（可以用任意的合法标识符）</p>
-<p>在花括号内是声明块，在其中声明的实体称为命名空间成员(namespace member)。现在命名空间成员包括变量a和b，注意a和b仍然是全局变量，仅仅是把它们隐藏在指定的命名空间中而已。</p>
-<p>如果在程序中要使用变量a和b，必须加上命名空间名和作用域分辨符“::”，如nsl::a，nsl::b。这种用法称为命名空间限定(qualified)，这些名字(如nsl::a)称为被限定名 (qualified name)。</p>
+<p>命名空间成员包括变量a和b，注意a和b仍然是全局变量，仅仅是把它们隐藏在指定的命名空间中而已。如果在程序中要使用变量a和b，必须加上命名空间名和作用域分辨符“::”，如nsl::a，nsl::b。这种用法称为命名空间限定(qualified)，这些名字(如nsl::a)称为被限定名 (qualified name)。</p>
+<p>C++中命名空间的作用类似于操作系统中的目录和文件的关系，由于文件很多，不便管理，而且容易重名，于是人们设立若干子目录，把文件分别放到不同的子目录中，不同子目录中的文件可以同名。调用文件时应指出文件路径。</p>
+<h3 id="2-VS中快捷键"><a href="#2-VS中快捷键" class="headerlink" title="2. VS中快捷键"></a>2. VS中快捷键</h3><p><code>ctrl + k</code> + <code>ctrl + c</code>，注释</p>
+<p><code>ctrl + k</code> + <code>ctrl + u</code>，取消注释</p>
+<p><code>ctrl + k</code> + <code>ctrl + f</code>，格式化代码</p>
+<h3 id="3-容器-向量（Vector）"><a href="#3-容器-向量（Vector）" class="headerlink" title="3. 容器-向量（Vector）"></a>3. 容器-向量（Vector）</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">vec0</span><span class="params">(<span class="number">4</span>,<span class="number">0</span>)</span></span>; <span class="comment">// 向量初始化,长度为4，元素初始值均为0</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">6</span>&#125;; <span class="comment">// 向量初始化法</span></span><br><span class="line">vec.<span class="built_in">size</span>() <span class="comment">// 返回容器的元素个数</span></span><br><span class="line">vec.<span class="built_in">begin</span>() <span class="comment">// 返回指向 首元素 的迭代器（即容器指针）</span></span><br><span class="line">vec.<span class="built_in">end</span>() <span class="comment">// 返回指向尾 *元素下一位置* 的迭代器</span></span><br><span class="line"><span class="keyword">int</span> maxV = *max_element(vec.<span class="built_in">begin</span>(), vec.<span class="built_in">end</span>()); <span class="comment">// 求向量中的最大值</span></span><br><span class="line">vec.push_back(<span class="number">5</span>); <span class="comment">// 在表尾添加一个元素</span></span><br><span class="line">sort(vec.<span class="built_in">begin</span>(), vec.<span class="built_in">end</span>()); <span class="comment">// 对vector进行排序 #include &lt;algorithm&gt;</span></span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; (vec0 == vec) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">// 判断两个vector是否相等，可以直接使用“==”或者“!=”进行比较</span></span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator ret;</span><br><span class="line">ret = <span class="built_in">std</span>::<span class="built_in">find</span>(vec.<span class="built_in">begin</span>(), vec.<span class="built_in">end</span>(), <span class="number">15</span>);</span><br><span class="line"><span class="comment">// 判断某特定值是否存在于vector中</span></span><br><span class="line"><span class="keyword">if</span>(ret == vec.<span class="built_in">end</span>())</span><br><span class="line">     <span class="built_in">cout</span> &lt;&lt; <span class="string">"not found"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">     <span class="built_in">cout</span> &lt;&lt; <span class="string">"found it"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-运算符的运算效率"><a href="#4-运算符的运算效率" class="headerlink" title="4. 运算符的运算效率"></a>4. 运算符的运算效率</h3><p>在某一次测试中，同一段代码执行 10^8 次，计算所用时间：</p>
+<p>赋值运算（净运行时间0.8ms）；super fast</p>
+<p><font color=green>加法运算（净运行时间41.45ms）；fast</font></p>
+<p><font color=green>减法运算（净运行时间42.95ms）；fast</font></p>
+<p>乘法运算（净运行时间58.25ms）；normal</p>
+<p><font color=red>除法运算（净运行时间1210.2ms）；slow</font></p>
+<p><font color=red>取模运算（净运行时间1178.15ms）；slow</font></p>
 
     </div>
 
@@ -407,7 +415,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-命名空间namespace的作用"><span class="nav-text">1. 命名空间namespace的作用</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-命名空间namespace"><span class="nav-text">1. 命名空间namespace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-VS中快捷键"><span class="nav-text">2. VS中快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-容器-向量（Vector）"><span class="nav-text">3. 容器-向量（Vector）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-运算符的运算效率"><span class="nav-text">4. 运算符的运算效率</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
