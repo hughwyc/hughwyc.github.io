@@ -52,9 +52,12 @@ vector<int> vec = {2, 4, 9, 6}; // 向量初始化法
 vec.size() // 返回容器的元素个数
 vec.begin() // 返回指向 首元素 的迭代器（即容器指针）
 vec.end() // 返回指向尾 *元素下一位置* 的迭代器
+vec.rbegin() // 返回一个迭代器，即reverse的begin() 指向最后一个元素
+vec.rend() // 返回一个迭代器， 指向第一个元素的前一个位置
 int maxV = *max_element(vec.begin(), vec.end()); // 求向量中的最大值
 vec.push_back(5); // 在表尾添加一个元素
-sort(vec.begin(), vec.end()); // 对vector进行排序 #include <algorithm>
+sort(vec.begin(), vec.end());   // 正向排序 即按照从小到大的顺序排序
+sort(vec.rbegin(), vec.rend()); // 逆向排序 即按照从大到小的顺序进行排序
 cout << (vec0 == vec) << endl;
 // 判断两个vector是否相等，可以直接使用“==”或者“!=”进行比较
 vector<int>::iterator ret;

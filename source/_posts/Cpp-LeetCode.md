@@ -384,6 +384,7 @@ public:
 						subArr.push_back(nums[k]);
 						sort(subArr.begin(), subArr.end());
 						if (ans.size()==0 ||(ans.size() > 0 && find(ans.begin(), ans.end(), subArr) == ans.end()))
+                            // ==ans.end()是没找到，所以插入
 							ans.push_back(subArr);
 					}
 				}
@@ -401,3 +402,87 @@ public:
 采用指针的方式。固定一个数，用双指针来查找另外两个数。
 
 <div align=center><img src="https://i.loli.net/2020/06/01/TCOVghxBflGPwDK.png" width="80%" height="80%"></div>
+
+根据这个思路，又写了如下代码：
+
+```c++
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		vector<vector<int>> ans;
+		sort(nums.begin(), nums.end());
+		if (nums.size() < 3) return ans;
+		for (int i = 0; i < nums.size()-2; i++) {
+			if (nums[i] > 0) break;
+			vector<int>::iterator left = nums.begin() + i + 1;
+			vector<int>::iterator right = nums.end() - 1;			
+			while (left < right) {
+				
+				int sum = nums[i] + *left + *right;
+				vector<int> subArr;
+				if (sum == 0) {
+					subArr.push_back(nums[i]);
+					subArr.push_back(*left);
+					subArr.push_back(*right);
+					sort(subArr.begin(), subArr.end());
+					if (ans.size() == 0 || (ans.size() > 0 && find(ans.begin(), ans.end(), subArr) == ans.end()))
+						// ==ans.end()是没找到，所以插入
+						ans.push_back(subArr);
+					right--;
+					left++;
+				}
+				else if (sum > 0)
+					right--;
+				else
+					left++;
+			}
+			
+		}
+		return ans;
+	}
+};
+```
+
+使用了迭代器，仍然超时。把迭代器换成普通数组下标，还是超出时间限制...
+
+```c++
+class Solution {
+public:
+	vector<vector<int>> threeSum(vector<int>& nums) {
+		vector<vector<int>> ans;
+		sort(nums.begin(), nums.end());
+		int len = nums.size();
+		if (nums.size() < 3) return ans;
+		for (int i = 0; i < len-2; i++) {
+			if (nums[i] > 0) break;
+			int left =  i + 1;
+			int right = len - 1;			
+			while (left < right) {				
+				int sum = nums[i] + nums[left] + nums[right];				
+				if (sum == 0) {
+					vector<int> subArr = { nums[i], nums[left] , nums[right] };
+					sort(subArr.begin(), subArr.end());
+					if (ans.size() == 0 || (ans.size() > 0 && find(ans.begin(), ans.end(), subArr) == ans.end()))
+						ans.push_back(subArr);
+					right--;
+					left++;
+				}
+				else if (sum > 0)
+					right--;
+				else
+					left++;
+			}
+		}
+		return ans;
+	}
+};
+```
+
+
+
+#### 参考代码：
+
+```c++
+
+```
+
