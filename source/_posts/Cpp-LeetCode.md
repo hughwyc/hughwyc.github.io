@@ -6,7 +6,7 @@ comment_count: true
 date: 2020-05-31 11:52:52
 id: leetcode-cpp
 top:
-tags: {cpp,leetcode}
+tags: [cpp,leetcode]
 categories: Coding
 description: 自2020-05-31起，开始刷LeetCode，每日不少于3题（1简单，1中等，1困难）
 ---

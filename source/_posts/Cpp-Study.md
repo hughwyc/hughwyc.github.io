@@ -6,7 +6,7 @@ comment_count: true
 date: 2020-05-31 14:32:27
 id: cpp-study
 top:
-tags: {cpp,leetcode}
+tags: cpp
 categories: Coding
 description: 重新系统学习C++，随时记录
 ---

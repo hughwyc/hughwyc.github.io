@@ -5,12 +5,17 @@ visitor: true
 comment_count: true
 date: 2020-06-24 09:39:28
 id: python-code-with-PEP8
-notshow:
-top:
-tags:
-categories:
-description:“Code is read much more often than it is written.” --Guido van Rossum
+top: 
+tags: Python
+categories: Coding
+description: “Code is read much more often than it is written.” --Guido van Rossum
 ---
+
+> “Code is read much more often than it is written.” --Guido van Rossum
+
+<div align=center><img src="https://i.loli.net/2020/06/24/ONud5gIxMEiLjWG.png" width="70%" height="70%"></div>
+
+
 
 ## Naming Conventions
 
@@ -36,9 +41,7 @@ Always try to use the most concise but descriptive names possible.
 >>> y, z = x.split()
 >>> print(z, y, sep=', ')
 'Smith, John'
-```
 
-```python
 >>> # Recommended
 >>> name = 'John Smith'
 >>> first_name, last_name = name.split()
@@ -50,9 +53,7 @@ Always try to use the most concise but descriptive names possible.
 # Not recommended
 def db(x):
     return x * 2
-```
 
-```python
 # Recommended
 def multiply_by_two(x):
     return x * 2
@@ -147,9 +148,7 @@ def function(
     arg_one, arg_two,
     arg_three, arg_four):
     return arg_one
-```
 
-```python
 # Recommended
 def function(
         arg_one, arg_two,
@@ -245,11 +244,9 @@ Surround the following binary operators with a single space on either side:
 def function(default_parameter=5):
     # ...
 
-
 # Not recommended
 def function(default_parameter = 5):
     # ...
-   
 ```
 
 When there’s more than one operator in a statement, adding a single space before and after each operator can look confusing. Instead, it is better to only add whitespace around the operators with the lowest priority, especially when performing mathematical manipulation：
@@ -319,6 +316,17 @@ x = 5
   ```
 
 ## Programming Recommendations
+
+* The "f-string"  makes formatting easier.
+
+  ```python
+  money = 10000000
+  print("I earn", money, "dollars by writing on medium.")
+  
+  # Recommended
+  money = 10_000_000
+  print(f"I earn {money} dollars by writing on medium.")
+  ```
 
 * Don’t compare boolean values to `True` or `False` using the equivalence operator.
 
