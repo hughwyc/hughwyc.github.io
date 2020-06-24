@@ -1,6 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Write Beautiful Python Code With PEP8</title>
+    <url>/posts/python-code-with-PEP8/</url>
+    <content><![CDATA[<blockquote>
+<p>“Code is read much more often than it is written.” --Guido van Rossum</p>
+</blockquote>
+<div align=center><img src="https://i.loli.net/2020/06/24/ONud5gIxMEiLjWG.png" width="70%" height="70%"></div>
+
+
+
+<h2 id="Naming-Conventions"><a href="#Naming-Conventions" class="headerlink" title="Naming Conventions"></a>Naming Conventions</h2><h3 id="Naming-Styles"><a href="#Naming-Styles" class="headerlink" title="Naming Styles"></a>Naming Styles</h3><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Naming Convention</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Function</td>
+<td>Use a lowercase word or words. Separate words by underscores to improve readability.</td>
+<td><code>function</code>, <code>my_function</code></td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.</td>
+<td><code>x</code>, <code>var</code>, <code>my_variable</code></td>
+</tr>
+<tr>
+<td>Class</td>
+<td>Start each word with a capital letter. Do not separate words with underscores. This style is called camel case.</td>
+<td><code>Model</code>, <code>MyClass</code></td>
+</tr>
+<tr>
+<td>Method</td>
+<td>Use a lowercase word or words. Separate words with underscores to improve readability.</td>
+<td><code>class_method</code>, <code>method</code></td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.</td>
+<td><code>CONSTANT</code>, <code>MY_CONSTANT</code>, <code>MY_LONG_CONSTANT</code></td>
+</tr>
+<tr>
+<td>Module</td>
+<td>Use a short, lowercase word or words. Separate words with underscores to improve readability.</td>
+<td><code>module.py</code>, <code>my_module.py</code></td>
+</tr>
+<tr>
+<td>Package</td>
+<td>Use a short, lowercase word or words. Do not separate words with underscores.</td>
+<td><code>package</code>, <code>mypackage</code></td>
+</tr>
+</tbody></table>
+<h3 id="How-to-Choose-Names"><a href="#How-to-Choose-Names" class="headerlink" title="How to Choose Names"></a>How to Choose Names</h3><p>Always try to use the most concise but descriptive names possible.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># Not recommended</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>x = <span class="string">'John Smith'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>y, z = x.split()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(z, y, sep=<span class="string">', '</span>)</span><br><span class="line"><span class="string">'Smith, John'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="comment"># Recommended</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>name = <span class="string">'John Smith'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>first_name, last_name = name.split()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(last_name, first_name, sep=<span class="string">', '</span>)</span><br><span class="line"><span class="string">'Smith, John'</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">db</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multiply_by_two</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x * <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Code-Layout"><a href="#Code-Layout" class="headerlink" title="Code Layout"></a>Code Layout</h2><h3 id="Blank-Lines"><a href="#Blank-Lines" class="headerlink" title="Blank Lines"></a>Blank Lines</h3><p>Code that’s bunched up together can be overwhelming and hard to read.</p>
+<ul>
+<li><p><strong>Surround top-level functions and classes with two blank lines.</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MySecondClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">top_level_function</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Surround method definitions inside classes with a single blank line.</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">first_method</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">second_method</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Use blank lines sparingly inside functions to show clear steps.</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calculate_variance</span><span class="params">(number_list)</span>:</span></span><br><span class="line">    sum_list = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> number <span class="keyword">in</span> number_list:</span><br><span class="line">        sum_list = sum_list + number</span><br><span class="line">    mean = sum_list / len(number_list)</span><br><span class="line"></span><br><span class="line">    sum_squares = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> number <span class="keyword">in</span> number_list:</span><br><span class="line">        sum_squares = sum_squares + number**<span class="number">2</span></span><br><span class="line">    mean_squares = sum_squares / len(number_list)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> mean_squares - mean**<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="Maximum-Line-Length-and-Line-Breaking"><a href="#Maximum-Line-Length-and-Line-Breaking" class="headerlink" title="Maximum Line Length and Line Breaking"></a>Maximum Line Length and Line Breaking</h3><p>PEP 8 suggests lines should be limited to 79 characters. </p>
+<p>Python will assume line continuation if code is contained within parentheses, brackets, or braces:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(arg_one, arg_two,</span></span></span><br><span class="line"><span class="function"><span class="params">             arg_three, arg_four)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> arg_one</span><br></pre></td></tr></table></figure>
+
+<p>If it is impossible to use implied continuation, then you can use backslashes to break lines instead:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> mypkg <span class="keyword">import</span> example1, \</span><br><span class="line">    example2, example3</span><br></pre></td></tr></table></figure>
+
+<p>If line breaking needs to occur around binary operators, like <code>+</code> and <code>*</code>, it should occur before the operator:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Recommended</span></span><br><span class="line">total = (first_variable</span><br><span class="line">         + second_variable</span><br><span class="line">         - third_variable)</span><br></pre></td></tr></table></figure>
+
+<p>Breaking before binary operators produces more readable code.</p>
+<h2 id="Indentation"><a href="#Indentation" class="headerlink" title="Indentation"></a>Indentation</h2><h3 id="Indentation-Following-Line-Breaks"><a href="#Indentation-Following-Line-Breaks" class="headerlink" title="Indentation Following Line Breaks"></a>Indentation Following Line Breaks</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not Recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">    arg_one, arg_two,</span></span></span><br><span class="line"><span class="function"><span class="params">    arg_three, arg_four)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> arg_one</span><br><span class="line"></span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        arg_one, arg_two,</span></span></span><br><span class="line"><span class="function"><span class="params">        arg_three, arg_four)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> arg_one</span><br></pre></td></tr></table></figure>
+
+<h3 id="Where-to-Put-the-Closing-Brace"><a href="#Where-to-Put-the-Closing-Brace" class="headerlink" title="Where to Put the Closing Brace"></a>Where to Put the Closing Brace</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list_of_numbers = [</span><br><span class="line">    <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>,</span><br><span class="line">    <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>,</span><br><span class="line">    <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h2><ul>
+<li>Limit the line length of comments and docstrings to 72 characters.</li>
+<li>Use complete sentences, starting with a capital letter.</li>
+<li>Make sure to update comments if you change your code.</li>
+</ul>
+<h3 id="Inline-Comments"><a href="#Inline-Comments" class="headerlink" title="Inline Comments"></a>Inline Comments</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">empty_list = []  <span class="comment"># Initialize empty list</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">5</span></span><br><span class="line">x = x * <span class="number">5</span>  <span class="comment"># Multiply x by 5</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Block-Comments"><a href="#Block-Comments" class="headerlink" title="Block Comments"></a>Block Comments</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">10</span>):</span><br><span class="line">    <span class="comment"># Loop over i ten times and print out the value of i, followed by a</span></span><br><span class="line">    <span class="comment"># new line character</span></span><br><span class="line">    print(i, <span class="string">'\n'</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quadratic</span><span class="params">(a, b, c, x)</span>:</span></span><br><span class="line">    <span class="comment"># Calculate the solution to a quadratic equation using the quadratic</span></span><br><span class="line">    <span class="comment"># formula.</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># There are always two solutions to a quadratic equation, x_1 and x_2.</span></span><br><span class="line">    x_1 = (- b+(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line">    x_2 = (- b-(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line">    <span class="keyword">return</span> x_1, x_2</span><br></pre></td></tr></table></figure>
+
+<h3 id="Documentation-Strings"><a href="#Documentation-Strings" class="headerlink" title="Documentation Strings"></a>Documentation Strings</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quadratic</span><span class="params">(a, b, c, x)</span>:</span></span><br><span class="line">    <span class="string">"""Solve quadratic equation via the quadratic formula.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    A quadratic equation has the following form:</span></span><br><span class="line"><span class="string">    ax**2 + bx + c = 0</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    There always two solutions to a quadratic equation: x_1 &amp; x_2.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    x_1 = (- b+(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line">    x_2 = (- b-(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> x_1, x_2</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quadratic</span><span class="params">(a, b, c, x)</span>:</span></span><br><span class="line">    <span class="string">"""Use the quadratic formula"""</span></span><br><span class="line">    x_1 = (- b+(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line">    x_2 = (- b-(b**<span class="number">2</span><span class="number">-4</span>*a*c)**(<span class="number">1</span>/<span class="number">2</span>)) / (<span class="number">2</span>*a)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> x_1, x_2</span><br></pre></td></tr></table></figure>
+
+<h2 id="Whitespace-in-Expressions-and-Statements"><a href="#Whitespace-in-Expressions-and-Statements" class="headerlink" title="Whitespace in Expressions and Statements"></a>Whitespace in Expressions and Statements</h2><h3 id="Whitespace-Around-Binary-Operators"><a href="#Whitespace-Around-Binary-Operators" class="headerlink" title="Whitespace Around Binary Operators"></a>Whitespace Around Binary Operators</h3><p>Surround the following binary operators with a single space on either side:</p>
+<ul>
+<li>Assignment operators (<code>=</code>, <code>+=</code>, <code>-=</code>, and so forth)</li>
+<li>Comparisons (<code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>. <code>&gt;=</code>, <code>&lt;=</code>) and (<code>is</code>, <code>is not</code>, <code>in</code>, <code>not in</code>)</li>
+<li>Booleans (<code>and</code>, <code>not</code>, <code>or</code>)</li>
+</ul>
+<p><strong>Note</strong>: When <code>=</code> is used to assign a default value to a function argument, do not surround it with spaces.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(default_parameter=<span class="number">5</span>)</span>:</span></span><br><span class="line">    <span class="comment"># ...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">function</span><span class="params">(default_parameter = <span class="number">5</span>)</span>:</span></span><br><span class="line">    <span class="comment"># ...</span></span><br></pre></td></tr></table></figure>
+
+<p>When there’s more than one operator in a statement, adding a single space before and after each operator can look confusing. Instead, it is better to only add whitespace around the operators with the lowest priority, especially when performing mathematical manipulation：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Recommended</span></span><br><span class="line">y = x**<span class="number">2</span> + <span class="number">5</span></span><br><span class="line">z = (x+y) * (x-y)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Not Recommended</span></span><br><span class="line">y = x ** <span class="number">2</span> + <span class="number">5</span></span><br><span class="line">z = (x + y) * (x - y)</span><br></pre></td></tr></table></figure>
+
+<p>You can also apply this to <code>if</code> statements where there are multiple conditions. The <code>and</code> operator has lowest priority. </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line"><span class="keyword">if</span> x &gt; <span class="number">5</span> <span class="keyword">and</span> x % <span class="number">2</span> == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">'x is larger than 5 and divisible by 2!'</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="keyword">if</span> x&gt;<span class="number">5</span> <span class="keyword">and</span> x%<span class="number">2</span>==<span class="number">0</span>:</span><br><span class="line">    print(<span class="string">'x is larger than 5 and divisible by 2!'</span>)</span><br></pre></td></tr></table></figure>
+
+<p>In slices, colons act as a binary operators:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">list[<span class="number">3</span>:<span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Treat the colon as the operator with lowest priority</span></span><br><span class="line">list[x+<span class="number">1</span> : x+<span class="number">2</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># In an extended slice, both colons must be</span></span><br><span class="line"><span class="comment"># surrounded by the same amount of whitespace</span></span><br><span class="line">list[<span class="number">3</span>:<span class="number">4</span>:<span class="number">5</span>]</span><br><span class="line">list[x+<span class="number">1</span> : x+<span class="number">2</span> : x+<span class="number">3</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># The space is omitted if a slice parameter is omitted</span></span><br><span class="line">list[x+<span class="number">1</span> : x+<span class="number">2</span> :]</span><br></pre></td></tr></table></figure>
+
+<h3 id="When-to-Avoid-Adding-Whitespace"><a href="#When-to-Avoid-Adding-Whitespace" class="headerlink" title="When to Avoid Adding Whitespace"></a>When to Avoid Adding Whitespace</h3><ul>
+<li><p>Before a comma, semicolon, or colon:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = <span class="number">5</span></span><br><span class="line">  y = <span class="number">6</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># Recommended</span></span><br><span class="line">  print(x, y)</span><br><span class="line">  </span><br><span class="line">  <span class="comment"># Not recommended</span></span><br><span class="line">  print(x , y)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Between a trailing comma and a closing parenthesis:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Recommended</span></span><br><span class="line">tuple = (<span class="number">1</span>,)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line">tuple = (<span class="number">1</span>, )</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="Programming-Recommendations"><a href="#Programming-Recommendations" class="headerlink" title="Programming Recommendations"></a>Programming Recommendations</h2><ul>
+<li><p>The &quot;f-string&quot;  makes formatting easier.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">money = <span class="number">10000000</span></span><br><span class="line">print(<span class="string">"I earn"</span>, money, <span class="string">"dollars by writing on medium."</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line">money = <span class="number">10</span>_000_000</span><br><span class="line">print(<span class="string">f"I earn <span class="subst">&#123;money&#125;</span> dollars by writing on medium."</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Don’t compare boolean values to <code>True</code> or <code>False</code> using the equivalence operator.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line">my_bool = <span class="number">6</span> &gt; <span class="number">5</span></span><br><span class="line"><span class="keyword">if</span> my_bool == <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'6 is bigger than 5'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="keyword">if</span> my_bool:</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'6 is bigger than 5'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use the fact that empty sequences are falsy in <code>if</code> statements.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line">my_list = []</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> len(my_list):</span><br><span class="line">    print(<span class="string">'List is empty!'</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line">my_list = []</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> my_list:</span><br><span class="line">    print(<span class="string">'List is empty!'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use <code>is not</code> rather than <code>not ... is</code> in <code>if</code> statements.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="keyword">if</span> x <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'x exists!'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> x <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'x exists!'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Don’t use <code>if x:</code> when you mean <code>if x is not None:</code>. </p>
+<p>Sometimes, you may have a function with arguments that are <code>None</code> by default. A common mistake when checking if such an argument, <code>arg</code>, has been given a different value is to use the following:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not Recommended</span></span><br><span class="line"><span class="keyword">if</span> arg:</span><br><span class="line">    <span class="comment"># Do something with arg...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="keyword">if</span> arg <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">    <span class="comment"># Do something with arg...</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>In python, <code>None</code>,  <code>False</code>, <code>empty string:&quot;&quot;</code>, <code>0</code>, <code>empty list: []</code>, <code>empty dict: {}</code>, <code>empty tuple: ()</code> are equal to <code>False</code>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">not</span> <span class="literal">None</span> == <span class="keyword">not</span> <span class="literal">False</span> == <span class="keyword">not</span> <span class="string">''</span> == <span class="keyword">not</span> <span class="number">0</span> == <span class="keyword">not</span> [] == <span class="keyword">not</span> &#123;&#125; == <span class="keyword">not</span> ()</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; x = []</span><br><span class="line">&gt;&gt;&gt;&gt; y = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; x <span class="keyword">is</span> <span class="literal">None</span>  <span class="comment"># attention</span></span><br><span class="line">&gt;<span class="literal">False</span></span><br><span class="line">&gt;&gt;&gt;&gt; y <span class="keyword">is</span> <span class="literal">None</span></span><br><span class="line">&gt;<span class="literal">True</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; <span class="keyword">not</span> x</span><br><span class="line">&gt;<span class="literal">True</span></span><br><span class="line">&gt;&gt;&gt;&gt; <span class="keyword">not</span> y</span><br><span class="line">&gt;<span class="literal">True</span></span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;&gt; <span class="keyword">not</span> x <span class="keyword">is</span> <span class="literal">None</span></span><br><span class="line">&gt;<span class="literal">True</span></span><br><span class="line">&gt;&gt;&gt;&gt; <span class="keyword">not</span> y <span class="keyword">is</span> <span class="literal">None</span></span><br><span class="line">&gt;<span class="literal">False</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>Use <code>.startswith()</code> and <code>.endswith()</code> instead of slicing.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Not recommended</span></span><br><span class="line"><span class="keyword">if</span> word[:<span class="number">3</span>] == <span class="string">'cat'</span>:</span><br><span class="line">    print(<span class="string">'The word starts with "cat"'</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># Recommended</span></span><br><span class="line"><span class="keyword">if</span> word.startswith(<span class="string">'cat'</span>):</span><br><span class="line">    print(<span class="string">'The word starts with "cat"'</span>)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cpp-Study</title>
     <url>/posts/cpp-study/</url>
     <content><![CDATA[<h3 id="1-命名空间namespace"><a href="#1-命名空间namespace" class="headerlink" title="1. 命名空间namespace"></a>1. 命名空间namespace</h3><p>命名空间是ANSIC++引入的可以由用户命名的作用域，用来处理程序中常见的同名冲突。</p>
@@ -29,7 +193,7 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>[object Object]</tag>
+        <tag>cpp</tag>
       </tags>
   </entry>
   <entry>
@@ -161,7 +325,8 @@
         <category>Coding</category>
       </categories>
       <tags>
-        <tag>[object Object]</tag>
+        <tag>cpp</tag>
+        <tag>leetcode</tag>
       </tags>
   </entry>
   <entry>
